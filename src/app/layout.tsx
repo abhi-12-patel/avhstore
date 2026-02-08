@@ -3,6 +3,11 @@ import "./globals.css";
 import type { Metadata } from "next";
 import Providers from "./providers";
 
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+};
+
 export const metadata: Metadata = {
   title: "AVH Store - Exquisite Jewelry for Every Occasion",
   description: "Fine jewelry crafted with exceptional attention to detail.",
