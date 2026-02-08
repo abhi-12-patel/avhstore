@@ -17,6 +17,7 @@ export interface Product {
   reviewCount: number;
 }
 
+
 export interface CartItem {
   product: Product;
   quantity: number;
