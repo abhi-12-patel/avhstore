@@ -16,6 +16,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
       <body>
         <Providers>{children}</Providers>
       </body>
