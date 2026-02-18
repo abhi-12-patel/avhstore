@@ -185,7 +185,7 @@ const Header = () => {
                 </div>
             )}
 
-            <div className="container mx-auto flex justify-between items-center md:px-6 lg:px-8">
+            <div className="container mx-auto px-4 py-4  flex justify-between items-center md:px-6 lg:px-8">
                 {/* Left: Search Icon and Mobile Menu Toggle */}
                 <div className="flex items-center space-x-4">
                     {/* Hamburger Icon for Mobile */}
