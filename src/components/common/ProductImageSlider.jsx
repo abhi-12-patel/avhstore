@@ -32,7 +32,7 @@ const ProductImageSlider = ({ images, productName }) => {
   return (
     <div className="space-y-4">
       {/* Main Image */}
-      <div className="relative aspect-[4/5] max-h-[600px] w-full bg-cream overflow-hidden group flex items-center justify-center p-4">
+      <div className="relative aspect-[4/5] max-h-[600px] w-full bg-white overflow-hidden group flex items-center justify-center p-4">
         <ImageWithFallback
           src={images[currentIndex]}
           alt={`${productName} - Image ${currentIndex + 1}`}
