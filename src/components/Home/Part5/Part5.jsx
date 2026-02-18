@@ -36,7 +36,7 @@ const Part5 = () => {
             <span className="text-2xl">Bestsellers</span>
 
       {/* PC View Grid */}
-      <div className="hidden md:grid grid-cols-1 lg:grid-cols-4 gap-8 justify-items-center">
+      <div className="hidden md:grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 justify-items-center">
         {featuredProducts.map((product) => (
           <div key={product.id} className="w-full max-w-[280px]">
             <ProductCard product={product} />

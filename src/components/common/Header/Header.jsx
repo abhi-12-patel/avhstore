@@ -98,7 +98,7 @@ const Header = () => {
     return (
         <header
             ref={headerRef} // Attach ref here
-            className={`fixed top-0 left-0 right-0 z-50 bg-white text-black border-b border-gray-200 transition-transform duration-300 ease-in-out ${isVisible ? 'translate-y-0' : '-translate-y-full'}`}
+            className={`fixed  top-0 left-0 right-0 z-50 bg-white text-black border-b border-gray-200 transition-transform duration-300 ease-in-out ${isVisible ? 'translate-y-0' : '-translate-y-full'}`}
         >
             {/* Announcement bar always on top */}
             {showAnnouncementBar && <AnnouncementBar />}
@@ -185,7 +185,7 @@ const Header = () => {
                 </div>
             )}
 
-            <div className="container mx-auto px-4 py-4 flex justify-between items-center md:px-6 lg:px-8">
+            <div className="container mx-auto flex justify-between items-center md:px-6 lg:px-8">
                 {/* Left: Search Icon and Mobile Menu Toggle */}
                 <div className="flex items-center space-x-4">
                     {/* Hamburger Icon for Mobile */}
