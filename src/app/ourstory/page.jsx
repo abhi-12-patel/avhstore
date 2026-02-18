@@ -1,0 +1,17 @@
+const OurStory = () => {
+    return(
+        <div className="relative bg-white text-gray-700 px-5 pt-24 lg:pt-10 lg:px-[26%] mt-[0%] py-10">
+            <h1 className="pb-13 leading-7  text-5xl">Our Story</h1>
+            <p className="pb-13 leading-7 text-gray-500">Welcome to AVH STORE !</p>
+            <p className="pb-13 leading-7 text-gray-500">We're all about keeping things minimal, unique & spiritual here. Our jewelry is made for the everyday woman who appreciates the beauty of understated elegance. We offer bohemian style, Artificial stacks, healing crystals, handmade jewelry, Pinterest jewels, etc. We started with a simple goal: to offer boho sterling Artificial 925 minimalist jewelry that you can wear with anything, anywhere. From work meetings to weekend brunches, our pieces are designed to effortlessly complement your style.</p>
+            <p className="pb-13 leading-7 text-gray-500">Each piece in our collection is carefully crafted from sterling Artificial 925 hallmarked, so you can trust that it's built to last. Plus, we're committed to ethical sourcing and sustainable practices, because looking good shouldn't come at the expense of the planet. So we do use recycled Artificial also, We use sustainable packaging and proudly support Indian handicrafts & artisans- But enough about us let's talk about you!</p>
+            <p className="pb-13 leading-7 text-gray-500">We're here to help you find the perfect piece that makes you feel confident and beautiful, whether you're treating yourself or shopping for a loved one. Thanks for stopping by Tarakaya ( Shiva). We can't wait to be part of your everyday style!</p>
+            <p className="pb-13 leading-7 text-gray-500">We believe in the transformative power of crystals and the timeless elegance of sterling Artificial jewelry. Our journey began with a passion for holistic wellness and a deep appreciation for the beauty of natural gemstones. We believe that each crystal carries its own unique energy and healing properties, and we're dedicated to bringing those benefits into your everyday life through our handcrafted jewelry.</p>
+            <p className="pb-13 leading-7 text-gray-500">From delicate pendants to statement rings, each piece in our collection is thoughtfully designed to showcase the natural beauty and healing properties of crystals while incorporating the classic elegance of sterling silver. Whether you're seeking clarity, balance, or protection, our jewelry serves as a wearable reminder of your intentions and desires. We are committed to quality and craftsmanship, which is why we work closely with skilled artisans to create jewelry that is not only beautiful but also durable and long-lasting.</p>
+            <p className="pb-13 leading-7 text-gray-500">But our mission goes beyond just creating beautiful jewelry. We're here to empower you on your journey of self-discovery and healing. Whether you're new to crystal healing or a seasoned practitioner, we're here to support you every step of the way.</p>
+            <p className="pb-13 leading-7 text-gray-500">Thank you for choosing us. We're honored to be part of your journey toward greater well-being and personal transformation. With love and light,</p>
+            <p className="pb-13 leading-7 text-gray-500">-Abhi</p>
+        </div>
+    )
+}
+export default OurStory;

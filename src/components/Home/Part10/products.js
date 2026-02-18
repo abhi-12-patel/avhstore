@@ -1,0 +1,88 @@
+const products = [
+  {
+    id: 1,
+    imageUrl: '/70048E73-FC04-4A94-A59C-374E7A399E9B.jpg',
+    title: 'Rings Artificial 925',
+    price: '1000',
+    linkHref: '/product/1',
+  },
+  {
+    id: 2,
+    imageUrl: '/70048E73-FC04-4A94-A59C-374E7A399E9B.jpg',
+    title: 'Pendants',
+    price: '1000',
+    linkHref: '/product/2',
+  },
+  {
+    id: 3,
+    imageUrl: '/70048E73-FC04-4A94-A59C-374E7A399E9B.jpg',
+    title: 'Artificial 925 Earrings',
+    price: '1000',
+    linkHref: '/product/3',
+  },
+  {
+    id: 4,
+    imageUrl: '/70048E73-FC04-4A94-A59C-374E7A399E9B.jpg',
+    title: 'Nose rings / Nose pins / Septums / Clip ons',
+    price: '1000',
+    linkHref: '/product/4',
+  },
+  {
+    id: 5,
+    imageUrl: '/70048E73-FC04-4A94-A59C-374E7A399E9B.jpg',
+    title: 'Nose rings / Nose pins / Septums / Clip ons',
+    price: '1000',
+    linkHref: '/product/4',
+  },
+  {
+    id: 6,
+    imageUrl: '/70048E73-FC04-4A94-A59C-374E7A399E9B.jpg',
+    title: 'Nose rings / Nose pins / Septums / Clip ons',
+    price: '1000',
+    linkHref: '/product/4',
+  },
+  {
+    id: 7,
+    imageUrl: '/70048E73-FC04-4A94-A59C-374E7A399E9B.jpg',
+    title: 'Bracelets Gold Plated',
+    price: '1000',
+    linkHref: '/product/5',
+  },
+  {
+    id: 8,
+    imageUrl: '/70048E73-FC04-4A94-A59C-374E7A399E9B.jpg',
+    title: 'Rings Artificial 925',
+    price: '1000',
+    linkHref: '/product/1',
+  },
+  {
+    id: 9,
+    imageUrl: '/70048E73-FC04-4A94-A59C-374E7A399E9B.jpg',
+    title: 'Pendants',
+    price: '1000',
+    linkHref: '/product/2',
+  },
+  {
+    id: 10,
+    imageUrl: '/70048E73-FC04-4A94-A59C-374E7A399E9B.jpg',
+    title: 'Artificial 925 Earrings',
+    price: '1000',
+    linkHref: '/product/3',
+  },
+  {
+    id: 11,
+    imageUrl: '/70048E73-FC04-4A94-A59C-374E7A399E9B.jpg',
+    title: 'Nose rings / Nose pins / Septums / Clip ons',
+    price: '1000',
+    linkHref: '/product/4',
+  },
+  {
+    id: 12,
+    imageUrl: '/70048E73-FC04-4A94-A59C-374E7A399E9B.jpg',
+    title: 'Bracelets Gold Plated',
+    price: '1000',
+    linkHref: '/product/5',
+  },
+];
+
+export default products; 
