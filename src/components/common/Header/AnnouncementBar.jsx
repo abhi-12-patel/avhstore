@@ -16,8 +16,8 @@ const AnnouncementBar = () => {
           <div className="marquee-content">
             <span>🚚 Free Shipping on orders above ₹2999/-</span>
             <span>🎉 Get 3% OFF above ₹2999/-</span>
-            <span>🔥 Get 5% OFF above ₹4999/-</span>
-            <span>🔥 Get 7% OFF above ₹5999/-</span>
+            <span>🔥 Get 5% OFF above ₹5999/-</span>
+            <span>🔥 Get 7% OFF above ₹8999/-</span>
 
             {/* Duplicate for smooth loop */}
             <span>🚚 Free Shipping on orders above ₹2999/-</span>

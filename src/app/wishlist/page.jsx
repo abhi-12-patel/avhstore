@@ -97,7 +97,7 @@ const Wishlist = () => {
                     {/* Remove Button */}
                     <button
                       onClick={() => handleRemove(product.id)}
-                      className="absolute top-3 right-3 p-2 bg-white rounded-full shadow hover:scale-110 transition"
+                      className="absolute top-3 right-3 p-2 bg-white text-black rounded-full shadow hover:scale-110 transition"
                     >
                       <Trash2 size={16} />
                     </button>
