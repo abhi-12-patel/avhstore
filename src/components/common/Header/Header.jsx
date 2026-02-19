@@ -184,12 +184,12 @@ const Header = () => {
                 </div>
             )}
 
-            <div className="container mx-auto  flex justify-between items-center md:px-6 lg:px-8">
+            <div className="container mx-auto flex items-center px-4 py-3 md:px-6 lg:px-8">
                 {/* Left: Search Icon and Mobile Menu Toggle */}
-                <div className="flex items-center space-x-4">
+                <div className="flex w-20 shrink-0 items-center space-x-3 md:w-auto md:space-x-4">
                     {/* Hamburger Icon for Mobile */}
                     <button
-                        className="md:hidden text-gray-600"
+                        className="shrink-0 text-gray-600 md:hidden sm:hidden"
                         onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
                     >
                         <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -207,7 +207,7 @@ const Header = () => {
                         viewBox="0 0 24 24"
                         strokeWidth={1}
                         stroke="currentColor"
-                        className="w-6 h-6 cursor-pointer text-gray-600"
+                        className="w-6 h-6 shrink-0 cursor-pointer text-gray-600"
                     >
                         <path strokeLinecap="round" strokeLinejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
                     </svg>
@@ -215,7 +215,7 @@ const Header = () => {
 
                 {/* Center: Logo */}
               {/* Center: Logo */}
-<div className="flex justify-center text-center">
+<div className="flex flex-1 justify-center text-center">
   <Image
     src={logo}
     alt="TARAKAYA Artificial Logo"
@@ -228,13 +228,13 @@ const Header = () => {
 
 
                 {/* Right: Icons */}
-                <div className="flex items-center space-x-4">
+                <div className="flex w-20 shrink-0 items-center justify-end space-x-3 text-gray-700 md:w-auto md:space-x-4">
                     {/* <Link href="/login">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1} stroke="currentColor" className="w-6 h-6 cursor-pointer text-gray-600">
                             <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
                         </svg>
                     </Link> */}
-                    <Link href="/wishlist" className="relative">
+                    <Link href="/wishlist" className="relative shrink-0">
                           <Heart  size={20} />
               {isHydrated && wishlistCount > 0 && (
                 <span className="absolute -top-3 -right-2 w-5 h-5 bg-primary text-primary-foreground text-xs rounded-full flex items-center justify-center font-body">
@@ -242,7 +242,7 @@ const Header = () => {
                 </span>
               )}
                     </Link>
-                    <Link href="/cart" className="relative">
+                    <Link href="/cart" className="relative shrink-0">
                           <ShoppingBag size={20} />
               {isHydrated && cartCount > 0 && (
                 <span className="absolute -top-3 -right-2 w-5 h-5 bg-primary text-primary-foreground text-xs rounded-full flex items-center justify-center font-body">

@@ -29,7 +29,7 @@ const Wishlist = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-gray-50 mainCatgeroryContainer">
 
       <main className="py-14">
         <div className="container mx-auto px-4">

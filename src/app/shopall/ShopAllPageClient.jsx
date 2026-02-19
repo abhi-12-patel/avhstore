@@ -32,9 +32,10 @@ export default function ShopAllPageClient() {
       className="bg-white px-4 pt-24 text-gray-600 lg:px-[14%] lg:py-8"
       style={{ fontFamily: "Inter, sans-serif" }}
     >
-      <h1 className="pb-6 text-4xl font-semibold text-gray-900">
-        Shop All Products
-      </h1>
+<h1 className="pb-6 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-gray-900">
+  Shop All Products
+</h1>
+
 
       {/* Category Filter */}
       <div className="mb-8 flex flex-wrap gap-2">

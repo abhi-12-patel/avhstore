@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const catagories = () => {
   return (
-    <div className="text-gray-600 px-4 lg:px-[14%] pt-22 lg:pt-8 pb-20 bg-white" style={{ fontFamily: 'Inter, sans-serif' }}>
+    <div className="text-gray-600 px-4 lg:px-[14%] pt-22 lg:pt-8 pb-20 bg-white mainCatgeroryContainer " style={{ fontFamily: 'Inter, sans-serif' }}>
         <h1 className="text-4xl pb-[3%]">Categories</h1>
 
       <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-10 justify-items-center">

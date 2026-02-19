@@ -1,13 +1,10 @@
-// This component can be a client component if you need client-side interactivity
-// (e.g., if you had interactive consent options, which this policy does not suggest)
-// For a purely static UI, it can remain a server component.
-// 'use client'; 
+
 
 import React from 'react';
 
 const PrivacyPolicySection = () => {
   return (
-    <div className="flex flex-col items-center pt-20 lg:pt-0 justify-start bg-white w-full text-black">
+    <div className="flex flex-col items-center pt-20 lg:pt-0 justify-start bg-white w-full text-black mainCatgeroryContainer">
       <div className="bg-white p-8 sm:p-12 md:p-16 flex flex-col items-center w-full max-w-2xl lg:max-w-xl text-left"> {/* Increased max-width for readability */}
         
         <h1 className="text-4xl font-normal text-gray-800 mb-2 text-center">Privacy policy</h1> {/* Centered main title */}

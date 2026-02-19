@@ -64,3 +64,149 @@ body {
   cursor: pointer;
   transition: box-shadow 0.2s;
 }
+
+
+/********** Template CSS **********/
+
+.HomeMainContainer  {
+  width: 100%;
+  height: auto;
+  padding-left: 80px;
+  padding-right: 80px;
+  overflow-x: hidden;
+}
+.heroMainContainerWeb{
+  width: 100%;
+  height: auto;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+  /* 25-11 dev Ku */
+  /* overflow-x: hidden; */
+}
+
+
+
+
+
+
+
+
+
+.cityContainer{ 
+  width: 70%; 
+  margin: auto;
+}
+.cityNameBox{
+  width: 100%;
+  height: 40px;
+  align-items: center;
+  display: flex;
+}
+.cityNameBox p{
+  margin: 0;
+  margin-left: 10px; 
+}
+
+.box2{
+  position: relative;
+}
+
+.featuredPropertyContainer{
+  width: 80%; 
+  margin: auto; 
+}
+
+
+
+
+.weWorkContainer{
+  width: 100%;
+  height: auto;
+}
+
+@media only screen and (min-width:1440px) {
+  .cityContainer{ 
+      width: 50%; 
+      margin: auto;
+  }
+  .featuredPropertyContainer{
+      width: 60%; 
+      margin: auto; 
+  }
+}
+
+
+@media only screen and (max-width:1080px) {
+
+  .HomeMainContainer{
+      width: 100%;
+      height: auto;
+      padding-left: 10px;
+      padding-right: 10px;
+  }
+  .heroMainContainerWeb{
+      width: 100%;
+      height: auto;
+      padding-left: 0px !important;
+      padding-right: 0px !important;
+      overflow-x: hidden;
+  }
+  
+  .featuredPropertyContainer{
+      width: 99%; 
+      margin: auto; 
+  }
+
+  .cityContainer{ 
+      width: 99%; 
+      margin: auto;
+  }   
+}
+
+
+@media only screen and (max-width:991px) {
+  .searchBox{
+      display: none;
+  }
+   
+.hero-heading{
+  padding: 20px;
+  font-weight: 300 !important;
+  font-size: 25px;
+  line-height: 35px;
+} 
+}
+
+
+.homepageSlider .slick-dots{
+  display: none !important;
+}
+.mag{
+  padding-right: 20px !important;
+}
+
+  
+@media only screen and (max-width:992px) {
+  .searchContainerTab{
+      display: flex !important;
+  }
+  
+}
+
+@media only screen and (max-width: 992px) and (min-width: 430px) {
+  .HomeImg{
+      height: 95vh !important;
+  }
+}
+
+
+@media only screen and (max-width:992px) {
+  
+   .mainCatgeroryContainer {
+      margin-top: 50px !important;
+  }
+ 
+ 
+}
+
+

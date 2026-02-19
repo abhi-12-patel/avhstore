@@ -5,7 +5,7 @@ import React from 'react';
 
 const TermsOfServiceSection = () => {
   return (
-    <div className="flex flex-col items-center justify-start pt-20 lg:pt-0 bg-white w-full text-black py-16">
+    <div className="flex flex-col items-center justify-start pt-20 lg:pt-0 bg-white w-full text-black py-16 mainCatgeroryContainer">
       <div className="bg-white p-8 sm:p-12 md:p-16 flex flex-col items-center w-full max-w-2xl lg:max-w-xl text-left">
         
         <h1 className="text-4xl font-normal text-gray-800 mb-8 text-center">Terms of Service</h1>

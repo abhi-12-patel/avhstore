@@ -1,16 +1,24 @@
 'use client';
 
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { FaFacebookF, FaPinterestP, FaInstagram } from 'react-icons/fa';
 import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 import Image from 'next/image';
+import { Heart, Info, ShoppingBag, Store } from 'lucide-react';
+import { useStore } from '@/store/useStore';
 
 const logo = "/Logo.png";
 
 const Footer = () => {
   const pathname = usePathname();
-
+    const { getCartCount, wishlist } = useStore();
+    const cartCount = getCartCount();
+      const [isHydrated, setIsHydrated] = useState(false);
+        useEffect(() => {
+          setIsHydrated(true);
+        }, []);
+  const wishlistCount = wishlist.length;
   const quickLinks = [
     { name: 'Privacy Policy', href: '/privacypolicy' },
     { name: 'Return and Refund Policy', href: '/retunpolicy' },
@@ -26,6 +34,7 @@ const Footer = () => {
   ];
 
   return (
+    <>
     <footer className="mt-auto border-t border-stone-200 bg-white px-4 py-12 sm:px-6 lg:px-8">
       <div className="mx-auto max-w-7xl">
 
@@ -107,7 +116,47 @@ const Footer = () => {
         </div>
 
       </div>
+      <nav className="lg:hidden fixed bottom-0 left-1/2 -translate-x-1/2 z-50 w-full">
+        <div className="flex justify-between items-center gap-6 px-6 py-3 rounded-3 bg-[#01203D] py-[0.9%] text-primary-foreground shadow-lg">
+          <Link
+            href="/cart"
+            className="relative flex flex-col items-center text-xs font-body tracking-wide"
+            aria-label="Cart"
+          >
+            <ShoppingBag size={18} />
+            <span>Cart</span>
+            {isHydrated && cartCount > 0 && (
+              <span className="absolute -top-2 -right-2 w-5 h-5 bg-background text-foreground text-[10px] rounded-full flex items-center justify-center font-body">
+                {cartCount}
+              </span>
+            )}
+          </Link>
+          <Link
+            href="/about"
+            className="flex flex-col items-center text-xs font-body tracking-wide"
+            aria-label="About"
+          >
+            <Info size={18} />
+            <span>About</span>
+          </Link>
+          <Link
+            href="/wishlist"
+            className="relative flex flex-col items-center text-xs font-body tracking-wide"
+            aria-label="Wishlist"
+          >
+            <Heart size={18} />
+            <span>Like</span>
+            {wishlistCount > 0 && (
+              <span className="absolute -top-2 -right-2 w-5 h-5 bg-background text-foreground text-[10px] rounded-full flex items-center justify-center font-body">
+                {wishlistCount}
+              </span>
+            )}
+          </Link>
+        </div>
+      </nav>
     </footer>
+   
+    </>
   );
 };
 
