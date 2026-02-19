@@ -11,12 +11,12 @@ const TermsConditionsSection = () => {
         <h1 className="text-4xl font-normal text-gray-800 mb-8 text-center">Terms and Conditions</h1>
 
         <p className="text-gray-700 leading-relaxed mb-8">
-          Welcome to Tarakaya Artificial OPC private Limited! Before you start exploring our exquisite collection of sterling Artificial jewelry, please take a moment to read and understand our terms and conditions. By using our website and making a purchase, you agree to comply with these terms and conditions.
+          Welcome to AVH Store Artificial Before you start exploring our exquisite collection of sterling Artificial jewelry, please take a moment to read and understand our terms and conditions. By using our website and making a purchase, you agree to comply with these terms and conditions.
         </p>
 
         <h2 className="text-3xl font-normal text-gray-800 mb-4">1. Product Availability and Description</h2>
         <p className="text-gray-700 leading-relaxed mb-8">
-          At Tarakaya Silver, we strive to provide accurate and detailed descriptions of our jewelry pieces. However, please note that the actual product may slightly differ in appearance due to variations in lighting and natural variations in crystals. We maintain the originality in our photographs to the utmost extent, but it's important to embrace the beauty of their natural variations.
+          At AVH Store Silver, we strive to provide accurate and detailed descriptions of our jewelry pieces. However, please note that the actual product may slightly differ in appearance due to variations in lighting and natural variations in crystals. We maintain the originality in our photographs to the utmost extent, but it's important to embrace the beauty of their natural variations.
         </p>
 
         <h2 className="text-3xl font-normal text-gray-800 mb-4">2. Ordering and Shipping</h2>
@@ -26,7 +26,7 @@ const TermsConditionsSection = () => {
 
         <h2 className="text-3xl font-normal text-gray-800 mb-4">3. Returns and Refunds</h2>
         <p className="text-gray-700 leading-relaxed mb-4">
-          At Tarakaya Silver, we do not offer returns or refunds unless there has been severe damage during the shipping process. In case a defective product has arrived, we accept returns with a full refund, but it is mandatory to send an unboxing video of the package. No claims will be accepted without the unboxing video. If an incorrect item has been sent, we will require photos/videos of the package, items, and invoice to rectify the mistake. Please note that you must ship the incorrect item back to us before we send the correct item within 7 days.
+          At AVH Store Silver, we do not offer returns or refunds unless there has been severe damage during the shipping process. In case a defective product has arrived, we accept returns with a full refund, but it is mandatory to send an unboxing video of the package. No claims will be accepted without the unboxing video. If an incorrect item has been sent, we will require photos/videos of the package, items, and invoice to rectify the mistake. Please note that you must ship the incorrect item back to us before we send the correct item within 7 days.
         </p>
         <p className="text-gray-700 leading-relaxed mb-8">
           For any complaints or concerns, please contact us at <a href="mailto:abhihothi524@gmail.com" className="text-blue-600 hover:underline">abhihothi524@gmail.com</a>.
@@ -37,14 +37,14 @@ const TermsConditionsSection = () => {
           If you need to reach out to us for any reason, here are our contact details:
         </p>
         <ul className="list-disc pl-6 text-gray-700 leading-relaxed mb-8">
-          <li className="mb-2"><strong>Trade name:</strong> Tarakaya Silver</li>
+          <li className="mb-2"><strong>Trade name:</strong> AVH Store Silver</li>
           <li className="mb-2"><strong>Phone number:</strong> 7004515415</li>
           <li className="mb-2"><strong>Email:</strong> <a href="mailto:abhihothi524@gmail.com" className="text-blue-600 hover:underline">abhihothi524@gmail.com</a></li>
           <li className="mb-4"><strong>Physical address:</strong> SHREE JEWELLERS Kani bazar, 38A house number, 825301 Hazaribagh JH, India</li>
         </ul>
 
         <p className="text-gray-700 leading-relaxed mb-8">
-          Thank you for choosing Tarakaya Silver. We hope you enjoy your shopping experience and find the perfect jewelry piece to elevate your style.
+          Thank you for choosing AVH Store Silver. We hope you enjoy your shopping experience and find the perfect jewelry piece to elevate your style.
         </p>
 
       </div>

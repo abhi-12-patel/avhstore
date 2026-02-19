@@ -11,7 +11,7 @@ const ShippingPolicySection = () => {
         <h1 className="text-4xl font-normal text-gray-800 mb-8 text-center">Shipping policy</h1>
 
         <p className="text-gray-700 leading-relaxed mb-8">
-          At Tarakaya Silver, we strive to provide a seamless and efficient shipping experience for our customers. Please take a moment to familiarize yourself with our shipping policy to ensure a smooth delivery process.
+          At AVH Store Silver, we strive to provide a seamless and efficient shipping experience for our customers. Please take a moment to familiarize yourself with our shipping policy to ensure a smooth delivery process.
         </p>
 
         <h2 className="text-3xl font-normal text-gray-800 mb-4">Free Delivery</h2>

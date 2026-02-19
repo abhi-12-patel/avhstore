@@ -11,8 +11,8 @@ const PrivacyPolicySection = () => {
         <p className="text-gray-600 mb-8">Last updated: February 22, 2025</p>
 
         <p className="text-gray-700 leading-relaxed mb-4">
-          This Privacy Policy describes how Tarakaya Artificial (the "Site", "we" "us", or "our" collects, uses, and discloses your personal
-          Information when you visit, use our services, or make a purchase from www.silvertarakaya.com [the "Site") or otherwise
+          This Privacy Policy describes how AVH Store Artificial (the "Site", "we" "us", or "our" collects, uses, and discloses your personal
+          Information when you visit, use our services, or make a purchase from www.avhstore.in [the "Site") or otherwise
           communicate with us regarding the Site (collectively, the "Services"). For purposes of this Privacy Policy, "you" and "your"
           means you as the user of the Services, whether you are a customer, website visitor, or another individual whose
           Information we have collected pursuant to this Privacy Policy.
@@ -267,7 +267,7 @@ const PrivacyPolicySection = () => {
         <h2 className="text-3xl font-normal text-gray-800 mb-4">Contact</h2>
         <p className="text-gray-700 leading-relaxed mb-4">
           Should you have any questions about our privacy practices or this Privacy Policy, or if you would like to exercise any of the
-          rights available to you, please call or email us at abhihothi524@gmail.com or contact us at Bottom Bazar Road, Kani bazar, 38A, Hazaribagh, JH, 825301, IN.
+          rights available to you, please call or email us at abhihothi524@gmail.com or contact us at 
         </p>
 
       </div>

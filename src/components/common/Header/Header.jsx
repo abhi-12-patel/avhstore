@@ -201,7 +201,7 @@ const Header = () => {
           <Link href="/">
             <Image
               src={logo}
-              alt="TARAKAYA Artificial Logo"
+              alt="AVH Store Artificial Logo"
               width={200}
               height={60}
               priority

@@ -20,7 +20,7 @@ export default function Home() {
     <ImageSlider/>
     <Image
       src={logo}
-      alt="TARAKAYA Artificial Logo"
+      alt="AVH Store Artificial Logo"
       width={2000} // Adjust as needed
       height={50} // Adjust as needed
       className=" w-full"

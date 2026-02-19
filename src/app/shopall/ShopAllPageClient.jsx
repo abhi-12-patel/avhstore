@@ -33,7 +33,7 @@ export default function ShopAllPageClient() {
       style={{ fontFamily: "Inter, sans-serif" }}
     >
 <h1 className="pb-6 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-gray-900">
-  Shop All Products
+  Products
 </h1>
 
 
