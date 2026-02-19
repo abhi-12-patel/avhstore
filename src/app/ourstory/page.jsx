@@ -1,8 +1,8 @@
 const OurStory = () => {
     return(
-        <div className="relative bg-white text-gray-700 px-5 pt-24 lg:pt-10 lg:px-[26%] mt-[0%] py-10">
-            <h1 className="pb-13 leading-7  text-5xl">Our Story</h1>
-            <p className="pb-13 leading-7 text-gray-500">Welcome to AVH STORE !</p>
+        <div className="relative bg-white text-gray-700 px-5 pt-24 lg:pt-10 lg:px-[26%] mt-[0%] py-10 mainCatgeroryContainer" >
+            <h1 className="pb-13 leading-7 text-5xl  text-[clamp(1.5rem,5vw,3rem)] ">Our Story</h1>
+            <p className="pb-13 leading-7 text-gray-500  ">Welcome to AVH STORE !</p>
             <p className="pb-13 leading-7 text-gray-500">We're all about keeping things minimal, unique & spiritual here. Our jewelry is made for the everyday woman who appreciates the beauty of understated elegance. We offer bohemian style, Artificial stacks, healing crystals, handmade jewelry, Pinterest jewels, etc. We started with a simple goal: to offer boho sterling Artificial 925 minimalist jewelry that you can wear with anything, anywhere. From work meetings to weekend brunches, our pieces are designed to effortlessly complement your style.</p>
             <p className="pb-13 leading-7 text-gray-500">Each piece in our collection is carefully crafted from sterling Artificial 925 hallmarked, so you can trust that it's built to last. Plus, we're committed to ethical sourcing and sustainable practices, because looking good shouldn't come at the expense of the planet. So we do use recycled Artificial also, We use sustainable packaging and proudly support Indian handicrafts & artisans- But enough about us let's talk about you!</p>
             <p className="pb-13 leading-7 text-gray-500">We're here to help you find the perfect piece that makes you feel confident and beautiful, whether you're treating yourself or shopping for a loved one. Thanks for stopping by Tarakaya ( Shiva). We can't wait to be part of your everyday style!</p>

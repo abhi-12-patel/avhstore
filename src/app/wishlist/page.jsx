@@ -29,14 +29,14 @@ const Wishlist = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50 mainCatgeroryContainer">
+    <div className="min-h-screen bg-gray-50 mainProductDitailsContainer">
 
       <main className="py-14">
         <div className="container mx-auto px-4">
 
           {/* Header */}
           <div className="text-center mb-14">
-            <h1 className="text-4xl font-bold text-gray-900 mb-3">
+            <h1 className="text-4xl font-bold text-gray-900 mb-3 tracking-wide">
               Your Wishlist
             </h1>
             <p className="text-gray-500">

@@ -3,7 +3,7 @@ import Image from "next/image"
 const Size = () => {
     return(
         <div className="flex-col bg-white pt-20 lg:py-15 max-w-2xl justify-self-center justify-center items-center mainCatgeroryContainer">
-            <h1 className="text-4xl py-10 text-black">Size Guide ( USA guide )</h1>
+            <h1 className="text-[clamp(1.5rem,5vw,3rem)] py-10 text-black">Size Guide ( USA guide )</h1>
             <Image
             src="/1.jpg"
             height={5000}

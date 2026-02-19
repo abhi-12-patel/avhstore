@@ -1,7 +1,7 @@
 import React from 'react';
 
 const ContactForm = () => {
-  return (<div className="min-h-screen flex flex-col">
+  return (<div className="min-h-screen flex flex-col mainProductDitailsContainer">
       <main className="flex-1 py-16 ">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center space-y-16">

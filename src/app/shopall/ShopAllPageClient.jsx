@@ -29,7 +29,7 @@ export default function ShopAllPageClient() {
 
   return (
     <div
-      className="bg-white px-4 pt-24 text-gray-600 lg:px-[14%] lg:py-8"
+      className="bg-white px-4 pt-24 text-gray-600 lg:px-[14%] lg:py-8 mainCatgeroryContainer"
       style={{ fontFamily: "Inter, sans-serif" }}
     >
 <h1 className="pb-6 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-gray-900">

@@ -1,12 +1,13 @@
 "use client";
 
 import { useState, useCallback, useEffect } from 'react';
-import { ChevronLeft, ChevronRight } from 'lucide-react';
+import { ChevronLeft, ChevronRight, X } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import ImageWithFallback from '../ImageWithFallback';
 
 const ProductImageSlider = ({ images, productName }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [showModal, setShowModal] = useState(false);
 
   const scrollPrev = useCallback(() => {
     setCurrentIndex((prev) => (prev === 0 ? images.length - 1 : prev - 1));
@@ -21,11 +22,19 @@ const ProductImageSlider = ({ images, productName }) => {
     const handleKeyDown = (e) => {
       if (e.key === 'ArrowLeft') scrollPrev();
       if (e.key === 'ArrowRight') scrollNext();
+      if (e.key === 'Escape') setShowModal(false);
     };
 
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
   }, [scrollPrev, scrollNext]);
+
+  useEffect(() => {
+    document.body.style.overflow = showModal ? 'hidden' : '';
+    return () => {
+      document.body.style.overflow = '';
+    };
+  }, [showModal]);
 
   if (!images || images.length === 0) return null;
 
@@ -36,7 +45,8 @@ const ProductImageSlider = ({ images, productName }) => {
         <ImageWithFallback
           src={images[currentIndex]}
           alt={`${productName} - Image ${currentIndex + 1}`}
-          className="w-full h-full object-contain transition-transform duration-500"
+          className="w-full h-full object-contain transition-transform duration-500 cursor-zoom-in"
+          onClick={() => setShowModal(true)}
         />
 
         {/* Navigation Arrows */}
@@ -108,6 +118,51 @@ const ProductImageSlider = ({ images, productName }) => {
               aria-label={`Go to image ${index + 1}`}
             />
           ))}
+        </div>
+      )}
+
+      {showModal && (
+        <div
+          className="fixed inset-0 z-[100] bg-black/80 flex items-center justify-center p-4"
+          onClick={() => setShowModal(false)}
+        >
+          <div
+            className="relative w-full max-w-4xl max-h-[90vh] flex items-center justify-center"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <ImageWithFallback
+              src={images[currentIndex]}
+              alt={`${productName} - Image ${currentIndex + 1}`}
+              className="w-full max-h-[85vh] object-contain"
+            />
+
+            {images.length > 1 && (
+              <>
+                <button
+                  onClick={scrollPrev}
+                  className="absolute left-2 sm:left-4 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-black/70 text-white flex items-center justify-center"
+                  aria-label="Previous image"
+                >
+                  <ChevronLeft size={20} />
+                </button>
+                <button
+                  onClick={scrollNext}
+                  className="absolute right-2 sm:right-4 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-black/70 text-white flex items-center justify-center"
+                  aria-label="Next image"
+                >
+                  <ChevronRight size={20} />
+                </button>
+              </>
+            )}
+
+            <button
+              onClick={() => setShowModal(false)}
+              className="absolute top-2 right-2 p-2 rounded-full bg-black/70 text-white"
+              aria-label="Close image gallery"
+            >
+              <X size={18} />
+            </button>
+          </div>
         </div>
       )}
     </div>

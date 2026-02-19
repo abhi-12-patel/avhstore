@@ -500,9 +500,9 @@ console.log(cart,"cartcart")
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white px-4 py-10 text-black">
+    <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white px-4 py-10 text-black mainProductDitailsContainer">
       <div className="container mx-auto max-w-7xl">
-        <h1 className="mb-12 text-center text-5xl font-light tracking-wide">
+        <h1 className="pb-6 text-[clamp(1.5rem,5vw,3rem)] font-semibold text-gray-900 text-center ">
           Shopping Cart
         </h1>
 

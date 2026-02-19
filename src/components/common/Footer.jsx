@@ -132,12 +132,12 @@ const Footer = () => {
             )}
           </Link>
           <Link
-            href="/about"
+            href="/ourstory"
             className="flex flex-col items-center text-xs font-body tracking-wide"
-            aria-label="About"
+            aria-label="Our Story"
           >
             <Info size={18} />
-            <span>About</span>
+            <span>Our Story</span>
           </Link>
           <Link
             href="/wishlist"

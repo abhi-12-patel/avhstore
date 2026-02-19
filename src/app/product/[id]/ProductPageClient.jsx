@@ -101,7 +101,7 @@ export default function ProductPageClient({ product }) {
   };
 
   return (
-    <div className="bg-white min-h-screen text-black">
+    <div className="bg-white min-h-screen text-black mainProductDitailsContainer">
       
 
       <div className="container mx-auto px-4 py-10 max-w-6xl">
