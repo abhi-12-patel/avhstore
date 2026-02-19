@@ -93,12 +93,13 @@ export const useStore = create()(
         }));
       },
 
-      updateQuantity: (productId, quantity) => {
+      updateQuantity: (productId, qty) => {
         const normalizedProductId = String(productId ?? '');
+        console.log(quantity,"quantityquantity")
         set((state) => ({
           cart: state.cart.map((item) =>
             String(item.product.id) === normalizedProductId
-              ? { ...item, quantity }
+              ? { ...item, qty }
               : item
           ),
         }));

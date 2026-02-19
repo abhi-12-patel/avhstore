@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useStore } from "@/store/useStore";
 import { Minus, Plus, X, ShoppingBag, ArrowRight, Download, Send } from "lucide-react";
 import ImageWithFallback from "../ImageWithFallback";
+import { FREE_SHIPPING_MIN, OFFER_RULES } from "@/data";
 
 const WHATSAPP_NUMBER = "919016457163";
 const CHECKOUT_FIELDS = [
@@ -18,7 +19,7 @@ const CHECKOUT_FIELDS = [
 
 const Cart = () => {
   const { cart, removeFromCart, updateQuantity, clearCart } = useStore();
-console.log(cart,"cartcart")
+  console.log(cart,"Cart")
   const [showCheckout, setShowCheckout] = useState(false);
   const [form, setForm] = useState({
     fullName: "",
@@ -44,6 +45,16 @@ console.log(cart,"cartcart")
     const product = item?.product ?? item;
     return {
       id: product?.id ?? item?.id,
+      sku:
+        product?.SKU_id ??
+        product?.sku_id ??
+        product?.sku ??
+        product?.skuId ??
+        item?.SKU_id ??
+        item?.sku_id ??
+        item?.sku ??
+        item?.skuId ??
+        "N/A",
       title: product?.title ?? product?.name ?? item?.title ?? "Product",
       image:
         product?.image ??
@@ -51,25 +62,35 @@ console.log(cart,"cartcart")
         product?.images?.[0] ??
         item?.image,
       price: parseFloat(product?.price ?? item?.price) || 0,
-      quantity: Math.max(1, parseInt(item?.quantity) || 1),
+      qty: Math.max(1, parseInt(item?.qty) || 1),
       size: item?.size,
     };
   });
 
   /* ---------------- CALCULATIONS ---------------- */
   const subtotal = normalizedCart.reduce(
-    (total, item) => total + item.price * item.quantity,
+    (total, item) => total + item.price * item.qty,
     0
   );
 
-  const gst = subtotal * 0.03;
-  const shipping = subtotal > 0 && subtotal < 1000 ? 50 : 0;
-  const finalTotal = subtotal + gst + shipping;
-
   const round = (num) => Math.round(num);
+
+  const sortedOffers = Array.isArray(OFFER_RULES)
+    ? [...OFFER_RULES].sort((a, b) => b.min - a.min)
+    : [];
+  const applicableOffer = sortedOffers.find((offer) => subtotal >= offer.min);
+  const discountPercent = applicableOffer?.discount || 0;
+  const discountAmount = (subtotal * discountPercent) / 100;
+  const subtotalAfterDiscount = subtotal - discountAmount;
+  const gst = subtotalAfterDiscount * 0.03;
+  const shipping = subtotal > 0 && subtotal < FREE_SHIPPING_MIN ? 50 : 0;
+  const finalTotal = subtotalAfterDiscount + gst + shipping;
+
   const subtotalRounded = round(subtotal);
+  const discountRounded = round(discountAmount);
   const gstRounded = round(gst);
   const finalTotalRounded = round(finalTotal);
+
 
   const formatPrice = (price) =>
     new Intl.NumberFormat("en-IN", {
@@ -80,7 +101,8 @@ console.log(cart,"cartcart")
     }).format(price);
 
   /* ---------------- GENERATE INVOICE HTML ---------------- */
-  const generateInvoiceHTML = () => {
+  const generateInvoiceHTML = (options = {}) => {
+    const compact = Boolean(options.compact);
     const invoiceNumber = `INV-${Date.now().toString().slice(-8)}`;
     const date = new Date().toLocaleDateString("en-IN", {
       day: "numeric",
@@ -90,15 +112,16 @@ console.log(cart,"cartcart")
 
     const itemsHTML = normalizedCart
       .map((item, index) => {
-        const itemTotal = item.price * item.quantity;
+        const itemTotal = item.price * item.qty;
         return `
           <tr>
             <td style="padding: 12px; border-bottom: 1px solid #e2e8f0; text-align: center;">${index + 1}</td>
             <td style="padding: 12px; border-bottom: 1px solid #e2e8f0;">
               <div style="font-weight: 600; color: #1a202c;">${item.title}</div>
+              <div style="font-size: 12px; color: #718096;">SKU: ${item.sku}</div>
               ${item.size ? `<div style="font-size: 13px; color: #718096;">Size: ${item.size}</div>` : ''}
             </td>
-            <td style="padding: 12px; border-bottom: 1px solid #e2e8f0; text-align: center;">${item.quantity}</td>
+            <td style="padding: 12px; border-bottom: 1px solid #e2e8f0; text-align: center;">${item.qty}</td>
             <td style="padding: 12px; border-bottom: 1px solid #e2e8f0; text-align: right;">₹${Math.round(item.price)}</td>
             <td style="padding: 12px; border-bottom: 1px solid #e2e8f0; text-align: right; font-weight: 600;">₹${Math.round(itemTotal)}</td>
           </tr>
@@ -124,15 +147,15 @@ console.log(cart,"cartcart")
           body {
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
             background: #f7fafc;
-            padding: 40px 20px;
+            padding: ${compact ? "16px 12px" : "40px 20px"};
             color: #1a202c;
           }
           
           .invoice-container {
-            max-width: 1000px;
+            max-width: ${compact ? "900px" : "1000px"};
             margin: 0 auto;
             background: white;
-            border-radius: 16px;
+            border-radius: ${compact ? "12px" : "16px"};
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
             overflow: hidden;
           }
@@ -140,7 +163,7 @@ console.log(cart,"cartcart")
           .invoice-header {
             background: linear-gradient(135deg, #1a202c 0%, #2d3748 100%);
             color: white;
-            padding: 32px 40px;
+            padding: ${compact ? "20px 24px" : "32px 40px"};
           }
           
           .header-top {
@@ -151,7 +174,7 @@ console.log(cart,"cartcart")
           }
           
           .store-name {
-            font-size: 28px;
+            font-size: ${compact ? "22px" : "28px"};
             font-weight: 700;
             letter-spacing: -0.5px;
           }
@@ -168,7 +191,7 @@ console.log(cart,"cartcart")
           .store-details {
             display: flex;
             gap: 32px;
-            font-size: 14px;
+            font-size: ${compact ? "12px" : "14px"};
             color: #e2e8f0;
           }
           
@@ -198,7 +221,7 @@ console.log(cart,"cartcart")
           }
           
           .customer-section {
-            padding: 32px 40px;
+            padding: ${compact ? "20px 24px" : "32px 40px"};
             background: #f8fafc;
             border-bottom: 1px solid #e2e8f0;
           }
@@ -237,7 +260,7 @@ console.log(cart,"cartcart")
           }
           
           .items-section {
-            padding: 32px 40px;
+            padding: ${compact ? "20px 24px" : "32px 40px"};
           }
           
           table {
@@ -249,7 +272,7 @@ console.log(cart,"cartcart")
           th {
             background: #f7fafc;
             padding: 12px;
-            font-size: 14px;
+            font-size: ${compact ? "12px" : "14px"};
             font-weight: 600;
             color: #4a5568;
             text-align: left;
@@ -260,9 +283,10 @@ console.log(cart,"cartcart")
           th:last-child { border-radius: 0 8px 0 0; }
           
           .summary-section {
-            padding: 32px 40px;
+            padding: ${compact ? "20px 24px" : "32px 40px"};
             background: #f8fafc;
             border-top: 2px solid #e2e8f0;
+            page-break-inside: avoid;
           }
           
           .summary-grid {
@@ -273,16 +297,16 @@ console.log(cart,"cartcart")
           .summary-row {
             display: flex;
             justify-content: space-between;
-            padding: 12px 0;
+            padding: ${compact ? "8px 0" : "12px 0"};
             border-bottom: 1px dashed #cbd5e0;
           }
           
           .summary-row.total {
             border-bottom: none;
-            padding-top: 16px;
+            padding-top: ${compact ? "10px" : "16px"};
             margin-top: 8px;
             border-top: 2px solid #1a202c;
-            font-size: 18px;
+            font-size: ${compact ? "16px" : "18px"};
             font-weight: 700;
             color: #1a202c;
           }
@@ -297,11 +321,12 @@ console.log(cart,"cartcart")
           }
           
           .invoice-footer {
-            padding: 24px 40px;
+            padding: ${compact ? "16px 24px" : "24px 40px"};
             text-align: center;
             border-top: 1px solid #e2e8f0;
             color: #718096;
-            font-size: 13px;
+            font-size: ${compact ? "12px" : "13px"};
+            page-break-inside: avoid;
           }
           
           @media print {
@@ -383,6 +408,12 @@ console.log(cart,"cartcart")
                 <span class="summary-label">Subtotal:</span>
                 <span class="summary-amount">₹${subtotalRounded}</span>
               </div>
+              ${discountRounded > 0 ? `
+              <div class="summary-row">
+                <span class="summary-label">Discount (${discountPercent}%):</span>
+                <span class="summary-amount">-₹${discountRounded}</span>
+              </div>
+              ` : ""}
               <div class="summary-row">
                 <span class="summary-label">GST (3%):</span>
                 <span class="summary-amount">₹${gstRounded}</span>
@@ -415,31 +446,56 @@ console.log(cart,"cartcart")
   };
 
   /* ---------------- DOWNLOAD INVOICE PDF ---------------- */
-  const downloadInvoicePDF = () => {
+  const downloadInvoicePDF = async () => {
     if (normalizedCart.length === 0) return;
-    
-    const invoiceHTML = generateInvoiceHTML();
-    
-    // Create a blob with the HTML content
-    const blob = new Blob([invoiceHTML], { type: 'text/html' });
-    
-    // Create a download link
-    const url = window.URL.createObjectURL(blob);
-    const link = document.createElement('a');
-    link.href = url;
-    link.download = `invoice-avhstore-${Date.now()}.html`;
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-    window.URL.revokeObjectURL(url);
-    
-    // Optional: Open in new window for printing
-    const printWindow = window.open('', '_blank', 'width=900,height=700');
-    if (printWindow) {
-      printWindow.document.write(invoiceHTML);
-      printWindow.document.close();
-      printWindow.focus();
+
+    const [{ jsPDF }, { default: html2canvas }] = await Promise.all([
+      import("jspdf"),
+      import("html2canvas"),
+    ]);
+
+    const invoiceHTML = generateInvoiceHTML({ compact: true });
+
+    const temp = document.createElement("div");
+    temp.style.position = "fixed";
+    temp.style.left = "-10000px";
+    temp.style.top = "0";
+    temp.style.width = "1000px";
+    temp.style.background = "white";
+    temp.innerHTML = invoiceHTML;
+    document.body.appendChild(temp);
+
+    const invoiceRoot = temp.querySelector(".invoice-container");
+    if (!invoiceRoot) {
+      document.body.removeChild(temp);
+      return;
     }
+
+    const canvas = await html2canvas(invoiceRoot, {
+      backgroundColor: "#ffffff",
+      scale: 2,
+      useCORS: true,
+      allowTaint: true,
+      logging: false,
+    });
+
+    const imgData = canvas.toDataURL("image/png");
+    const pdf = new jsPDF("p", "mm", "a4");
+    const pageWidth = pdf.internal.pageSize.getWidth();
+    const pageHeight = pdf.internal.pageSize.getHeight();
+    const ratio = Math.min(
+      pageWidth / canvas.width,
+      pageHeight / canvas.height
+    );
+    const imgWidth = canvas.width * ratio;
+    const imgHeight = canvas.height * ratio;
+    const x = (pageWidth - imgWidth) / 2;
+    const y = (pageHeight - imgHeight) / 2;
+
+    pdf.addImage(imgData, "PNG", x, y, imgWidth, imgHeight);
+
+    pdf.save(`invoice-avhstore-${Date.now()}.pdf`);
+    document.body.removeChild(temp);
   };
 
   /* ---------------- WHATSAPP MESSAGE ---------------- */
@@ -448,11 +504,15 @@ console.log(cart,"cartcart")
 
     normalizedCart.forEach((item, index) => {
       message += `${index + 1}. ${item.title}\n`;
-      message += `Qty: ${item.quantity} × ₹${item.price}\n`;
-      message += `Total: ₹${item.price * item.quantity}\n\n`;
+      message += `SKU: ${item.sku}\n`;
+      message += `Qty: ${item.qty} × ₹${item.price}\n`;
+      message += `Total: ₹${item.price * item.qty}\n\n`;
     });
 
     message += `Subtotal: ₹${subtotalRounded}\n`;
+    if (discountRounded > 0) {
+      message += `Discount (${discountPercent}%): -₹${discountRounded}\n`;
+    }
     message += `GST (3%): ₹${gstRounded}\n`;
     message += `Shipping: ${shipping === 0 ? "Free" : "₹" + shipping}\n`;
     message += `*Grand Total: ₹${finalTotalRounded}*\n\n`;
@@ -466,7 +526,7 @@ console.log(cart,"cartcart")
   };
 
   /* ---------------- SUBMIT ---------------- */
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
     if (
@@ -481,13 +541,14 @@ console.log(cart,"cartcart")
       return;
     }
 
+    await downloadInvoicePDF();
+
     const message = buildInvoiceMessage();
     const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(
       message
     )}`;
 
     window.open(url, "_blank", "noopener,noreferrer");
-    downloadInvoicePDF(); // Download invoice instead of print
   };
 
   /* ---------------- QUANTITY ---------------- */
@@ -500,8 +561,16 @@ console.log(cart,"cartcart")
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white px-4 py-10 text-black mainProductDitailsContainer">
+    <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white px-4 py-6 sm:py-10 text-black mainProductDitailsContainer">
       <div className="container mx-auto max-w-7xl">
+
+            {/* OFFERS BAR */}
+        <div className="mb-6 flex flex-wrap justify-center gap-4 text-sm bg-black text-white p-3 rounded-lg">
+          <span>🚚 Free Shipping above ₹2999</span>
+          <span>🎉 3% OFF above ₹2999</span>
+          <span>🔥 5% OFF above ₹5999</span>
+          <span>🔥 7% OFF above ₹8999</span>
+        </div>
         <h1 className="pb-6 text-[clamp(1.5rem,5vw,3rem)] font-semibold text-gray-900 text-center ">
           Shopping Cart
         </h1>
@@ -523,25 +592,25 @@ console.log(cart,"cartcart")
             </Link>
           </div>
         ) : (
-          <div className="grid gap-8 lg:grid-cols-3">
+          <div className="grid gap-6 lg:gap-8 lg:grid-cols-3">
             
             {/* CART ITEMS */}
             <div className="lg:col-span-2 space-y-4">
               {normalizedCart.map((item, index) => {
-                const itemTotal = item.price * item.quantity;
+                const itemTotal = item.price * item.qty;
                 const cartItemKey = `${item.id}-${item.size || "nosize"}-${index}`;
 
                 return (
                   <div 
                     key={cartItemKey} 
-                    className="group relative rounded-xl bg-white p-6 shadow-sm transition-all hover:shadow-md"
+                    className="group relative rounded-xl bg-white p-4 sm:p-6 shadow-sm transition-all hover:shadow-md"
                   >
-                    <div className="grid gap-6 md:grid-cols-12 items-center">
+                    <div className="grid gap-4 sm:gap-6 sm:grid-cols-12 items-center">
                       
                       {/* Product Info */}
-                      <div className="flex gap-4 md:col-span-5">
+                      <div className="flex gap-4 sm:col-span-5 min-w-0">
                         <Link href={`/product/${item.id}`} className="shrink-0">
-                          <div className="h-24 w-24 overflow-hidden rounded-lg bg-gray-100">
+                          <div className="h-20 w-20 sm:h-24 sm:w-24 overflow-hidden rounded-lg bg-gray-100">
                             <ImageWithFallback
                               src={item.image || "https://placehold.co/300x300"}
                               alt={item.title}
@@ -551,9 +620,10 @@ console.log(cart,"cartcart")
                         </Link>
 
                         <div className="flex flex-col justify-center">
-                          <h3 className="text-lg font-medium text-gray-900">{item.title}</h3>
+                          <h3 className="text-base sm:text-lg font-medium text-gray-900 truncate">{item.title}</h3>
+                          <p className="text-xs text-gray-500">SKU: {item.sku}</p>
                           {item.size && (
-                            <p className="text-sm text-gray-500">
+                            <p className="text-xs sm:text-sm text-gray-500">
                               Size: {item.size}
                             </p>
                           )}
@@ -561,17 +631,17 @@ console.log(cart,"cartcart")
                       </div>
 
                       {/* Quantity Controls */}
-                      <div className="flex justify-start md:col-span-3">
+                      <div className="flex justify-start sm:col-span-3">
                         <div className="flex items-center rounded-lg border border-gray-200">
                           <button 
-                            onClick={() => handleQuantityChange(item.id, item.quantity - 1)} 
+                            onClick={() => handleQuantityChange(item.id, item.qty - 1)} 
                             className="p-2 hover:bg-gray-50 transition-colors"
                           >
                             <Minus size={16} />
                           </button>
-                          <span className="w-12 text-center font-medium">{item.quantity}</span>
+                          <span className="w-12 text-center font-medium">{item.qty}</span>
                           <button 
-                            onClick={() => handleQuantityChange(item.id, item.quantity + 1)} 
+                            onClick={() => handleQuantityChange(item.id, item.qty + 1)} 
                             className="p-2 hover:bg-gray-50 transition-colors"
                           >
                             <Plus size={16} />
@@ -580,16 +650,16 @@ console.log(cart,"cartcart")
                       </div>
 
                       {/* Price */}
-                      <div className="hidden md:block md:col-span-2">
+                      <div className="hidden sm:block sm:col-span-2">
                         <p className="text-sm text-gray-500">Unit Price</p>
                         <p className="font-medium">{formatPrice(item.price)}</p>
                       </div>
 
                       {/* Total & Remove */}
-                      <div className="flex justify-between items-center md:col-span-2">
+                      <div className="flex justify-between items-center sm:col-span-2">
                         <div>
-                          <p className="text-sm text-gray-500 md:hidden">Total</p>
-                          <p className="text-lg font-semibold text-gray-900">
+                          <p className="text-xs text-gray-500 sm:hidden">Total</p>
+                          <p className="text-base sm:text-lg font-semibold text-gray-900">
                             {formatPrice(itemTotal)}
                           </p>
                         </div>
@@ -620,14 +690,20 @@ console.log(cart,"cartcart")
 
             {/* ORDER SUMMARY */}
             <div className="lg:col-span-1">
-              <div className="sticky top-8 rounded-xl bg-white p-8 shadow-sm">
-                <h2 className="mb-6 text-2xl font-medium">Order Summary</h2>
+              <div className="lg:sticky lg:top-8 rounded-xl bg-white p-6 sm:p-8 shadow-sm">
+                <h2 className="mb-6 text-xl sm:text-2xl font-medium">Order Summary</h2>
 
                 <div className="space-y-4 border-b border-gray-100 pb-6">
                   <div className="flex justify-between text-gray-600">
                     <span>Subtotal</span>
                     <span className="font-medium">{formatPrice(subtotalRounded)}</span>
                   </div>
+                  {discountRounded > 0 && (
+                    <div className="flex justify-between text-emerald-700">
+                      <span>Discount ({discountPercent}%)</span>
+                      <span className="font-medium">-{formatPrice(discountRounded)}</span>
+                    </div>
+                  )}
                   <div className="flex justify-between text-gray-600">
                     <span>GST (3%)</span>
                     <span className="font-medium">{formatPrice(gstRounded)}</span>
@@ -638,7 +714,7 @@ console.log(cart,"cartcart")
                   </div>
                 </div>
 
-                <div className="flex justify-between py-6 text-xl font-semibold">
+                <div className="flex justify-between py-6 text-lg sm:text-xl font-semibold">
                   <span>Total</span>
                   <span className="text-black">{formatPrice(finalTotalRounded)}</span>
                 </div>

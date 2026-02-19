@@ -4,6 +4,7 @@ export const products = [
   {
     id: 2,
     name: "Luna Pearl Pendant2",
+    SKU_id: "LPP-201",
     price: 890,
     description:
       "Inspired by the gentle glow of moonlight, this pendant showcases a lustrous South Sea pearl suspended from a delicate 18k gold chain. The pearl's natural iridescence captures light beautifully, creating an ethereal, feminine elegance.",
@@ -20,6 +21,7 @@ export const products = [
   {
     id: 3,
     name: "Gold Plated Trishul Earrings3",
+    SKU_id: "LPP-002",
     price: 65,
     description:
       "Traditional Trishul-inspired gold drop earrings with elegant dangling details, symbolizing strength, devotion, and timeless beauty.",
@@ -38,6 +40,7 @@ export const products = [
   {
     id: 4,
     name: "Gold Plated Trishul Earrings4",
+    SKU_id: "LPP-004",
     price: 65,
     description:
       "Traditional Trishul-inspired gold drop earrings with elegant dangling details, symbolizing strength, devotion, and timeless beauty.",
@@ -55,6 +58,7 @@ export const products = [
   {
     id: 5,
     name: "Gold Plated Trishul Earrings5",
+    SKU_id: "LPP-051",
     price: 65,
     description:
       "Traditional Trishul-inspired gold drop earrings with elegant dangling details, symbolizing strength, devotion, and timeless beauty.",
@@ -73,6 +77,7 @@ export const products = [
   {
     id: 6,
     name: "Gold Plated Trishul Earrings6",
+    SKU_id: "LPP-601",
     price: 65,
     description:
       "Traditional Trishul-inspired gold drop earrings with elegant dangling details, symbolizing strength, devotion, and timeless beauty.",
@@ -91,6 +96,7 @@ export const products = [
   {
     id: 7,
     name: "Gold Plated Trishul Earrings7",
+    SKU_id: "LPP-071",
     price: 350,
     description:
       "Traditional Trishul-inspired gold drop earrings with elegant dangling details, symbolizing strength, devotion, and timeless beauty.",
@@ -109,6 +115,7 @@ export const products = [
   {
     id: 22,
     name: "Luna Pearl Pendant2",
+    SKU_id: "LPP-701",
     price: 890,
     description:
       "Inspired by the gentle glow of moonlight, this pendant showcases a lustrous South Sea pearl suspended from a delicate 18k gold chain. The pearl's natural iridescence captures light beautifully, creating an ethereal, feminine elegance.",
@@ -125,6 +132,7 @@ export const products = [
   {
     id: 33,
     name: "Gold Plated Trishul Earrings3",
+    SKU_id: "LPP-003",
     price: 65,
     description:
       "Traditional Trishul-inspired gold drop earrings with elegant dangling details, symbolizing strength, devotion, and timeless beauty.",
@@ -143,6 +151,7 @@ export const products = [
   {
     id: 44,
     name: "Gold Plated Trishul Earrings4",
+    SKU_id: "LPP-004",
     price: 65,
     description:
       "Traditional Trishul-inspired gold drop earrings with elegant dangling details, symbolizing strength, devotion, and timeless beauty.",
@@ -160,6 +169,7 @@ export const products = [
   {
     id: 55,
     name: "Gold Plated Trishul Earrings5",
+    SKU_id: "LPP-005",
     price: 65,
     description:
       "Traditional Trishul-inspired gold drop earrings with elegant dangling details, symbolizing strength, devotion, and timeless beauty.",
@@ -178,6 +188,7 @@ export const products = [
   {
     id: 66,
     name: "Gold Plated Trishul Earrings6",
+    SKU_id: "LPP-006",
     price: 65,
     description:
       "Traditional Trishul-inspired gold drop earrings with elegant dangling details, symbolizing strength, devotion, and timeless beauty.",
@@ -196,6 +207,7 @@ export const products = [
   {
     id: 77,
     name: "Gold Plated Trishul Earrings7",
+    SKU_id: "LPP-007",
     price: 350,
     description:
       "Traditional Trishul-inspired gold drop earrings with elegant dangling details, symbolizing strength, devotion, and timeless beauty.",
@@ -214,6 +226,7 @@ export const products = [
   {
     id: 23,
     name: "Luna Pearl Pendant2",
+    SKU_id: "LPP-002",
     price: 890,
     description:
       "Inspired by the gentle glow of moonlight, this pendant showcases a lustrous South Sea pearl suspended from a delicate 18k gold chain. The pearl's natural iridescence captures light beautifully, creating an ethereal, feminine elegance.",
@@ -230,6 +243,7 @@ export const products = [
   {
     id: 32,
     name: "Gold Plated Trishul Earrings3",
+    SKU_id: "LPP-003",
     price: 65,
     description:
       "Traditional Trishul-inspired gold drop earrings with elegant dangling details, symbolizing strength, devotion, and timeless beauty.",
@@ -248,6 +262,7 @@ export const products = [
   {
     id: 34,
     name: "Gold Plated Trishul Earrings4",
+    SKU_id: "LPP-004",
     price: 65,
     description:
       "Traditional Trishul-inspired gold drop earrings with elegant dangling details, symbolizing strength, devotion, and timeless beauty.",
@@ -265,6 +280,7 @@ export const products = [
   {
     id: 35,
     name: "Gold Plated Trishul Earrings5",
+    SKU_id: "LPP-007",
     price: 65,
     description:
       "Traditional Trishul-inspired gold drop earrings with elegant dangling details, symbolizing strength, devotion, and timeless beauty.",
@@ -283,6 +299,7 @@ export const products = [
   {
     id: 36,
     name: "Gold Plated Trishul Earrings6",
+    SKU_id: "LPP-008",
     price: 65,
     description:
       "Traditional Trishul-inspired gold drop earrings with elegant dangling details, symbolizing strength, devotion, and timeless beauty.",
@@ -301,6 +318,7 @@ export const products = [
   {
     id: 37,
     name: "Gold Plated Trishul Earrings7",
+    SKU_id: "LPP-009",
     price: 350,
     description:
       "Traditional Trishul-inspired gold drop earrings with elegant dangling details, symbolizing strength, devotion, and timeless beauty.",
@@ -369,3 +387,20 @@ export const stones = [
   { id: "pearl", name: "Pearl" },
   { id: "none", name: "No Stone" },
 ];
+
+
+export const FREE_SHIPPING_MIN = 2999;
+
+export const OFFER_RULES = [
+  { min: 8999, discount: 7 },
+  { min: 5999, discount: 5 },
+  { min: 2999, discount: 3 },
+];
+
+  const STORE_INFO = {
+    name: "AVH STORE",
+    address: "RAJOT",
+    gstin: "RTOUFGV56790",
+    phone: "9016457163",
+    email: "avhstore@example.com",
+  };
