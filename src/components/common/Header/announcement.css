@@ -1,0 +1,31 @@
+.marquee {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.marquee-content {
+  display: inline-flex;
+  gap: 50px;
+  padding: 8px 0;
+  animation: scrollMarquee 20s linear infinite;
+}
+
+.marquee-content span {
+  display: inline-block;
+}
+
+/* Keyframe Animation */
+@keyframes scrollMarquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Pause on hover */
+.marquee-content:hover {
+  animation-play-state: paused;
+}
