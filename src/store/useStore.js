@@ -53,7 +53,7 @@ export const useStore = create()(
       // ======================
       cart: [],
 
-      addToCart: (product, quantity = 1, size) => {
+      addToCart: (product, qty = 1, size) => {
         set((state) => {
           const resolvedProduct = resolveProduct(product);
           const productId = String(resolvedProduct?.id ?? '');
@@ -69,7 +69,7 @@ export const useStore = create()(
               cart: state.cart.map((item) =>
                 String(item.product.id) === productId &&
                 item.size === size
-                  ? { ...item, quantity: item.quantity + quantity }
+                  ? { ...item, qty: item.qty + qty }
                   : item
               ),
             };
@@ -78,7 +78,7 @@ export const useStore = create()(
           return {
             cart: [
               ...state.cart,
-              { product: resolvedProduct, quantity, size },
+              { product: resolvedProduct, qty, size },
             ],
           };
         });
@@ -111,7 +111,7 @@ export const useStore = create()(
         const { cart } = get();
         return cart.reduce(
           (total, item) =>
-            total + item.product.price * item.quantity,
+            total + item.product.price * item.qty,
           0
         );
       },
@@ -119,7 +119,7 @@ export const useStore = create()(
       getCartCount: () => {
         const { cart } = get();
         return cart.reduce(
-          (count, item) => count + item.quantity,
+          (count, item) => count + item.qty,
           0
         );
       },
@@ -209,7 +209,7 @@ export const useStore = create()(
         const migratedCart = Array.isArray(state.cart)
           ? state.cart.map((item) => ({
               id: item?.id ?? item?.product?.id,
-              quantity: item?.quantity ?? item?.qty ?? 1,
+              qty: item?.qty ?? item?.quantity ?? 1,
               size: item?.size,
             }))
           : [];
