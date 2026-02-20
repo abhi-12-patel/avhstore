@@ -123,9 +123,9 @@ const ShopAll = ({
       <button
         onClick={handleAddToCart}
         disabled={!product.inStock}
-        className={`absolute bottom-[90px] right-4 rounded-full p-3 shadow-lg transition-all duration-500 ${
+        className={`absolute bottom-[90px] right-4 z-10 rounded-full p-3 shadow-lg transition-all duration-500 ${
           product.inStock
-            ? 'bg-black text-white opacity-0 group-hover:opacity-100 group-hover:translate-y-0 translate-y-4 hover:bg-gray-800'
+            ? 'bg-black text-white opacity-100 translate-y-0 sm:opacity-0 sm:translate-y-4 sm:group-hover:opacity-100 sm:group-hover:translate-y-0 hover:bg-gray-800'
             : 'bg-gray-300 text-gray-500 opacity-100 cursor-not-allowed'
         }`}
         aria-label="Add to cart"

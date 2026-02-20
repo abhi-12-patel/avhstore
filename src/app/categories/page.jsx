@@ -9,7 +9,7 @@ const catagories = () => {
         <h1 className="text-4xl pb-[3%]">Categories</h1>
 
       <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-10 justify-items-center">
-        {/* {categories.map((product) => {
+         {categories.map((product) => {
           const categoryProducts = products.filter((item) => item.category === product.id);
           const minPrice = categoryProducts.length
             ? Math.min(...categoryProducts.map((item) => item.price))
@@ -24,9 +24,9 @@ const catagories = () => {
             linkHref={`/collections?category=${product.id}`}
           />
           );
-        })} */}
+        })} 
 
-             {categories.map((cat) => (
+             {/* {categories.map((cat) => (
             <Link
               key={cat.id}
               href={`/collections?category=${cat.id}`}
@@ -45,7 +45,7 @@ const catagories = () => {
                 </span>
               </div>
             </Link>
-          ))}
+          ))} */}
       </div>
     </div>
   );
