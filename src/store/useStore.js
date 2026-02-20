@@ -29,12 +29,17 @@ const resolveProduct = (input) => {
 
 const normalizeCart = (cart) =>
   Array.isArray(cart)
-    ? cart.map((item) => ({
-        ...item,
-        product: resolveProduct(item?.product ?? item?.id),
-        quantity: Math.max(1, Number(item?.quantity) || 1),
-        size: item?.size,
-      })).filter((item) => item?.product?.id)
+    ? cart
+        .map((item) => ({
+          ...item,
+          product: resolveProduct(item?.product ?? item?.id),
+          qty: Math.max(
+            1,
+            Number(item?.qty ?? item?.quantity) || 1
+          ),
+          size: item?.size,
+        }))
+        .filter((item) => item?.product?.id)
     : [];
 
 const normalizeWishlist = (wishlist) =>
@@ -95,7 +100,6 @@ export const useStore = create()(
 
       updateQuantity: (productId, qty) => {
         const normalizedProductId = String(productId ?? '');
-        console.log(quantity,"quantityquantity")
         set((state) => ({
           cart: state.cart.map((item) =>
             String(item.product.id) === normalizedProductId
@@ -191,7 +195,10 @@ export const useStore = create()(
           ? state.cart
               .map((item) => ({
                 id: String(item?.product?.id ?? item?.id ?? ''),
-                qty: Math.max(1, Number(item?.quantity) || 1),
+                qty: Math.max(
+                  1,
+                  Number(item?.qty ?? item?.quantity) || 1
+                ),
                 size: item?.size,
               }))
               .filter((item) => item.id)
