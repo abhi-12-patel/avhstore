@@ -117,7 +117,7 @@ export default function ProductPageClient({ product }) {
           <ProductImageSlider images={currentProduct.images} productName={currentProduct.name} />
 
           <div>
-            <h1 className="text-3xl md:text-4xl font-semibold mb-2">{currentProduct.name}</h1>
+            <h1 className="text-2xl md:text-4xl font-semibold mb-2">{currentProduct.name}</h1>
 
             <div className="flex items-center gap-3 mb-6">
               <span className="text-2xl font-semibold">{formatPrice(currentProduct.price)}</span>
