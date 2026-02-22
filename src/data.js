@@ -5,11 +5,14 @@ export const products = [
     id: 2,
     name: "Luna Pearl Pendant2",
     SKU_id: "LPP-201",
-    price: 890,
+    price: 60,
     description:
       "Inspired by the gentle glow of moonlight, this pendant showcases a lustrous South Sea pearl suspended from a delicate 18k gold chain. The pearl's natural iridescence captures light beautifully, creating an ethereal, feminine elegance.",
     images: [
-      "https://drive.google.com/file/d/19LvtmMDhguK-uZdGDbEX28xnsBLwzGKk/view?usp=sharing",
+      "https://drive.google.com/uc?export=view&id=19LvtmMDhguK-uZdGDbEX28xnsBLwzGKk",
+      "https://drive.google.com/uc?export=view&id=1992MrHitsxFHJObFhOS2ja0H_lVE3qLF",
+      "https://drive.google.com/uc?export=view&id=196X8-GNaBmWQmQWcsgAQOMachTH5wIvp",
+      "https://drive.google.com/uc?export=view&id=195BulfwojjqruHLaLv4d_Q1sH5eVD64N",
     ],
     category: "earrings",
     material: "Brass",
@@ -18,7 +21,81 @@ export const products = [
     inStock: true,
     isNew: false,
   },
-
+  {
+    id: 3,
+    name: "Gold Plated Trishul Earrings3",
+    SKU_id: "LPP-002",
+    price: 65,
+    description:
+      "Traditional Trishul-inspired gold drop earrings with elegant dangling details, symbolizing strength, devotion, and timeless beauty.",
+    images: [
+      "https://drive.google.com/uc?export=view&id=11k76b8IRBSOYhTc3FIWn0U-g5URc0WkG",
+      "https://drive.google.com/uc?export=view&id=1P5ib23q76djk8-_LgFBY5C7w5C99DHd6",
+      "https://drive.google.com/uc?export=view&id=1P5ib23q76djk8-_LgFBY5C7w5C99DHd6",
+    ],
+    category: "earrings",
+    material: "Brass",
+    stone: "none",
+    isBestseller: true,
+    inStock: true,
+    isNew: false,
+  },
+  {
+    id: 4,
+    name: "Gold Plated Trishul Earrings4",
+    SKU_id: "LPP-004",
+    price: 65,
+    description:
+      "Traditional Trishul-inspired gold drop earrings with elegant dangling details, symbolizing strength, devotion, and timeless beauty.",
+    images: [
+      "https://drive.google.com/uc?export=view&id=1mxle1M5cU7y9n5puejncZ4AK0bXhyZQ2",
+      "https://drive.google.com/uc?export=view&id=1U-NnZCXyCrmR7CG5uSYgg2RfycylJpOV",
+    ],
+    category: "earrings",
+    material: "Brass",
+    stone: "none",
+    isBestseller: true,
+    inStock: true,
+    isNew: false,
+  },
+  {
+    id: 5,
+    name: "Gold Plated Trishul Earrings5",
+    SKU_id: "LPP-051",
+    price: 65,
+    description:
+      "Traditional Trishul-inspired gold drop earrings with elegant dangling details, symbolizing strength, devotion, and timeless beauty.",
+    images: [
+      "https://drive.google.com/uc?export=view&id=1o5Kf8jmI_Cz99luD8FPwUCfbJTmXcyle",
+      "https://drive.google.com/uc?export=view&id=1v1DDwhOqF4qUYHH6bOTi0RLb3VSbulG5",
+      "https://drive.google.com/uc?export=view&id=147JZlOWp95EHaduNWqnsBUFRpnir-jyk",
+    ],
+    category: "earrings",
+    material: "Brass",
+    stone: "none",
+    isBestseller: true,
+    inStock: true,
+    isNew: false,
+  },
+  {
+    id: 6,
+    name: "Gold Plated Trishul Earrings6",
+    SKU_id: "LPP-601",
+    price: 65,
+    description:
+      "Traditional Trishul-inspired gold drop earrings with elegant dangling details, symbolizing strength, devotion, and timeless beauty.",
+    images: [
+      "https://drive.google.com/uc?export=view&id=1X8sXsnUaNyOsNxPLcWyLqf7TonHi3p2N",
+      "https://drive.google.com/uc?export=view&id=1bQLGPYnAj0piWZSwm51-S1iChyNpoU8r",
+      "https://drive.google.com/uc?export=view&id=1K8xNdCrKTumUVt9rmIcT19zsg62zDB1v",
+    ],
+    category: "earrings",
+    material: "Brass",
+    stone: "none",
+    isBestseller: true,
+    inStock: true,
+    isNew: false,
+  },
 
 
 ];

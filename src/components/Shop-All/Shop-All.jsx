@@ -80,7 +80,7 @@ const ShopAll = ({
         <ImageWithFallback
           src={product.image}
           alt={product.title}
-          style={{ width: "300px", height: "300px" }}
+          // style={{ width: "300px", height: "300px" }}
           className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
           loading="lazy"
           onError={(e) => {

@@ -1,28 +1,27 @@
 const DRIVE_HOSTS = new Set([
-  "drive.google.com",
-  "drive.usercontent.google.com",
+  'drive.google.com',
+  'drive.usercontent.google.com',
 ]);
 
 const extractDriveId = (url) => {
-  // ?id= format
-  const idFromQuery = url.searchParams.get("id");
+  const idFromQuery = url.searchParams.get('id');
   if (idFromQuery) return idFromQuery;
 
-  // /file/d/ID/ format
-  const match = url.pathname.match(/\/file\/d\/([^/]+)/);
-  if (match && match[1]) return match[1];
+  const pathMatch = url.pathname.match(/\/file\/d\/([^/]+)/);
+  if (pathMatch && pathMatch[1]) return pathMatch[1];
 
   return null;
 };
 
-const getDriveCandidates = (id) => [
-  // Best working format
+const getDriveCandidates = (id, original) => [
+  `https://lh3.googleusercontent.com/d/${id}`,
   `https://drive.google.com/uc?export=view&id=${id}`,
   `https://drive.google.com/uc?export=download&id=${id}`,
+  original,
 ];
 
 export const getImageCandidates = (input) => {
-  if (!input) return [""];
+  if (!input) return [''];
 
   try {
     const url = new URL(input);
@@ -34,8 +33,8 @@ export const getImageCandidates = (input) => {
     const id = extractDriveId(url);
     if (!id) return [input];
 
-    return getDriveCandidates(id);
-  } catch {
+    return getDriveCandidates(id, input);
+  } catch (error) {
     return [input];
   }
 };
