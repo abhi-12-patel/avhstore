@@ -1,6 +1,204 @@
 // data.js
 
 export const products = [
+   {
+    id: 15,
+    name: "Traditional Gold Plated Royal PDE Pendant Necklace Set with Earrings for Women",
+    SKU_id: "AVH_JS_015",
+    price: 300,
+    description:
+      `Enhance your ethnic elegance with this Traditional Gold Plated Royal PDE Pendant Necklace Set featuring a beautifully detailed geometric paisley design centerpiece. Designed with intricate craftsmanship, delicate stone accents, and a rich gold-tone finish, this jewelry set reflects timeless Indian tradition with a modern touch.
+
+The statement PDE pendant paired with matching earrings makes it perfect for weddings, festive occasions, bridal functions, and cultural celebrations. Lightweight yet luxurious, this necklace set pairs beautifully with sarees, lehengas, silk outfits, and Indo-western attire.
+
+An ideal choice for brides, festive styling, party wear, and gifting purposes.`,
+    images: [   
+      "https://drive.google.com/uc?export=view&id=1frY44a8yMMMUWMic5o03PX0dZbPKNhd8",
+      "https://drive.google.com/uc?export=view&id=1vWVAETBK8VYiEbipquCqbe76d0xAZN78",
+      "https://drive.google.com/uc?export=view&id=1LwyTHFtWufnslKOO5G0a0HPUJ8bb0iwp",
+    ],
+    category: "jewelleryset",
+    metakey:"PDE jewelry set, geometric pendant necklace set, gold plated necklace with earrings, modern ethnic jewelry, wedding jewelry set for women, party wear necklace set, designer gold pendant set, festive jewelry for girls, statement necklace set, traditional gold fashion jewelrypaisley pendant necklace set, traditional gold jewelry set, paisley design necklace set, wedding necklace for women, bridal imitation jewelry, gold plated necklace with earrings, ethnic party wear jewelry, festive gold necklace set, designer indian jewelry, geometric paisley pendant set",
+    material: "Brass",
+    stone: "none",
+    isBestseller: true,
+    inStock: true,
+    isNew: false,
+  },
+  
+  {
+    id: 16,
+    name: "Traditional Zivara Crescent Bloom Gold Necklace Set with Earrings for Women",
+    SKU_id: "AVH_JS_016",
+    price: 300,
+    description:
+      `Elevate your elegance with the Zivara Crescent Bloom Gold Jewellery Set, a stunning fusion of traditional artistry and contemporary charm. This exquisite set features a finely crafted gold-finish necklace paired with matching crescent-inspired earrings, beautifully adorned with sparkling crystal accents and a delicate ruby-tone centerpiece.
+
+The graceful floral and crescent motifs symbolize beauty and prosperity, while the intricate detailing reflects superior craftsmanship. Designed to be lightweight yet luxurious, this jewellery set is perfect for weddings, festive occasions, cultural celebrations, and elegant evening wear.
+
+Whether styled with sarees, lehengas, or ethnic gowns, the Zivara Crescent Bloom set adds timeless sophistication and makes a memorable gifting choice for anniversaries, bridal trousseaus, and festive celebrations.`,
+    images: [   
+      "https://drive.google.com/uc?export=view&id=1BbKKnhfGG6DuaLxl3K90e9POUtsD8gl0",
+    ],
+    category: "jewelleryset",
+    metakey:"gold jewellery set, necklace earrings set for women, crescent gold jewellery, designer gold necklace set, bridal jewellery set, traditional gold jewellery, festive jewellery set, floral gold necklace, ruby accent jewellery, premium Indian jewellery",
+    material: "Brass",
+    stone: "none",
+    isBestseller: true,
+    inStock: false,
+    isNew: false,
+  },
+  {
+    id: 17,
+    name: "Traditional Triveni Trikon Heritage Gold Necklace Set with Earrings for Women",
+    SKU_id: "AVH_JS_017",
+    price: 350,
+    description:
+      `Celebrate timeless tradition with the Triveni Trikon Heritage Gold Necklace Set, inspired by the sacred trikon (triangle) motif symbolizing strength, balance, and prosperity. This exquisite necklace features a beautifully crafted triangular pendant with intricate lattice detailing, enhanced by sparkling stone accents and rich ruby-tone highlights.
+
+The structured gold-finish necklace is paired with matching trikon-style earrings, creating a harmonious and regal look. Designed for weddings, festive occasions, and cultural celebrations, this set blends traditional craftsmanship with elegant detailing, making it ideal for sarees, lehengas, and ethnic ensembles.
+
+Lightweight yet luxurious, the Triveni Trikon set is a perfect choice for bridal wear, festive gifting, and heirloom-inspired collections.`,
+    images: [   
+      "https://drive.google.com/uc?export=view&id=1vXMYjv09pFFZNRcpRuERwRikhqAPP3lF",
+      "https://drive.google.com/uc?export=view&id=1sCfKEsQcmdZtsNankkcV2FiXF5ZZFEEm",
+      "https://drive.google.com/uc?export=view&id=1NHcrAe9N-2Zn9_r9ZrfeF054Wzw1QJIe",
+    ],
+    category: "jewelleryset",
+    metakey:"trikon necklace set, triangle gold necklace, traditional gold necklace set, bridal trikon jewellery, temple style necklace set, gold necklace earrings set, designer gold jewellery, festive jewellery set, ruby accent gold necklace, Indian heritage jewellery",
+    material: "Brass",
+    stone: "none",
+    isBestseller: true,
+    inStock: true,
+    isNew: false,
+  },
+  {
+    id: 18,
+    name: "Traditional Sudarsha Chakra Gold Necklace Set with Earrings for Women",
+    SKU_id: "AVH_JS_018",
+    price: 300,
+    description:
+      `Embrace timeless tradition with the Sudarsha Chakra Gold Necklace Set, exquisitely designed around a classic round pendant motif that symbolizes harmony, eternity, and grace. This beautiful jewellery set features a delicately crafted gold-finish necklace paired with matching circular earrings, enhanced with sparkling stone accents and a rich ruby-tone centerpiece.
+
+The detailed circular pendant showcases fine craftsmanship with layered textures and ornamental patterns, making it perfect for weddings, festive occasions, and cultural celebrations. Lightweight yet luxurious, this set offers all-day comfort while delivering a regal and sophisticated look.
+
+Ideal for pairing with sarees, lehengas, and traditional attire, the Sudarsha Chakra set is a stunning choice for bridal wear, festive gifting, and heirloom-inspired jewellery collections.`,
+    images: [   
+      "https://drive.google.com/uc?export=view&id=16bPvCp7b4DyTj5iDI6YSBs6gbm2bfdnN",
+      "https://drive.google.com/uc?export=view&id=1sCfKEsQcmdZtsNankkcV2FiXF5ZZFEEm",
+      "https://drive.google.com/uc?export=view&id=1NHcrAe9N-2Zn9_r9ZrfeF054Wzw1QJIe",
+    ],
+    category: "jewelleryset",
+    metakey:"round gold necklace set, circular pendant jewellery, traditional gold necklace set, bridal round necklace, designer gold jewellery set, necklace earrings set for women, festive gold jewellery, ruby accent necklace, ethnic Indian jewellery, premium gold finish jewellery",
+    material: "Brass",
+    stone: "none",
+    isBestseller: true,
+    inStock: true,
+    isNew: false,
+  },
+   {
+    id: 19,
+    name: "Traditional Vaidehi Ranjana Temple Heritage Jewellery Set with Earrings for Women",
+    SKU_id: "AVH_JS_019",
+    price: 700,
+    description:
+      `Rajwadi Antique Matte Jewellery Set Kundan, Pearl And Meenakari Design for Matte Gold Plated Necklace Set Long And Short with Earrings and Mang-Tikka Full Jewellery Set for Women-Girls.`,
+    images: [   
+      "https://drive.google.com/uc?export=view&id=1AnySjTOtc5Qb08vgYh03gadJVtF03dma",
+      "https://drive.google.com/uc?export=view&id=1AnySjTOtc5Qb08vgYh03gadJVtF03dma",
+    ],
+    category: "rajwadiset",
+    metakey:"temple jewellery set, layered gold necklace set, bridal temple jewellery, antique gold jewellery set, traditional Indian jewellery, South Indian bridal jewellery, gemstone gold necklace, heritage jewellery set, wedding jewellery set, premium ethnic jewellery",
+    material: "Brass",
+    stone: "none",
+    isBestseller: true,
+    inStock: true,
+    isNew: false,
+  },
+  {
+    id: 20,
+    name: "Traditional Kalyani Pushpa Temple Royale Jewellery Set with Earrings for Women",
+    SKU_id: "AVH_JS_020",
+    price: 700,
+    description:
+      `Rajwadi Antique Matte Jewellery Set Kundan, Pearl And Meenakari Design for Matte Gold Plated Necklace Set Long And Short with Earrings and Mang-Tikka Full Jewellery Set for Women-Girls.`,
+    images: [   
+      "https://drive.google.com/uc?export=view&id=1Arc_sjI34bKfGsha4jjB0j-OI1NJdMkC",
+      "https://drive.google.com/uc?export=view&id=1Arc_sjI34bKfGsha4jjB0j-OI1NJdMkC",
+    ],
+    category: "rajwadiset",
+    metakey:"temple jewellery set, layered gold necklace set, South Indian temple jewellery, bridal temple jewellery set, antique gold jewellery, floral gold necklace set, traditional Indian jewellery, wedding jewellery set, ruby emerald gold set, premium ethnic jewellery",
+    material: "Brass",
+    stone: "none",
+    isBestseller: true,
+    inStock: true,
+    isNew: false,
+  },
+   {
+    id: 21,
+    name: "Traditional Rajasi Vriksha Antique Temple Jewellery Set with Earrings for Women",
+    SKU_id: "AVH_JS_021",
+    price: 700,
+    description:
+      `Rajwadi Antique Matte Jewellery Set Kundan, Pearl And Meenakari Design for Matte Gold Plated Necklace Set Long And Short with Earrings and Mang-Tikka Full Jewellery Set for Women-Girls.`,
+    images: [   
+      "https://drive.google.com/uc?export=view&id=1AuhjQ5VgL4nO2lXFjDXTHwF7FOjjrqVr",
+      "https://drive.google.com/uc?export=view&id=1AuhjQ5VgL4nO2lXFjDXTHwF7FOjjrqVr",
+    ],
+    category: "rajwadiset",
+    metakey:"antique temple jewellery set, layered gold necklace set, bridal temple jewellery, traditional Indian jewellery, antique gold finish necklace, heritage jewellery set, wedding jewellery set, ruby emerald jewellery, ethnic gold jewellery set, premium imitation jewellery",
+    material: "Brass",
+    stone: "none",
+    isBestseller: true,
+    inStock: true,
+    isNew: false,
+  },
+  {
+    id: 22,
+    name: "TraditionalAarvika Halo Gold Necklace Set with Earrings for Women",
+    SKU_id: "AVH_JS_022",
+    price: 300,
+    description:
+      `Add refined elegance to your jewellery collection with the Aarvika Halo Gold Necklace Set, a beautifully crafted ensemble that blends modern sophistication with traditional charm. This graceful set features a sleek gold-finish necklace adorned with oval and circular motifs, highlighted by shimmering stone accents and subtle ruby-tone detailing.
+
+The round pendant showcases intricate lattice work bordered with sparkling stones, creating a radiant focal point. Paired with matching stud-style earrings, this set is lightweight, comfortable, and perfect for both festive occasions and elegant everyday wear.
+
+Ideal for weddings, celebrations, parties, and gifting, the Aarvika Halo set complements sarees, lehengas, and contemporary ethnic outfits with timeless grace and understated luxury.`,
+    images: [   
+      "https://drive.google.com/uc?export=view&id=1AxEqxIt6iTB6WqwA6FKwZcf_qQxY00Hm",
+      "https://drive.google.com/uc?export=view&id=1AxEqxIt6iTB6WqwA6FKwZcf_qQxY00Hm",
+    ],
+    category: "jewelleryset",
+    metakey:"round gold necklace set, circular pendant jewellery, traditional gold necklace set, bridal round necklace, designer gold jewellery set, necklace earrings set for women, festive gold jewellery, ruby accent necklace, ethnic Indian jewellery, premium gold finish jewellerygold necklace set, designer gold jewellery set, necklace earrings set for women, round pendant necklace, elegant gold jewellery, festive jewellery set, bridal gold necklace, traditional gold jewellery, ruby accent necklace set, premium imitation jewellery",
+    material: "Brass",
+    stone: "none",
+    isBestseller: true,
+    inStock: true,
+    isNew: false,
+  },
+  {
+    id: 23,
+    name: "Traditional Anvika Chakra Grace Gold Necklace Set with Earrings for Women",
+    SKU_id: "AVH_JS_023",
+    price: 350,
+    description:
+      `Discover timeless sophistication with the Anvika Chakra Grace Gold Necklace Set, a beautifully balanced design that blends traditional symbolism with modern elegance. This refined set features a sleek gold-finish necklace accented with sculpted oval motifs and a radiant circular chakra pendant, embellished with sparkling stones and subtle ruby-tone highlights.
+
+The centerpiece pendant showcases intricate detailing that represents harmony and grace, while the matching stud earrings echo the same elegant circular pattern. Lightweight and comfortable, this jewellery set is ideal for festive occasions, weddings, celebrations, and graceful everyday wear.
+
+Perfectly complementing sarees, lehengas, and contemporary ethnic outfits, the Anvika Chakra Grace set is also an excellent gifting choice for anniversaries, festivals, and special moments.`,
+    images: [   
+      "https://drive.google.com/uc?export=view&id=1BlJ_iRRcZjH5VM94zmGHN85OIjL6dxKA",
+      "https://drive.google.com/uc?export=view&id=1BlJ_iRRcZjH5VM94zmGHN85OIjL6dxKA",
+    ],
+    category: "jewelleryset",
+    metakey:"gold necklace set, chakra pendant necklace, designer gold jewellery set, necklace earrings set for women, circular pendant jewellery, festive gold jewellery, bridal necklace set, traditional gold jewellery, ruby accent necklace, premium imitation jewellery",
+    material: "Brass",
+    stone: "none",
+    isBestseller: false,
+    inStock: false,
+    isNew: false,
+  },
   {
     id: 1,
     name: "Gold Plated Round Earrings for Women",
@@ -312,181 +510,7 @@ An ideal choice for brides, festive styling, party wear, and gifting purposes.`,
     inStock: true,
     isNew: false,
   },
-  {
-    id: 15,
-    name: "Traditional Gold Plated Royal PDE Pendant Necklace Set with Earrings for Women",
-    SKU_id: "AVH_JS_015",
-    price: 300,
-    description:
-      `Enhance your ethnic elegance with this Traditional Gold Plated Royal PDE Pendant Necklace Set featuring a beautifully detailed geometric paisley design centerpiece. Designed with intricate craftsmanship, delicate stone accents, and a rich gold-tone finish, this jewelry set reflects timeless Indian tradition with a modern touch.
-
-The statement PDE pendant paired with matching earrings makes it perfect for weddings, festive occasions, bridal functions, and cultural celebrations. Lightweight yet luxurious, this necklace set pairs beautifully with sarees, lehengas, silk outfits, and Indo-western attire.
-
-An ideal choice for brides, festive styling, party wear, and gifting purposes.`,
-    images: [   
-      "https://drive.google.com/uc?export=view&id=1frY44a8yMMMUWMic5o03PX0dZbPKNhd8",
-      "https://drive.google.com/uc?export=view&id=1vWVAETBK8VYiEbipquCqbe76d0xAZN78",
-      "https://drive.google.com/uc?export=view&id=1LwyTHFtWufnslKOO5G0a0HPUJ8bb0iwp",
-    ],
-    category: "jewelleryset",
-    metakey:"PDE jewelry set, geometric pendant necklace set, gold plated necklace with earrings, modern ethnic jewelry, wedding jewelry set for women, party wear necklace set, designer gold pendant set, festive jewelry for girls, statement necklace set, traditional gold fashion jewelrypaisley pendant necklace set, traditional gold jewelry set, paisley design necklace set, wedding necklace for women, bridal imitation jewelry, gold plated necklace with earrings, ethnic party wear jewelry, festive gold necklace set, designer indian jewelry, geometric paisley pendant set",
-    material: "Brass",
-    stone: "none",
-    isBestseller: true,
-    inStock: true,
-    isNew: false,
-  },
-  
-  {
-    id: 16,
-    name: "Traditional Zivara Crescent Bloom Gold Necklace Set with Earrings for Women",
-    SKU_id: "AVH_JS_016",
-    price: 300,
-    description:
-      `Elevate your elegance with the Zivara Crescent Bloom Gold Jewellery Set, a stunning fusion of traditional artistry and contemporary charm. This exquisite set features a finely crafted gold-finish necklace paired with matching crescent-inspired earrings, beautifully adorned with sparkling crystal accents and a delicate ruby-tone centerpiece.
-
-The graceful floral and crescent motifs symbolize beauty and prosperity, while the intricate detailing reflects superior craftsmanship. Designed to be lightweight yet luxurious, this jewellery set is perfect for weddings, festive occasions, cultural celebrations, and elegant evening wear.
-
-Whether styled with sarees, lehengas, or ethnic gowns, the Zivara Crescent Bloom set adds timeless sophistication and makes a memorable gifting choice for anniversaries, bridal trousseaus, and festive celebrations.`,
-    images: [   
-      "https://drive.google.com/uc?export=view&id=1BbKKnhfGG6DuaLxl3K90e9POUtsD8gl0",
-    ],
-    category: "jewelleryset",
-    metakey:"gold jewellery set, necklace earrings set for women, crescent gold jewellery, designer gold necklace set, bridal jewellery set, traditional gold jewellery, festive jewellery set, floral gold necklace, ruby accent jewellery, premium Indian jewellery",
-    material: "Brass",
-    stone: "none",
-    isBestseller: true,
-    inStock: false,
-    isNew: false,
-  },
-  {
-    id: 17,
-    name: "Traditional Triveni Trikon Heritage Gold Necklace Set with Earrings for Women",
-    SKU_id: "AVH_JS_017",
-    price: 350,
-    description:
-      `Celebrate timeless tradition with the Triveni Trikon Heritage Gold Necklace Set, inspired by the sacred trikon (triangle) motif symbolizing strength, balance, and prosperity. This exquisite necklace features a beautifully crafted triangular pendant with intricate lattice detailing, enhanced by sparkling stone accents and rich ruby-tone highlights.
-
-The structured gold-finish necklace is paired with matching trikon-style earrings, creating a harmonious and regal look. Designed for weddings, festive occasions, and cultural celebrations, this set blends traditional craftsmanship with elegant detailing, making it ideal for sarees, lehengas, and ethnic ensembles.
-
-Lightweight yet luxurious, the Triveni Trikon set is a perfect choice for bridal wear, festive gifting, and heirloom-inspired collections.`,
-    images: [   
-      "https://drive.google.com/uc?export=view&id=1vXMYjv09pFFZNRcpRuERwRikhqAPP3lF",
-      "https://drive.google.com/uc?export=view&id=1sCfKEsQcmdZtsNankkcV2FiXF5ZZFEEm",
-      "https://drive.google.com/uc?export=view&id=1NHcrAe9N-2Zn9_r9ZrfeF054Wzw1QJIe",
-    ],
-    category: "jewelleryset",
-    metakey:"trikon necklace set, triangle gold necklace, traditional gold necklace set, bridal trikon jewellery, temple style necklace set, gold necklace earrings set, designer gold jewellery, festive jewellery set, ruby accent gold necklace, Indian heritage jewellery",
-    material: "Brass",
-    stone: "none",
-    isBestseller: true,
-    inStock: true,
-    isNew: false,
-  },
-  {
-    id: 18,
-    name: "Traditional Sudarsha Chakra Gold Necklace Set with Earrings for Women",
-    SKU_id: "AVH_JS_018",
-    price: 300,
-    description:
-      `Embrace timeless tradition with the Sudarsha Chakra Gold Necklace Set, exquisitely designed around a classic round pendant motif that symbolizes harmony, eternity, and grace. This beautiful jewellery set features a delicately crafted gold-finish necklace paired with matching circular earrings, enhanced with sparkling stone accents and a rich ruby-tone centerpiece.
-
-The detailed circular pendant showcases fine craftsmanship with layered textures and ornamental patterns, making it perfect for weddings, festive occasions, and cultural celebrations. Lightweight yet luxurious, this set offers all-day comfort while delivering a regal and sophisticated look.
-
-Ideal for pairing with sarees, lehengas, and traditional attire, the Sudarsha Chakra set is a stunning choice for bridal wear, festive gifting, and heirloom-inspired jewellery collections.`,
-    images: [   
-      "https://drive.google.com/uc?export=view&id=16bPvCp7b4DyTj5iDI6YSBs6gbm2bfdnN",
-      "https://drive.google.com/uc?export=view&id=1sCfKEsQcmdZtsNankkcV2FiXF5ZZFEEm",
-      "https://drive.google.com/uc?export=view&id=1NHcrAe9N-2Zn9_r9ZrfeF054Wzw1QJIe",
-    ],
-    category: "jewelleryset",
-    metakey:"round gold necklace set, circular pendant jewellery, traditional gold necklace set, bridal round necklace, designer gold jewellery set, necklace earrings set for women, festive gold jewellery, ruby accent necklace, ethnic Indian jewellery, premium gold finish jewellery",
-    material: "Brass",
-    stone: "none",
-    isBestseller: true,
-    inStock: true,
-    isNew: false,
-  },
-   {
-    id: 19,
-    name: "Traditional Vaidehi Ranjana Temple Heritage Jewellery Set with Earrings for Women",
-    SKU_id: "AVH_JS_019",
-    price: 700,
-    description:
-      `Rajwadi Antique Matte Jewellery Set Kundan, Pearl And Meenakari Design for Matte Gold Plated Necklace Set Long And Short with Earrings and Mang-Tikka Full Jewellery Set for Women-Girls.`,
-    images: [   
-      "https://drive.google.com/uc?export=view&id=1AnySjTOtc5Qb08vgYh03gadJVtF03dma",
-      "https://drive.google.com/uc?export=view&id=1AnySjTOtc5Qb08vgYh03gadJVtF03dma",
-    ],
-    category: "rajwadiset",
-    metakey:"temple jewellery set, layered gold necklace set, bridal temple jewellery, antique gold jewellery set, traditional Indian jewellery, South Indian bridal jewellery, gemstone gold necklace, heritage jewellery set, wedding jewellery set, premium ethnic jewellery",
-    material: "Brass",
-    stone: "none",
-    isBestseller: true,
-    inStock: true,
-    isNew: false,
-  },
-  {
-    id: 20,
-    name: "Traditional Kalyani Pushpa Temple Royale Jewellery Set with Earrings for Women",
-    SKU_id: "AVH_JS_020",
-    price: 700,
-    description:
-      `Rajwadi Antique Matte Jewellery Set Kundan, Pearl And Meenakari Design for Matte Gold Plated Necklace Set Long And Short with Earrings and Mang-Tikka Full Jewellery Set for Women-Girls.`,
-    images: [   
-      "https://drive.google.com/uc?export=view&id=1Arc_sjI34bKfGsha4jjB0j-OI1NJdMkC",
-      "https://drive.google.com/uc?export=view&id=1Arc_sjI34bKfGsha4jjB0j-OI1NJdMkC",
-    ],
-    category: "rajwadiset",
-    metakey:"temple jewellery set, layered gold necklace set, South Indian temple jewellery, bridal temple jewellery set, antique gold jewellery, floral gold necklace set, traditional Indian jewellery, wedding jewellery set, ruby emerald gold set, premium ethnic jewellery",
-    material: "Brass",
-    stone: "none",
-    isBestseller: true,
-    inStock: true,
-    isNew: false,
-  },
-   {
-    id: 21,
-    name: "Traditional Rajasi Vriksha Antique Temple Jewellery Set with Earrings for Women",
-    SKU_id: "AVH_JS_021",
-    price: 700,
-    description:
-      `Rajwadi Antique Matte Jewellery Set Kundan, Pearl And Meenakari Design for Matte Gold Plated Necklace Set Long And Short with Earrings and Mang-Tikka Full Jewellery Set for Women-Girls.`,
-    images: [   
-      "https://drive.google.com/uc?export=view&id=1AuhjQ5VgL4nO2lXFjDXTHwF7FOjjrqVr",
-      "https://drive.google.com/uc?export=view&id=1AuhjQ5VgL4nO2lXFjDXTHwF7FOjjrqVr",
-    ],
-    category: "rajwadiset",
-    metakey:"antique temple jewellery set, layered gold necklace set, bridal temple jewellery, traditional Indian jewellery, antique gold finish necklace, heritage jewellery set, wedding jewellery set, ruby emerald jewellery, ethnic gold jewellery set, premium imitation jewellery",
-    material: "Brass",
-    stone: "none",
-    isBestseller: true,
-    inStock: true,
-    isNew: false,
-  },
-  {
-    id: 22,
-    name: "TraditionalAarvika Halo Gold Necklace Set with Earrings for Women",
-    SKU_id: "AVH_JS_022",
-    price: 300,
-    description:
-      `Add refined elegance to your jewellery collection with the Aarvika Halo Gold Necklace Set, a beautifully crafted ensemble that blends modern sophistication with traditional charm. This graceful set features a sleek gold-finish necklace adorned with oval and circular motifs, highlighted by shimmering stone accents and subtle ruby-tone detailing.
-
-The round pendant showcases intricate lattice work bordered with sparkling stones, creating a radiant focal point. Paired with matching stud-style earrings, this set is lightweight, comfortable, and perfect for both festive occasions and elegant everyday wear.
-
-Ideal for weddings, celebrations, parties, and gifting, the Aarvika Halo set complements sarees, lehengas, and contemporary ethnic outfits with timeless grace and understated luxury.`,
-    images: [   
-      "https://drive.google.com/uc?export=view&id=1AxEqxIt6iTB6WqwA6FKwZcf_qQxY00Hm",
-      "https://drive.google.com/uc?export=view&id=1AxEqxIt6iTB6WqwA6FKwZcf_qQxY00Hm",
-    ],
-    category: "jewelleryset",
-    metakey:"round gold necklace set, circular pendant jewellery, traditional gold necklace set, bridal round necklace, designer gold jewellery set, necklace earrings set for women, festive gold jewellery, ruby accent necklace, ethnic Indian jewellery, premium gold finish jewellerygold necklace set, designer gold jewellery set, necklace earrings set for women, round pendant necklace, elegant gold jewellery, festive jewellery set, bridal gold necklace, traditional gold jewellery, ruby accent necklace set, premium imitation jewellery",
-    material: "Brass",
-    stone: "none",
-    isBestseller: true,
-    inStock: true,
-    isNew: false,
-  },
+ 
 ];
 
 export const categories = [

@@ -55,9 +55,12 @@ const Part5 = () => {
 
       {/* "View All" button for Mobile, and for PC when there's no "View all" in header */}
       <div className="border-1 flex border-[#01203D] w-fit justify-self-center mx-auto mt-8"> {/* Added mx-auto and mt-8 */}
-        <Link href="collections?category=bestselling"className="flex cursor-pointer justify-self-center bg-[#01203D] text-white border-white border-1 px-8 py-3" >
+        <Link href="/shopall"className="flex cursor-pointer justify-self-center bg-[#01203D] text-white border-white border-1 px-8 py-3" >
           View All
         </Link>
+        {/* <Link href="collections?category=bestselling"className="flex cursor-pointer justify-self-center bg-[#01203D] text-white border-white border-1 px-8 py-3" >
+          View All
+        </Link> */}
       </div>
     </div>
   );
