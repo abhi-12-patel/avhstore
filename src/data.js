@@ -99,7 +99,7 @@ Ideal for pairing with sarees, lehengas, and traditional attire, the Sudarsha Ch
    {
     id: 19,
     name: "Traditional Vaidehi Ranjana Temple Heritage Jewellery Set with Earrings for Women",
-    SKU_id: "AVH_JS_019",
+    SKU_id: "AVH_RW_019",
     price: 700,
     description:
       `Rajwadi Antique Matte Jewellery Set Kundan, Pearl And Meenakari Design for Matte Gold Plated Necklace Set Long And Short with Earrings and Mang-Tikka Full Jewellery Set for Women-Girls.`,
@@ -118,7 +118,7 @@ Ideal for pairing with sarees, lehengas, and traditional attire, the Sudarsha Ch
   {
     id: 20,
     name: "Traditional Kalyani Pushpa Temple Royale Jewellery Set with Earrings for Women",
-    SKU_id: "AVH_JS_020",
+    SKU_id: "AVH_RW_020",
     price: 700,
     description:
       `Rajwadi Antique Matte Jewellery Set Kundan, Pearl And Meenakari Design for Matte Gold Plated Necklace Set Long And Short with Earrings and Mang-Tikka Full Jewellery Set for Women-Girls.`,
@@ -137,7 +137,7 @@ Ideal for pairing with sarees, lehengas, and traditional attire, the Sudarsha Ch
    {
     id: 21,
     name: "Traditional Rajasi Vriksha Antique Temple Jewellery Set with Earrings for Women",
-    SKU_id: "AVH_JS_021",
+    SKU_id: "AVH_RW_021",
     price: 700,
     description:
       `Rajwadi Antique Matte Jewellery Set Kundan, Pearl And Meenakari Design for Matte Gold Plated Necklace Set Long And Short with Earrings and Mang-Tikka Full Jewellery Set for Women-Girls.`,
@@ -510,7 +510,81 @@ An ideal choice for brides, festive styling, party wear, and gifting purposes.`,
     inStock: true,
     isNew: false,
   },
+ {
+    id: 24,
+    name: "Traditional Divyara Mandala Heritage Gold Necklace Set with Earrings for Women",
+    SKU_id: "AVH_JS_024",
+    price: 300,
+    description:
+      `Elevate your traditional elegance with the Divyara Mandala Heritage Gold Necklace Set, a timeless creation inspired by sacred mandala artistry and classical Indian craftsmanship. This refined set features a beautifully structured gold-finish necklace adorned with geometric motifs, leading to a radiant circular pendant with intricate lattice detailing and a graceful drop accent.
+
+Paired with matching stud earrings, the set reflects understated luxury while maintaining a strong heritage appeal. Its lightweight yet regal design makes it ideal for weddings, festive celebrations, temple visits, and special occasions.
+
+Perfectly complementing silk sarees, lehengas, and ethnic ensembles, the Divyara Mandala set is a sophisticated choice for women who value tradition with a modern touch. It also makes a meaningful gift for anniversaries, festivals, and milestone celebrations.`,
+    images: [
+      "https://drive.google.com/uc?export=view&id=1oZGBhiKLJFB23iiyBFopIWK4C-9nWy3-",
+      "https://drive.google.com/uc?export=view&id=1DnR_doyYQKWb0zkRq-YZaLPNAHddo226",
+      "https://drive.google.com/uc?export=view&id=1E3otwhAoG6rocQII5aWuZadXzeP8Gg4t",
  
+    ],
+    category: "jewelleryset",
+    metakey:"gold necklace set, mandala pendant jewellery, traditional gold jewellery set, necklace earrings set for women, heritage gold necklace, festive jewellery set, bridal gold jewellery, ethnic Indian jewellery, circular pendant necklace, premium imitation jewellery",
+    material: "Brass",
+    stone: "none",
+    isBestseller: true,
+    inStock: true,
+    isNew: false,
+  },
+  {
+    id: 25,
+    name: "Traditional Gold Plated Noorika Eclipse Royale Necklace Set with Earrings for Women",
+    SKU_id: "AVH_JS_025",
+    price: 300,
+    description:
+      `Unveil understated luxury with the Noorika Eclipse Royale Necklace Set, a masterpiece designed for modern elegance with a timeless soul. This refined gold-finish necklace features a sequence of delicately sculpted motifs leading to a graceful crescent-inspired pendant, accented with shimmering stones and subtle ruby detailing.
+
+Paired with matching minimalist earrings, the set exudes sophistication and balance, making it ideal for evening events, festive gatherings, weddings, and elegant celebrations. The sleek design ensures lightweight comfort while delivering a striking, regal presence.
+
+Perfect for women who appreciate classic beauty with contemporary finesse, the Noorika Eclipse set pairs beautifully with sarees, gowns, and designer ethnic wear, making it a standout addition to any premium jewellery collection.`,
+    images: [
+      "https://drive.google.com/uc?export=view&id=1BM1O4pQN9o_PSISseOpg9OaH15VQPH-Y",
+      "https://drive.google.com/uc?export=view&id=1E8piGo2LfNHqJYeVov3YNTj8Auy1d6y8",
+      "https://drive.google.com/uc?export=view&id=1DT4MNFn8LLjlZfD2Hhr2NU-0Yr29HcIG",
+ 
+    ],
+    category: "jewelleryset",
+    metakey:"gold necklace set, designer necklace earrings set, crescent pendant jewellery, elegant gold jewellery for women, premium imitation jewellery, festive necklace set, bridal jewellery set, ruby accent necklace, luxury ethnic jewellery, modern traditional jewellery",
+    material: "Brass",
+    stone: "none",
+    isBestseller: true,
+    inStock: true,
+    isNew: false,
+  },
+  {
+    id: 26,
+    name: "Traditional Gold Plated Noorika Eclipse Royale Necklace Set with Earrings for Women",
+    SKU_id: "AVH_JS_026",
+    price: 300,
+    description:
+      `Unveil understated luxury with the Noorika Eclipse Royale Necklace Set, a masterpiece designed for modern elegance with a timeless soul. This refined gold-finish necklace features a sequence of delicately sculpted motifs leading to a graceful crescent-inspired pendant, accented with shimmering stones and subtle ruby detailing.
+
+Paired with matching minimalist earrings, the set exudes sophistication and balance, making it ideal for evening events, festive gatherings, weddings, and elegant celebrations. The sleek design ensures lightweight comfort while delivering a striking, regal presence.
+
+Perfect for women who appreciate classic beauty with contemporary finesse, the Noorika Eclipse set pairs beautifully with sarees, gowns, and designer ethnic wear, making it a standout addition to any premium jewellery collection.`,
+    images: [
+      "https://drive.google.com/uc?export=view&id=1BM1O4pQN9o_PSISseOpg9OaH15VQPH-Y",
+      "https://drive.google.com/uc?export=view&id=1E8piGo2LfNHqJYeVov3YNTj8Auy1d6y8",
+      "https://drive.google.com/uc?export=view&id=1DT4MNFn8LLjlZfD2Hhr2NU-0Yr29HcIG",
+ 
+    ],
+    category: "jewelleryset",
+    metakey:"gold necklace set, designer necklace earrings set, crescent pendant jewellery, elegant gold jewellery for women, premium imitation jewellery, festive necklace set, bridal jewellery set, ruby accent necklace, luxury ethnic jewellery, modern traditional jewellery",
+    material: "Brass",
+    stone: "none",
+    isBestseller: true,
+    inStock: true,
+    isNew: false,
+  },
 ];
 
 export const categories = [

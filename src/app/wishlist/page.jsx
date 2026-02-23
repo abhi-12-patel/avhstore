@@ -97,7 +97,7 @@ const Wishlist = () => {
                     {/* Remove Button */}
                     <button
                       onClick={() => handleRemove(product.id)}
-                      className="absolute top-3 right-3 p-2 bg-white text-black rounded-full shadow hover:scale-110 transition"
+                      className="absolute top-3 right-3 p-2 bg-white/20 text-black rounded-full shadow hover:scale-110 transition"
                     >
                       <Trash2 size={16} />
                     </button>
@@ -112,9 +112,9 @@ const Wishlist = () => {
                   </div>
 
                   {/* Product Info */}
-                  <div className="p-5 text-center space-y-2">
+                  <div className="p-5 space-y-2">
                     <Link href={`/product/${product.id}`}>
-                      <h3 className="font-semibold text-gray-900 hover:text-black transition line-clamp-2">
+                      <h3 className="font-semibold truncate text-gray-900 hover:text-black transition line-clamp-2">
                         {product.name}
                       </h3>
                     </Link>
