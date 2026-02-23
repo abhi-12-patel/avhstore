@@ -240,23 +240,23 @@ A must-have jewelry set for women and girls who love stylish statement accessori
   },
   {
     id: 12,
-    name: "Traditional Gold Plated Hexagon Pendant Necklace Set with Earrings for Women",
+    name: "Traditional Gold Plated Designer Choker Necklace Set with Earrings for Women",
     SKU_id: "AVH_JS_012",
     price: 350,
     description:
-      `Enhance your style with this Elegant Gold Plated Hexagon Pendant Necklace Set featuring a beautifully crafted geometric floral centerpiece with delicate stone detailing. The modern hexagon design combined with a traditional gold-tone finish creates a perfect blend of contemporary and ethnic elegance.
+      `Add royal elegance to your ethnic collection with this Traditional Gold Plated Designer Choker Necklace Set. Featuring a beautifully detailed curved choker design with hexagon accents and a grand circular pendant, this jewelry set reflects timeless heritage craftsmanship.
 
-This lightweight necklace set includes matching hexagon earrings, making it ideal for weddings, festive occasions, parties, and special celebrations. The premium gold plating ensures long-lasting shine and a luxurious look. Perfect to pair with sarees, lehengas, gowns, and Indo-western outfits.
+The intricate carving work combined with stone embellishments gives a rich and luxurious look, perfect for weddings, bridal wear, festive occasions, and traditional celebrations. The set includes matching geometric earrings that complement the necklace perfectly.
 
-A must-have jewelry set for women and girls who love stylish statement accessories.`,
+Lightweight yet statement-making, this choker necklace set pairs beautifully with sarees, lehengas, silk outfits, and Indo-western attire. An ideal choice for brides, festive styling, and gifting purposes.`,
     images: [
-      "https://drive.google.com/uc?export=view&id=1AIjDCx5JWYRROuLCWoGST7qjNPRbTVyf",
-      "https://drive.google.com/uc?export=view&id=1AWBlA7J9SO9AcrKS1qEwd6B9qe5OGlMY",
-      "https://drive.google.com/uc?export=view&id=1BKxE4Yz0IigFC6nw2YlEZpyxpAIauqGL",
       "https://drive.google.com/uc?export=view&id=1AcUrCXVxqzA9kAgdMAVerjXMaEDRc5u2",
+      "https://drive.google.com/uc?export=view&id=1AIjDCx5JWYRROuLCWoGST7qjNPRbTVyf",
+      "https://drive.google.com/uc?export=view&id=1BKxE4Yz0IigFC6nw2YlEZpyxpAIauqGL",
+      "https://drive.google.com/uc?export=view&id=1AWBlA7J9SO9AcrKS1qEwd6B9qe5OGlMY",
     ],
     category: "jewelleryset",
-    metakey:"hexagon jewelry set, geometric pendant necklace set, gold plated necklace with earrings, modern ethnic jewelry, wedding jewelry set for women, party wear necklace set, designer gold pendant set, festive jewelry for girls, statement necklace set, traditional gold fashion jewelry",
+    metakey:"gold choker necklace set, traditional gold jewelry set, bridal choker set for women, wedding necklace with earrings, designer gold plated jewelry, ethnic party wear necklace set, statement choker jewelry, festive wear gold set, indian bridal jewelry set, geometric gold necklace",
     material: "Brass",
     stone: "none",
     isBestseller: true,
@@ -265,27 +265,146 @@ A must-have jewelry set for women and girls who love stylish statement accessori
   },
   {
     id: 13,
-    name: "Traditional Gold Plated Hexagon Pendant Necklace Set with Earrings for Women",
-    SKU_id: "AVH_JS_012",
+    name: "Traditional Gold Plated Hexagon Floral Pendant Necklace Set with Earrings for Women",
+    SKU_id: "AVH_JS_013",
     price: 350,
     description:
-      `Enhance your style with this Elegant Gold Plated Hexagon Pendant Necklace Set featuring a beautifully crafted geometric floral centerpiece with delicate stone detailing. The modern hexagon design combined with a traditional gold-tone finish creates a perfect blend of contemporary and ethnic elegance.
+      `Enhance your ethnic elegance with this Traditional Gold Plated Hexagon Floral Pendant Necklace Set featuring a beautifully detailed geometric floral centerpiece. Designed with intricate craftsmanship, delicate stone accents, and a rich gold-tone finish, this jewelry set reflects timeless Indian tradition with a modern touch.
 
-This lightweight necklace set includes matching hexagon earrings, making it ideal for weddings, festive occasions, parties, and special celebrations. The premium gold plating ensures long-lasting shine and a luxurious look. Perfect to pair with sarees, lehengas, gowns, and Indo-western outfits.
+The statement hexagon pendant paired with matching earrings makes it perfect for weddings, festive occasions, bridal functions, and cultural celebrations. Lightweight yet luxurious, this necklace set pairs beautifully with sarees, lehengas, silk outfits, and Indo-western attire.
 
-A must-have jewelry set for women and girls who love stylish statement accessories.`,
+An ideal choice for brides, festive styling, party wear, and gifting purposes.`,
     images: [
       "https://drive.google.com/uc?export=view&id=1QwOA0fp3U84tpLjKtMWlNdYOz4QXBDC1",
       "https://drive.google.com/uc?export=view&id=1KrzOySnddO-7Hizv_CRTQa_AnXg4Rvz-",
-      "https://drive.google.com/uc?export=view&id=1BKxE4Yz0IigFC6nw2YlEZpyxpAIauqGL",
-      "https://drive.google.com/uc?export=view&id=1AcUrCXVxqzA9kAgdMAVerjXMaEDRc5u2",
+ 
     ],
     category: "jewelleryset",
-    metakey:"hexagon jewelry set, geometric pendant necklace set, gold plated necklace with earrings, modern ethnic jewelry, wedding jewelry set for women, party wear necklace set, designer gold pendant set, festive jewelry for girls, statement necklace set, traditional gold fashion jewelry",
+    metakey:"hexagon jewelry set, geometric pendant necklace set, gold plated necklace with earrings, modern ethnic jewelry, wedding jewelry set for women, party wear necklace set, designer gold pendant set, festive jewelry for girls, statement necklace set, traditional gold fashion jewelryhexagon pendant necklace set, traditional gold jewelry set, floral design necklace set, wedding necklace for women, bridal imitation jewelry, gold plated necklace with earrings, ethnic party wear jewelry, festive gold necklace set, designer indian jewelry, geometric floral pendant set",
     material: "Brass",
     stone: "none",
     isBestseller: true,
     inStock: true,
+    isNew: false,
+  },
+  {
+    id: 14,
+    name: "Traditional Gold Plated Royal Paisley Pendant Necklace Set with Earrings for Women",
+    SKU_id: "AVH_JS_014",
+    price: 300,
+    description:
+      `Enhance your ethnic elegance with this Traditional Gold Plated Royal Paisley Pendant Necklace Set featuring a beautifully detailed geometric paisley design centerpiece. Designed with intricate craftsmanship, delicate stone accents, and a rich gold-tone finish, this jewelry set reflects timeless Indian tradition with a modern touch.
+
+The statement paisley pendant paired with matching earrings makes it perfect for weddings, festive occasions, bridal functions, and cultural celebrations. Lightweight yet luxurious, this necklace set pairs beautifully with sarees, lehengas, silk outfits, and Indo-western attire.
+
+An ideal choice for brides, festive styling, party wear, and gifting purposes.`,
+    images: [
+      "https://drive.google.com/uc?export=view&id=1ICUUJFyLqm4rph1Hrbj4mcqVksoVd2JH",
+      "https://drive.google.com/uc?export=view&id=1295fQTb3WpwP6KftvGaF9lVKs26SvtQd",
+      "https://drive.google.com/uc?export=view&id=1295fQTb3WpwP6KftvGaF9lVKs26SvtQd",
+ 
+    ],
+    category: "jewelleryset",
+    metakey:"paisley jewelry set, geometric pendant necklace set, gold plated necklace with earrings, modern ethnic jewelry, wedding jewelry set for women, party wear necklace set, designer gold pendant set, festive jewelry for girls, statement necklace set, traditional gold fashion jewelrypaisley pendant necklace set, traditional gold jewelry set, paisley design necklace set, wedding necklace for women, bridal imitation jewelry, gold plated necklace with earrings, ethnic party wear jewelry, festive gold necklace set, designer indian jewelry, geometric paisley pendant set",
+    material: "Brass",
+    stone: "none",
+    isBestseller: true,
+    inStock: true,
+    isNew: false,
+  },
+  {
+    id: 15,
+    name: "Traditional Gold Plated Royal PDE Pendant Necklace Set with Earrings for Women",
+    SKU_id: "AVH_JS_015",
+    price: 300,
+    description:
+      `Enhance your ethnic elegance with this Traditional Gold Plated Royal PDE Pendant Necklace Set featuring a beautifully detailed geometric paisley design centerpiece. Designed with intricate craftsmanship, delicate stone accents, and a rich gold-tone finish, this jewelry set reflects timeless Indian tradition with a modern touch.
+
+The statement PDE pendant paired with matching earrings makes it perfect for weddings, festive occasions, bridal functions, and cultural celebrations. Lightweight yet luxurious, this necklace set pairs beautifully with sarees, lehengas, silk outfits, and Indo-western attire.
+
+An ideal choice for brides, festive styling, party wear, and gifting purposes.`,
+    images: [   
+      "https://drive.google.com/uc?export=view&id=1frY44a8yMMMUWMic5o03PX0dZbPKNhd8",
+      "https://drive.google.com/uc?export=view&id=1vWVAETBK8VYiEbipquCqbe76d0xAZN78",
+      "https://drive.google.com/uc?export=view&id=1LwyTHFtWufnslKOO5G0a0HPUJ8bb0iwp",
+    ],
+    category: "jewelleryset",
+    metakey:"PDE jewelry set, geometric pendant necklace set, gold plated necklace with earrings, modern ethnic jewelry, wedding jewelry set for women, party wear necklace set, designer gold pendant set, festive jewelry for girls, statement necklace set, traditional gold fashion jewelrypaisley pendant necklace set, traditional gold jewelry set, paisley design necklace set, wedding necklace for women, bridal imitation jewelry, gold plated necklace with earrings, ethnic party wear jewelry, festive gold necklace set, designer indian jewelry, geometric paisley pendant set",
+    material: "Brass",
+    stone: "none",
+    isBestseller: true,
+    inStock: true,
+    isNew: false,
+  },
+  
+  {
+    id: 16,
+    name: "Traditional Zivara Crescent Bloom Gold Necklace Set with Earrings for Women",
+    SKU_id: "AVH_JS_016",
+    price: 300,
+    description:
+      `Elevate your elegance with the Zivara Crescent Bloom Gold Jewellery Set, a stunning fusion of traditional artistry and contemporary charm. This exquisite set features a finely crafted gold-finish necklace paired with matching crescent-inspired earrings, beautifully adorned with sparkling crystal accents and a delicate ruby-tone centerpiece.
+
+The graceful floral and crescent motifs symbolize beauty and prosperity, while the intricate detailing reflects superior craftsmanship. Designed to be lightweight yet luxurious, this jewellery set is perfect for weddings, festive occasions, cultural celebrations, and elegant evening wear.
+
+Whether styled with sarees, lehengas, or ethnic gowns, the Zivara Crescent Bloom set adds timeless sophistication and makes a memorable gifting choice for anniversaries, bridal trousseaus, and festive celebrations.`,
+    images: [   
+      "https://drive.google.com/uc?export=view&id=1BbKKnhfGG6DuaLxl3K90e9POUtsD8gl0",
+    ],
+    category: "jewelleryset",
+    metakey:"gold jewellery set, necklace earrings set for women, crescent gold jewellery, designer gold necklace set, bridal jewellery set, traditional gold jewellery, festive jewellery set, floral gold necklace, ruby accent jewellery, premium Indian jewellery",
+    material: "Brass",
+    stone: "none",
+    isBestseller: true,
+    inStock: false,
+    isNew: false,
+  },
+  {
+    id: 17,
+    name: "Traditional Triveni Trikon Heritage Gold Necklace Set with Earrings for Women",
+    SKU_id: "AVH_JS_017",
+    price: 300,
+    description:
+      `Celebrate timeless tradition with the Triveni Trikon Heritage Gold Necklace Set, inspired by the sacred trikon (triangle) motif symbolizing strength, balance, and prosperity. This exquisite necklace features a beautifully crafted triangular pendant with intricate lattice detailing, enhanced by sparkling stone accents and rich ruby-tone highlights.
+
+The structured gold-finish necklace is paired with matching trikon-style earrings, creating a harmonious and regal look. Designed for weddings, festive occasions, and cultural celebrations, this set blends traditional craftsmanship with elegant detailing, making it ideal for sarees, lehengas, and ethnic ensembles.
+
+Lightweight yet luxurious, the Triveni Trikon set is a perfect choice for bridal wear, festive gifting, and heirloom-inspired collections.`,
+    images: [   
+      "https://drive.google.com/uc?export=view&id=1vXMYjv09pFFZNRcpRuERwRikhqAPP3lF",
+      "https://drive.google.com/uc?export=view&id=1sCfKEsQcmdZtsNankkcV2FiXF5ZZFEEm",
+      "https://drive.google.com/uc?export=view&id=1NHcrAe9N-2Zn9_r9ZrfeF054Wzw1QJIe",
+    ],
+    category: "jewelleryset",
+    metakey:"trikon necklace set, triangle gold necklace, traditional gold necklace set, bridal trikon jewellery, temple style necklace set, gold necklace earrings set, designer gold jewellery, festive jewellery set, ruby accent gold necklace, Indian heritage jewellery",
+    material: "Brass",
+    stone: "none",
+    isBestseller: true,
+    inStock: false,
+    isNew: false,
+  },
+  {
+    id: 18,
+    name: "Traditional Triveni Trikon Heritage Gold Necklace Set with Earrings for Women",
+    SKU_id: "AVH_JS_018",
+    price: 300,
+    description:
+      `Celebrate timeless tradition with the Triveni Trikon Heritage Gold Necklace Set, inspired by the sacred trikon (triangle) motif symbolizing strength, balance, and prosperity. This exquisite necklace features a beautifully crafted triangular pendant with intricate lattice detailing, enhanced by sparkling stone accents and rich ruby-tone highlights.
+
+The structured gold-finish necklace is paired with matching trikon-style earrings, creating a harmonious and regal look. Designed for weddings, festive occasions, and cultural celebrations, this set blends traditional craftsmanship with elegant detailing, making it ideal for sarees, lehengas, and ethnic ensembles.
+
+Lightweight yet luxurious, the Triveni Trikon set is a perfect choice for bridal wear, festive gifting, and heirloom-inspired collections.`,
+    images: [   
+      "https://drive.google.com/uc?export=view&id=16bPvCp7b4DyTj5iDI6YSBs6gbm2bfdnN",
+      "https://drive.google.com/uc?export=view&id=1sCfKEsQcmdZtsNankkcV2FiXF5ZZFEEm",
+      "https://drive.google.com/uc?export=view&id=1NHcrAe9N-2Zn9_r9ZrfeF054Wzw1QJIe",
+    ],
+    category: "jewelleryset",
+    metakey:"trikon necklace set, triangle gold necklace, traditional gold necklace set, bridal trikon jewellery, temple style necklace set, gold necklace earrings set, designer gold jewellery, festive jewellery set, ruby accent gold necklace, Indian heritage jewellery",
+    material: "Brass",
+    stone: "none",
+    isBestseller: true,
+    inStock: false,
     isNew: false,
   },
   
