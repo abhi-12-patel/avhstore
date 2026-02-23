@@ -110,7 +110,7 @@ const ShopAll = ({
       {/* WISHLIST BUTTON */}
       <button
         onClick={handleWishlist}
-        className="absolute right-4 top-4 rounded-full bg-white/90 p-2 shadow-md backdrop-blur transition-all duration-300 hover:scale-110 z-10"
+        className="absolute right-4 top-4 rounded-full bg-white/20 p-2 backdrop-blur-md transition-all duration-300 hover:scale-110 z-10"
         aria-label="Toggle wishlist"
       >
         <FaHeart
@@ -135,12 +135,12 @@ const ShopAll = ({
       </button>
 
       {/* CONTENT */}
-      <div className="p-5">
-        <Link href={safeHref}>
-          <h3 className="mb-2 text-sm font-semibold text-gray-800 transition-colors duration-300 group-hover:text-black">
-            {product.name || product.title}
-          </h3>
-        </Link>
+     <div className="p-5">
+  <Link href={safeHref}>
+    <h3 className="mb-2 text-sm font-semibold text-gray-800 transition-colors duration-300 group-hover:text-black line-clamp-1">
+      {product.name || product.title}
+    </h3>
+  </Link>
 
         {/* <p className="mb-1 text-xs text-gray-400 tracking-wide">{material}</p> */}
 

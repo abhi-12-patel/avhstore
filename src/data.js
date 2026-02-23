@@ -238,6 +238,56 @@ A must-have jewelry set for women and girls who love stylish statement accessori
     inStock: true,
     isNew: false,
   },
+  {
+    id: 12,
+    name: "Traditional Gold Plated Hexagon Pendant Necklace Set with Earrings for Women",
+    SKU_id: "AVH_JS_012",
+    price: 350,
+    description:
+      `Enhance your style with this Elegant Gold Plated Hexagon Pendant Necklace Set featuring a beautifully crafted geometric floral centerpiece with delicate stone detailing. The modern hexagon design combined with a traditional gold-tone finish creates a perfect blend of contemporary and ethnic elegance.
+
+This lightweight necklace set includes matching hexagon earrings, making it ideal for weddings, festive occasions, parties, and special celebrations. The premium gold plating ensures long-lasting shine and a luxurious look. Perfect to pair with sarees, lehengas, gowns, and Indo-western outfits.
+
+A must-have jewelry set for women and girls who love stylish statement accessories.`,
+    images: [
+      "https://drive.google.com/uc?export=view&id=1AIjDCx5JWYRROuLCWoGST7qjNPRbTVyf",
+      "https://drive.google.com/uc?export=view&id=1AWBlA7J9SO9AcrKS1qEwd6B9qe5OGlMY",
+      "https://drive.google.com/uc?export=view&id=1BKxE4Yz0IigFC6nw2YlEZpyxpAIauqGL",
+      "https://drive.google.com/uc?export=view&id=1AcUrCXVxqzA9kAgdMAVerjXMaEDRc5u2",
+    ],
+    category: "jewelleryset",
+    metakey:"hexagon jewelry set, geometric pendant necklace set, gold plated necklace with earrings, modern ethnic jewelry, wedding jewelry set for women, party wear necklace set, designer gold pendant set, festive jewelry for girls, statement necklace set, traditional gold fashion jewelry",
+    material: "Brass",
+    stone: "none",
+    isBestseller: true,
+    inStock: true,
+    isNew: false,
+  },
+  {
+    id: 13,
+    name: "Traditional Gold Plated Hexagon Pendant Necklace Set with Earrings for Women",
+    SKU_id: "AVH_JS_012",
+    price: 350,
+    description:
+      `Enhance your style with this Elegant Gold Plated Hexagon Pendant Necklace Set featuring a beautifully crafted geometric floral centerpiece with delicate stone detailing. The modern hexagon design combined with a traditional gold-tone finish creates a perfect blend of contemporary and ethnic elegance.
+
+This lightweight necklace set includes matching hexagon earrings, making it ideal for weddings, festive occasions, parties, and special celebrations. The premium gold plating ensures long-lasting shine and a luxurious look. Perfect to pair with sarees, lehengas, gowns, and Indo-western outfits.
+
+A must-have jewelry set for women and girls who love stylish statement accessories.`,
+    images: [
+      "https://drive.google.com/uc?export=view&id=1QwOA0fp3U84tpLjKtMWlNdYOz4QXBDC1",
+      "https://drive.google.com/uc?export=view&id=1KrzOySnddO-7Hizv_CRTQa_AnXg4Rvz-",
+      "https://drive.google.com/uc?export=view&id=1BKxE4Yz0IigFC6nw2YlEZpyxpAIauqGL",
+      "https://drive.google.com/uc?export=view&id=1AcUrCXVxqzA9kAgdMAVerjXMaEDRc5u2",
+    ],
+    category: "jewelleryset",
+    metakey:"hexagon jewelry set, geometric pendant necklace set, gold plated necklace with earrings, modern ethnic jewelry, wedding jewelry set for women, party wear necklace set, designer gold pendant set, festive jewelry for girls, statement necklace set, traditional gold fashion jewelry",
+    material: "Brass",
+    stone: "none",
+    isBestseller: true,
+    inStock: true,
+    isNew: false,
+  },
   
 ];
 

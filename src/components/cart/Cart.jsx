@@ -620,7 +620,7 @@ const Cart = () => {
                         </Link>
 
                         <div className="flex flex-col justify-center">
-                          <h3 className="text-base sm:text-lg font-medium text-gray-900 truncate">{item.title}</h3>
+                          <h3 className="text-base text-wrap sm:text-lg font-medium text-gray-900 truncate">{item.title}</h3>
                           <p className="text-xs text-gray-500">SKU: {item.sku}</p>
                           {item.size && (
                             <p className="text-xs sm:text-sm text-gray-500">

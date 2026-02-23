@@ -83,7 +83,7 @@ export default function ProductCard({ product }) {
         {/* Wishlist Icon */}
         <button
           onClick={handleWishlistToggle}
-          className="absolute top-3 right-3 p-2 bg-white rounded-full shadow-md hover:scale-110 transition z-10"
+          className="absolute top-3 right-3 p-2 bg-white/20 p-2 backdrop-blur-md rounded-full shadow-md hover:scale-110 transition z-10"
           aria-label="Wishlist"
         >
           <Heart
@@ -104,9 +104,9 @@ export default function ProductCard({ product }) {
       </Link>
 
       {/* Description Section */}
-      <div className="bg-white p-4 text-center border-t border-gray-100 space-y-1">
+      <div className="bg-white p-4 border-t border-gray-100 space-y-1">
         <Link href={`/product/${product.id}`}>
-          <h3 className="text-sm font-semibold text-gray-900 hover:text-black transition">
+          <h3 className="text-sm truncate font-semibold text-gray-900 hover:text-black transition">
             {productName}
           </h3>
         </Link>
