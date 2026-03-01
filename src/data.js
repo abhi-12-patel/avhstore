@@ -836,6 +836,94 @@ An ideal choice for women and girls who love classy, ethnic, and designer-inspir
     inStock: true,
     isNew: false,
   },
+   {
+    id: 38,
+    name: "Gold Plated Trishul Earrings for Women",
+    SKU_id: "AVH_ER_038",
+    price: 60,
+    description:
+      `Add a touch of elegance to your jewelry collection with these Antique Gold Leaf Drop Earrings featuring a beautiful pink stone centerpiece. Designed with a teardrop top, detailed leaf motif, and circular drop frame, these earrings blend vintage charm with modern style.
+
+The antique gold finish enhances the soft pink stone, making them perfect for weddings, festive occasions, parties, and traditional events. Lightweight and comfortable for long hours, these statement earrings pair beautifully with sarees, lehengas, kurtis, and Indo-western outfits.
+
+An ideal choice for women and girls who love classy, ethnic, and designer-inspired jewelr`,
+    images: [
+      "https://drive.google.com/uc?export=view&id=1KCfEo_C-6BDmcRaVm_vgPm7TiJ6H9rv2",
+    ],
+    category: "bracelets",
+    metakey:"Shop premium gold plated heart dangle earrings for women. Lightweight, stylish party wear jewelry perfect for weddings, festivals & daily wear. Ideal gift for girls.",
+    material: "Brass",
+    stone: "none",
+    isBestseller: true,
+    inStock: true,
+    isNew: false,
+  },
+   {
+    id: 39,
+    name: "Gold Plated Trishul Earrings for Women",
+    SKU_id: "AVH_ER_039",
+    price: 60,
+    description:
+      `Add a touch of elegance to your jewelry collection with these Antique Gold Leaf Drop Earrings featuring a beautiful pink stone centerpiece. Designed with a teardrop top, detailed leaf motif, and circular drop frame, these earrings blend vintage charm with modern style.
+
+The antique gold finish enhances the soft pink stone, making them perfect for weddings, festive occasions, parties, and traditional events. Lightweight and comfortable for long hours, these statement earrings pair beautifully with sarees, lehengas, kurtis, and Indo-western outfits.
+
+An ideal choice for women and girls who love classy, ethnic, and designer-inspired jewelr`,
+    images: [
+      "https://drive.google.com/uc?export=view&id=1KIp5aTnMZl7kmp0b0Z5cWZ5jEp6FGxIx",
+    ],
+    category: "bracelets",
+    metakey:"Shop premium gold plated heart dangle earrings for women. Lightweight, stylish party wear jewelry perfect for weddings, festivals & daily wear. Ideal gift for girls.",
+    material: "Brass",
+    stone: "none",
+    isBestseller: true,
+    inStock: true,
+    isNew: false,
+  },
+   {
+    id: 41,
+    name: "Gold Plated Trishul Earrings for Women",
+    SKU_id: "AVH_ER_041",
+    price: 60,
+    description:
+      `Add a touch of elegance to your jewelry collection with these Antique Gold Leaf Drop Earrings featuring a beautiful pink stone centerpiece. Designed with a teardrop top, detailed leaf motif, and circular drop frame, these earrings blend vintage charm with modern style.
+
+The antique gold finish enhances the soft pink stone, making them perfect for weddings, festive occasions, parties, and traditional events. Lightweight and comfortable for long hours, these statement earrings pair beautifully with sarees, lehengas, kurtis, and Indo-western outfits.
+
+An ideal choice for women and girls who love classy, ethnic, and designer-inspired jewelr`,
+    images: [
+      "https://drive.google.com/uc?export=view&id=1KKLzY0Ax2Chw7kNSal_vsjEXJc3dYX40",
+    ],
+    category: "bracelets",
+    metakey:"Shop premium gold plated heart dangle earrings for women. Lightweight, stylish party wear jewelry perfect for weddings, festivals & daily wear. Ideal gift for girls.",
+    material: "Brass",
+    stone: "none",
+    isBestseller: true,
+    inStock: true,
+    isNew: false,
+  },
+   {
+    id: 40,
+    name: "Gold Plated Trishul Earrings for Women",
+    SKU_id: "AVH_ER_040",
+    price: 60,
+    description:
+      `Add a touch of elegance to your jewelry collection with these Antique Gold Leaf Drop Earrings featuring a beautiful pink stone centerpiece. Designed with a teardrop top, detailed leaf motif, and circular drop frame, these earrings blend vintage charm with modern style.
+
+The antique gold finish enhances the soft pink stone, making them perfect for weddings, festive occasions, parties, and traditional events. Lightweight and comfortable for long hours, these statement earrings pair beautifully with sarees, lehengas, kurtis, and Indo-western outfits.
+
+An ideal choice for women and girls who love classy, ethnic, and designer-inspired jewelr`,
+    images: [
+      "https://drive.google.com/uc?export=view&id=1KFzUCSvmvWbxwHivBf2YuPVOeUI7lPmD",
+    ],
+    category: "bracelets",
+    metakey:"Shop premium gold plated heart dangle earrings for women. Lightweight, stylish party wear jewelry perfect for weddings, festivals & daily wear. Ideal gift for girls.",
+    material: "Brass",
+    stone: "none",
+    isBestseller: true,
+    inStock: true,
+    isNew: false,
+  },
 ];
 
 export const categories = [
