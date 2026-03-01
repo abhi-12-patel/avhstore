@@ -1,5 +1,7 @@
 // data.js
 
+const PRODUCT_CREATE_DATE = "2026-03-01";
+
 export const products = [
    {
     id: 15,
@@ -661,20 +663,20 @@ An ideal choice for women and girls who love classy, ethnic, and designer-inspir
   },
     {
     id: 30,
-    name: "Gold Plated Trishul Earrings for Women",
+    name: "Rose Gold Plated LOVE Bracelet for Women & Girls | Stylish Letter Design Kada Bracelet | Trendy Party Wear & Gift Jewellery",
     SKU_id: "AVH_ER_030",
     price: 200,
     description:
-      `Add a touch of elegance to your jewelry collection with these Antique Gold Leaf Drop Earrings featuring a beautiful pink stone centerpiece. Designed with a teardrop top, detailed leaf motif, and circular drop frame, these earrings blend vintage charm with modern style.
+      `Celebrate love and style with this elegant Rose Gold LOVE Letter Bracelet. Designed with a modern and minimal look, this bracelet features a stylish “LOVE” letter charm in a classy black and white enamel finish. The smooth rose gold plating enhances its premium and luxurious appeal.
 
-The antique gold finish enhances the soft pink stone, making them perfect for weddings, festive occasions, parties, and traditional events. Lightweight and comfortable for long hours, these statement earrings pair beautifully with sarees, lehengas, kurtis, and Indo-western outfits.
+Crafted with a sturdy kada-style band and secure clasp lock, this bracelet ensures a comfortable and perfect fit. Its lightweight design makes it ideal for daily wear, parties, dates, and special occasions.
 
-An ideal choice for women and girls who love classy, ethnic, and designer-inspired jewelr`,
+This bracelet is a perfect gift choice for birthdays, anniversaries, Valentine’s Day, or as a surprise for someone special. It pairs beautifully with both western and traditional outfits.`,
     images: [
       "https://drive.google.com/uc?export=view&id=1JbxvhIc6Artek8exQdSen1MIuxPYRCP5",
     ],
     category: "bracelets",
-    metakey:"Shop premium gold plated heart dangle earrings for women. Lightweight, stylish party wear jewelry perfect for weddings, festivals & daily wear. Ideal gift for girls.",
+    metakey:"rose gold bracelet for women, love bracelet for girls, letter charm bracelet, stylish kada for women, trendy bracelet 2026, romantic gift bracelet, party wear bracelet, designer bracelet for women, fancy jewellery for girls, valentine gift bracelet",
     material: "Brass",
     stone: "none",
     isBestseller: true,
@@ -684,20 +686,20 @@ An ideal choice for women and girls who love classy, ethnic, and designer-inspir
 
    {
     id: 31,
-    name: "Gold Plated Trishul Earrings for Women",
+    name: "Rose Gold Plated Heart Bracelet for Women & Girls | Crystal Studded Stylish Kada Bracelet | Party Wear & Gift Jewellery",
     SKU_id: "AVH_ER_031",
     price: 200,
     description:
-      `Add a touch of elegance to your jewelry collection with these Antique Gold Leaf Drop Earrings featuring a beautiful pink stone centerpiece. Designed with a teardrop top, detailed leaf motif, and circular drop frame, these earrings blend vintage charm with modern style.
+      `Upgrade your jewellery collection with this Elegant Rose Gold Double Heart Crystal Bracelet, designed to add charm and sophistication to your look. Featuring a beautiful dual-heart centerpiece — one polished solid heart and one crystal-studded open heart — this bracelet symbolizes love, elegance, and modern style.
 
-The antique gold finish enhances the soft pink stone, making them perfect for weddings, festive occasions, parties, and traditional events. Lightweight and comfortable for long hours, these statement earrings pair beautifully with sarees, lehengas, kurtis, and Indo-western outfits.
+The sleek rose gold finish combined with sparkling crystal stones gives it a premium and luxurious appeal. Its secure clasp lock ensures a comfortable and firm fit, making it perfect for daily wear as well as special occasions.
 
-An ideal choice for women and girls who love classy, ethnic, and designer-inspired jewelr`,
+Whether you're attending a party, celebration, wedding, or looking for a thoughtful gift, this bracelet is a perfect choice for women and girls who love stylish and trendy jewellery.`,
     images: [
       "https://drive.google.com/uc?export=view&id=1JRPoRAWYvtp3iHMKISkDNcpYOVCqRD6-",
     ],
     category: "bracelets",
-    metakey:"Shop premium gold plated heart dangle earrings for women. Lightweight, stylish party wear jewelry perfect for weddings, festivals & daily wear. Ideal gift for girls.",
+    metakey:"rose gold bracelet for women, heart bracelet for girls, crystal bracelet, stylish kada for women, fancy bracelet, party wear bracelet, love heart bracelet, trendy jewellery 2026, gift bracelet for girlfriend, designer bracelet for women",
     material: "Brass",
     stone: "none",
     isBestseller: true,
@@ -706,20 +708,20 @@ An ideal choice for women and girls who love classy, ethnic, and designer-inspir
   },
    {
     id: 32,
-    name: "Gold Plated Trishul Earrings for Women",
+    name: "Rose Gold Plated Black Stone Bracelet for Women & Girls | Geometric Circle Design Stylish Kada | Party Wear & Trendy Jewellery",
     SKU_id: "AVH_ER_032",
     price: 200,
     description:
-      `Add a touch of elegance to your jewelry collection with these Antique Gold Leaf Drop Earrings featuring a beautiful pink stone centerpiece. Designed with a teardrop top, detailed leaf motif, and circular drop frame, these earrings blend vintage charm with modern style.
+      `Enhance your style with this elegant Rose Gold Black Stone Geometric Bracelet, designed for women who love modern and classy jewellery. Featuring a bold black round centerpiece with matching side accents and stylish circular elements, this bracelet gives a sophisticated and contemporary look.
 
-The antique gold finish enhances the soft pink stone, making them perfect for weddings, festive occasions, parties, and traditional events. Lightweight and comfortable for long hours, these statement earrings pair beautifully with sarees, lehengas, kurtis, and Indo-western outfits.
+The premium rose gold plating beautifully complements the black stone detailing, creating a perfect balance of elegance and trend. Its sleek kada-style structure with secure lock closure ensures a comfortable and firm fit for daily wear as well as special occasions.
 
-An ideal choice for women and girls who love classy, ethnic, and designer-inspired jewelr`,
+Perfect for parties, office wear, casual outings, and gifting, this bracelet adds a statement touch to both western and ethnic outfits.`,
     images: [
       "https://drive.google.com/uc?export=view&id=1Jv6eODf_Tv1aWaTJo9I9UgPorlhRxeIv",
     ],
     category: "bracelets",
-    metakey:"Shop premium gold plated heart dangle earrings for women. Lightweight, stylish party wear jewelry perfect for weddings, festivals & daily wear. Ideal gift for girls.",
+    metakey:"rose gold bracelet for women, black stone bracelet, geometric bracelet for girls, stylish kada bracelet, trendy bracelet 2026, party wear bracelet, designer bracelet for women, modern jewellery, fancy bracelet for girls, gift bracelet for women",
     material: "Brass",
     stone: "none",
     isBestseller: true,
@@ -750,20 +752,20 @@ An ideal choice for women and girls who love classy, ethnic, and designer-inspir
   },
    {
     id: 34,
-    name: "Gold Plated Trishul Earrings for Women",
+    name: "Rose Gold Plated Butterfly Bracelet with Crystal Stones | Stylish Kada Bracelet for Women & Girls | Party & Gift Wear Jewellery",
     SKU_id: "AVH_ER_034",
     price:200,
     description:
-      `Add a touch of elegance to your jewelry collection with these Antique Gold Leaf Drop Earrings featuring a beautiful pink stone centerpiece. Designed with a teardrop top, detailed leaf motif, and circular drop frame, these earrings blend vintage charm with modern style.
+      `Add elegance and charm to your jewelry collection with this stunning Rose Gold Butterfly Bracelet. Beautifully designed with delicate butterfly motifs, this bracelet features sparkling crystal stones that enhance its luxurious and feminine look. The sleek rose gold finish gives it a modern yet classy appeal, making it perfect for both daily wear and special occasions.
 
-The antique gold finish enhances the soft pink stone, making them perfect for weddings, festive occasions, parties, and traditional events. Lightweight and comfortable for long hours, these statement earrings pair beautifully with sarees, lehengas, kurtis, and Indo-western outfits.
+Crafted with high-quality plating and a secure clasp closure, this bracelet ensures comfort and durability. Its lightweight design makes it ideal for long wear without discomfort.
 
-An ideal choice for women and girls who love classy, ethnic, and designer-inspired jewelr`,
+Perfect for birthdays, anniversaries, parties, weddings, or as a thoughtful gift for someone special.`,
     images: [
       "https://drive.google.com/uc?export=view&id=1JzibhqOz366S-rNHTaGThTBymsTz8NVz",
     ],
     category: "bracelets",
-    metakey:"Shop premium gold plated heart dangle earrings for women. Lightweight, stylish party wear jewelry perfect for weddings, festivals & daily wear. Ideal gift for girls.",
+    metakey:"rose gold bracelet for women, butterfly bracelet, crystal bracelet for girls, stylish kada for women, party wear bracelet, gift bracelet for girls, fancy bracelet, designer bracelet for women, latest bracelet design, trendy jewelry 2026",
     material: "Brass",
     stone: "none",
     isBestseller: true,
@@ -816,20 +818,20 @@ An ideal choice for women and girls who love classy, ethnic, and designer-inspir
   },
    {
     id: 37,
-    name: "Gold Plated Trishul Earrings for Women",
+    name: "Rose Gold Plated Black Butterfly Bracelet for Women & Girls | Crystal Studded Stylish Kada | Trendy Party Wear Jewellery",
     SKU_id: "AVH_ER_037",
     price:200,
     description:
-      `Add a touch of elegance to your jewelry collection with these Antique Gold Leaf Drop Earrings featuring a beautiful pink stone centerpiece. Designed with a teardrop top, detailed leaf motif, and circular drop frame, these earrings blend vintage charm with modern style.
+      `Add a touch of elegance and charm to your jewellery collection with this stunning Rose Gold Black Butterfly Bracelet. Featuring a sleek butterfly centerpiece with glossy black enamel detailing, this bracelet beautifully blends modern style with feminine grace.
 
-The antique gold finish enhances the soft pink stone, making them perfect for weddings, festive occasions, parties, and traditional events. Lightweight and comfortable for long hours, these statement earrings pair beautifully with sarees, lehengas, kurtis, and Indo-western outfits.
+The delicate crystal accents along the band enhance its luxurious appeal, while the premium rose gold plating gives it a classy and sophisticated finish. Designed with a secure clasp lock, this bracelet ensures a comfortable and firm fit for everyday wear as well as special occasions.
 
-An ideal choice for women and girls who love classy, ethnic, and designer-inspired jewelr`,
+Perfect for parties, office wear, casual outings, and gifting, this stylish bracelet pairs effortlessly with both western and traditional outfits.`,
     images: [
       "https://drive.google.com/uc?export=view&id=1K8mlyOD0PVmrhdlCq8CeSS1UxZs-sXqS",
     ],
     category: "bracelets",
-    metakey:"Shop premium gold plated heart dangle earrings for women. Lightweight, stylish party wear jewelry perfect for weddings, festivals & daily wear. Ideal gift for girls.",
+    metakey:"rose gold bracelet for women, butterfly bracelet for girls, black butterfly bracelet, crystal bracelet, stylish kada for women, trendy bracelet 2026, party wear bracelet, designer bracelet for women, fancy jewellery for girls, gift bracelet for girlfriend",
     material: "Brass",
     stone: "none",
     isBestseller: true,

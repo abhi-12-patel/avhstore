@@ -32,8 +32,7 @@ const Part5 = () => {
   return (
     <div className="text-gray-600 px-4 py-8 md:px-[14%]" style={{ fontFamily: 'Inter, sans-serif' }}>
       {/* Header and 'View all' for PC */}
-            <h1 className="text-2xl">Most Loved</h1>
-            <span className="text-2xl">Bestsellers</span>
+            <h1 className="text-2xl">Hot Selling Product</h1>
 
       {/* PC View Grid */}
       <div className="hidden md:grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 justify-items-center">

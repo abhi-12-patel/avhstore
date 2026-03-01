@@ -8,7 +8,7 @@ const PrivacyPolicySection = () => {
       <div className="bg-white p-8 sm:p-12 md:p-16 flex flex-col items-center w-full max-w-2xl lg:max-w-xl text-left"> {/* Increased max-width for readability */}
         
         <h1 className="text-4xl font-normal text-gray-800 mb-2 text-center">Privacy policy</h1> {/* Centered main title */}
-        <p className="text-gray-600 mb-8">Last updated: February 22, 2025</p>
+        <p className="text-gray-600 mb-8">Last updated: February 22, 2026</p>
 
         <p className="text-gray-700 leading-relaxed mb-4">
           This Privacy Policy describes how AVH Store Artificial (the "Site", "we" "us", or "our" collects, uses, and discloses your personal
@@ -127,7 +127,7 @@ const PrivacyPolicySection = () => {
         <h2 className="text-3xl font-normal text-gray-800 mb-4">Cookies</h2>
         <p className="text-gray-700 leading-relaxed mb-4">
           Like many websites, we use Cookies on our Site. For specific Information about the Cookies that we use related to powering
-          our store with Shopify, see <a href="https://www.shopify.com/legal/cookies" className="text-blue-600 hover:underline">https://www.shopify.com/legal/cookies</a>. We use Cookies to power
+          our store with, see We use Cookies to power
           and improve our Site and our Services (including to remember your actions and preferences), to run analytics and better
           understand user interaction with the Services (in our legitimate interests to administer, improve and optimize the Services). We
           may also permit third parties and services providers to use Cookies on our Site to better tailor the services, products and

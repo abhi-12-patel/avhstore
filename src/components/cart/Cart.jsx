@@ -33,7 +33,7 @@ const Cart = () => {
   const STORE_INFO = {
     name: "AVH STORE",
     address: "RAJOT",
-    gstin: "RTOUFGV56790",
+    // gstin: "RTOUFGV56790",
     phone: "9016457163",
     email: "avhstore@example.com",
   };
@@ -347,7 +347,6 @@ const Cart = () => {
               <span>📍 ${STORE_INFO.address}</span>
               <span>📞 ${STORE_INFO.phone}</span>
               <span>📧 ${STORE_INFO.email}</span>
-              <span>🔖 GSTIN: ${STORE_INFO.gstin}</span>
             </div>
             
             <div class="invoice-meta">
