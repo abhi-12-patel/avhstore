@@ -641,7 +641,7 @@ An ideal choice for women and girls who love classy, ethnic, and designer-inspir
     id: 29,
     name: "Gold Plated Trishul Earrings for Women",
     SKU_id: "AVH_ER_029",
-    price: 60,
+    price: 200,
     description:
       `Add a touch of elegance to your jewelry collection with these Antique Gold Leaf Drop Earrings featuring a beautiful pink stone centerpiece. Designed with a teardrop top, detailed leaf motif, and circular drop frame, these earrings blend vintage charm with modern style.
 
@@ -663,7 +663,7 @@ An ideal choice for women and girls who love classy, ethnic, and designer-inspir
     id: 30,
     name: "Gold Plated Trishul Earrings for Women",
     SKU_id: "AVH_ER_030",
-    price: 60,
+    price: 200,
     description:
       `Add a touch of elegance to your jewelry collection with these Antique Gold Leaf Drop Earrings featuring a beautiful pink stone centerpiece. Designed with a teardrop top, detailed leaf motif, and circular drop frame, these earrings blend vintage charm with modern style.
 
@@ -686,7 +686,7 @@ An ideal choice for women and girls who love classy, ethnic, and designer-inspir
     id: 31,
     name: "Gold Plated Trishul Earrings for Women",
     SKU_id: "AVH_ER_031",
-    price: 60,
+    price: 200,
     description:
       `Add a touch of elegance to your jewelry collection with these Antique Gold Leaf Drop Earrings featuring a beautiful pink stone centerpiece. Designed with a teardrop top, detailed leaf motif, and circular drop frame, these earrings blend vintage charm with modern style.
 
@@ -708,7 +708,7 @@ An ideal choice for women and girls who love classy, ethnic, and designer-inspir
     id: 32,
     name: "Gold Plated Trishul Earrings for Women",
     SKU_id: "AVH_ER_032",
-    price: 60,
+    price: 200,
     description:
       `Add a touch of elegance to your jewelry collection with these Antique Gold Leaf Drop Earrings featuring a beautiful pink stone centerpiece. Designed with a teardrop top, detailed leaf motif, and circular drop frame, these earrings blend vintage charm with modern style.
 
@@ -730,7 +730,7 @@ An ideal choice for women and girls who love classy, ethnic, and designer-inspir
     id: 33,
     name: "Gold Plated Trishul Earrings for Women",
     SKU_id: "AVH_ER_033",
-    price: 60,
+    price:200,
     description:
       `Add a touch of elegance to your jewelry collection with these Antique Gold Leaf Drop Earrings featuring a beautiful pink stone centerpiece. Designed with a teardrop top, detailed leaf motif, and circular drop frame, these earrings blend vintage charm with modern style.
 
@@ -752,7 +752,7 @@ An ideal choice for women and girls who love classy, ethnic, and designer-inspir
     id: 34,
     name: "Gold Plated Trishul Earrings for Women",
     SKU_id: "AVH_ER_034",
-    price: 60,
+    price:200,
     description:
       `Add a touch of elegance to your jewelry collection with these Antique Gold Leaf Drop Earrings featuring a beautiful pink stone centerpiece. Designed with a teardrop top, detailed leaf motif, and circular drop frame, these earrings blend vintage charm with modern style.
 
@@ -774,7 +774,7 @@ An ideal choice for women and girls who love classy, ethnic, and designer-inspir
     id: 35,
     name: "Gold Plated Trishul Earrings for Women",
     SKU_id: "AVH_ER_035",
-    price: 60,
+    price:200,
     description:
       `Add a touch of elegance to your jewelry collection with these Antique Gold Leaf Drop Earrings featuring a beautiful pink stone centerpiece. Designed with a teardrop top, detailed leaf motif, and circular drop frame, these earrings blend vintage charm with modern style.
 
@@ -796,7 +796,7 @@ An ideal choice for women and girls who love classy, ethnic, and designer-inspir
     id: 36,
     name: "Gold Plated Trishul Earrings for Women",
     SKU_id: "AVH_ER_036",
-    price: 60,
+    price:200,
     description:
       `Add a touch of elegance to your jewelry collection with these Antique Gold Leaf Drop Earrings featuring a beautiful pink stone centerpiece. Designed with a teardrop top, detailed leaf motif, and circular drop frame, these earrings blend vintage charm with modern style.
 
@@ -818,7 +818,7 @@ An ideal choice for women and girls who love classy, ethnic, and designer-inspir
     id: 37,
     name: "Gold Plated Trishul Earrings for Women",
     SKU_id: "AVH_ER_037",
-    price: 60,
+    price:200,
     description:
       `Add a touch of elegance to your jewelry collection with these Antique Gold Leaf Drop Earrings featuring a beautiful pink stone centerpiece. Designed with a teardrop top, detailed leaf motif, and circular drop frame, these earrings blend vintage charm with modern style.
 
@@ -840,7 +840,7 @@ An ideal choice for women and girls who love classy, ethnic, and designer-inspir
     id: 38,
     name: "Gold Plated Trishul Earrings for Women",
     SKU_id: "AVH_ER_038",
-    price: 60,
+    price: 200,
     description:
       `Add a touch of elegance to your jewelry collection with these Antique Gold Leaf Drop Earrings featuring a beautiful pink stone centerpiece. Designed with a teardrop top, detailed leaf motif, and circular drop frame, these earrings blend vintage charm with modern style.
 
@@ -862,7 +862,7 @@ An ideal choice for women and girls who love classy, ethnic, and designer-inspir
     id: 39,
     name: "Gold Plated Trishul Earrings for Women",
     SKU_id: "AVH_ER_039",
-    price: 60,
+    price: 200,
     description:
       `Add a touch of elegance to your jewelry collection with these Antique Gold Leaf Drop Earrings featuring a beautiful pink stone centerpiece. Designed with a teardrop top, detailed leaf motif, and circular drop frame, these earrings blend vintage charm with modern style.
 
@@ -884,7 +884,7 @@ An ideal choice for women and girls who love classy, ethnic, and designer-inspir
     id: 41,
     name: "Gold Plated Trishul Earrings for Women",
     SKU_id: "AVH_ER_041",
-    price: 60,
+    price:200,
     description:
       `Add a touch of elegance to your jewelry collection with these Antique Gold Leaf Drop Earrings featuring a beautiful pink stone centerpiece. Designed with a teardrop top, detailed leaf motif, and circular drop frame, these earrings blend vintage charm with modern style.
 
@@ -906,7 +906,7 @@ An ideal choice for women and girls who love classy, ethnic, and designer-inspir
     id: 40,
     name: "Gold Plated Trishul Earrings for Women",
     SKU_id: "AVH_ER_040",
-    price: 60,
+    price:200,
     description:
       `Add a touch of elegance to your jewelry collection with these Antique Gold Leaf Drop Earrings featuring a beautiful pink stone centerpiece. Designed with a teardrop top, detailed leaf motif, and circular drop frame, these earrings blend vintage charm with modern style.
 
