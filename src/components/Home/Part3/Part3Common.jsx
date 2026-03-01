@@ -1,4 +1,5 @@
 'use client';
+import ImageWithFallback from '@/components/ImageWithFallback';
 import Link from 'next/link';
 import React from 'react';
 
@@ -10,7 +11,7 @@ const Part3Common = ({ imageUrl, title, linkHref = '#' }) => {
       style={{ fontFamily: 'Inter, sans-serif' }}
     >
       <div className="w-full h-3/4 overflow-hidden">
-        <img
+        <ImageWithFallback
           src={imageUrl}
           alt={title}
           className="w-full h-full object-cover transform transition-transform duration-300 group-hover:scale-103 "

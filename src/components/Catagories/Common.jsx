@@ -2,6 +2,7 @@
 import Link from 'next/link';
 import React from 'react';
 import { useStore } from '@/store/useStore';
+import ImageWithFallback from '../ImageWithFallback';
 
 const Common = ({ id, imageUrl, title, linkHref = '#', price }) => {
   const { addToCart, addToWishlist, removeFromWishlist, isInWishlist } = useStore();
@@ -11,16 +12,16 @@ const Common = ({ id, imageUrl, title, linkHref = '#', price }) => {
 
   return (
     <div
-      className="block overflow-hidden group transform transition-transform duration-500"
+      className="block w-full max-w-[280px] overflow-hidden group transform transition-transform duration-500"
       style={{ fontFamily: 'Inter, sans-serif' }}
     >
       <Link href={linkHref} className="block cursor-pointer">
         {/* Image Section */}
-        <div className="overflow-hidden">
-          <img
+        <div className="w-full aspect-[4/5] overflow-hidden rounded-xl bg-gray-100">
+          <ImageWithFallback
             src={imageUrl}
             alt={title}
-            className="w-full h-auto object-cover transform transition-transform duration-300 group-hover:scale-103"
+            className="w-full h-full object-cover transform transition-transform duration-300 group-hover:scale-105"
             onError={(e) => {
               e.target.onerror = null;
               e.target.src = `https://placehold.co/600x400/CCCCCC/333333?text=Image+Not+Found`;

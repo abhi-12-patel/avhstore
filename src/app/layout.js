@@ -4,6 +4,7 @@ import Header from "@/components/common/Header/Header";
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Footer from "@/components/common/Footer";
+import AppToaster from "@/components/common/AppToaster";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,6 +28,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-white text-black`}
       >
+          <AppToaster />
           <Header/>
           <div className="pt-[14%] bg-white ">
           {children}

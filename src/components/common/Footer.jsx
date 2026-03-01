@@ -54,12 +54,12 @@ const Footer = () => {
             </p>
 
             <div className="mt-6 flex justify-center gap-3 md:justify-start">
-              <a href="#" className="rounded-full border border-stone-300 p-2.5 text-stone-700 hover:border-stone-900 hover:text-stone-900 transition">
+              {/* <a href="#" className="rounded-full border border-stone-300 p-2.5 text-stone-700 hover:border-stone-900 hover:text-stone-900 transition">
                 <FaFacebookF className="text-sm" />
               </a>
               <a href="#" className="rounded-full border border-stone-300 p-2.5 text-stone-700 hover:border-stone-900 hover:text-stone-900 transition">
                 <FaPinterestP className="text-sm" />
-              </a>
+              </a> */}
               <a href="#" className="rounded-full border border-stone-300 p-2.5 text-stone-700 hover:border-stone-900 hover:text-stone-900 transition">
                 <FaInstagram className="text-sm" />
               </a>
@@ -108,10 +108,10 @@ const Footer = () => {
           <p>&copy; 2026 AVH Store Jewels. All rights reserved.</p>
 
           <div className="flex flex-wrap gap-2">
-            <span className="rounded-full border border-stone-300 px-3 py-1">Visa</span>
+            {/* <span className="rounded-full border border-stone-300 px-3 py-1">Visa</span>
             <span className="rounded-full border border-stone-300 px-3 py-1">Mastercard</span>
             <span className="rounded-full border border-stone-300 px-3 py-1">RuPay</span>
-            <span className="rounded-full border border-stone-300 px-3 py-1">UPI</span>
+            <span className="rounded-full border border-stone-300 px-3 py-1">UPI</span> */}
           </div>
         </div>
 

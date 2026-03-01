@@ -2,6 +2,15 @@ import { create } from 'zustand';
 import { persist } from 'zustand/middleware';
 import { products } from '@/data';
 
+const emitToast = (message, type = 'success') => {
+  if (typeof window === 'undefined') return;
+  window.dispatchEvent(
+    new CustomEvent('app-toast', {
+      detail: { message, type },
+    })
+  );
+};
+
 const productMap = new Map(
   (Array.isArray(products) ? products : []).map((product) => [
     String(product?.id ?? ''),
@@ -70,6 +79,7 @@ export const useStore = create()(
           );
 
           if (existingItem) {
+            emitToast('Cart quantity updated successfully');
             return {
               cart: state.cart.map((item) =>
                 String(item.product.id) === productId &&
@@ -80,6 +90,7 @@ export const useStore = create()(
             };
           }
 
+          emitToast('Added to cart successfully');
           return {
             cart: [
               ...state.cart,
@@ -143,9 +154,11 @@ export const useStore = create()(
               (item) => String(item.product.id) === productId
             )
           ) {
+            emitToast('Already in wishlist', 'info');
             return state;
           }
 
+          emitToast('Added to wishlist successfully');
           return {
             wishlist: [
               ...state.wishlist,
@@ -162,6 +175,7 @@ export const useStore = create()(
             (item) => String(item.product.id) !== normalizedProductId
           ),
         }));
+        emitToast('Removed from wishlist', 'info');
       },
 
       isInWishlist: (productId) => {

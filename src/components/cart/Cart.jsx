@@ -1,11 +1,12 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useMemo, useState } from "react";
 import Link from "next/link";
 import { useStore } from "@/store/useStore";
 import { Minus, Plus, X, ShoppingBag, ArrowRight, Download, Send } from "lucide-react";
 import ImageWithFallback from "../ImageWithFallback";
-import { FREE_SHIPPING_MIN, OFFER_RULES } from "@/data";
+import { FREE_SHIPPING_MIN, OFFER_RULES, products as catalogProducts } from "@/data";
+import ProductCard from "../common/productCart/ProductCart";
 
 const WHATSAPP_NUMBER = "919016457163";
 const CHECKOUT_FIELDS = [
@@ -18,7 +19,7 @@ const CHECKOUT_FIELDS = [
 ];
 
 const Cart = () => {
-  const { cart, removeFromCart, updateQuantity, clearCart } = useStore();
+  const { cart, addToCart, removeFromCart, updateQuantity, clearCart } = useStore();
   console.log(cart,"Cart")
   const [showCheckout, setShowCheckout] = useState(false);
   const [form, setForm] = useState({
@@ -32,7 +33,7 @@ const Cart = () => {
 
   const STORE_INFO = {
     name: "AVH STORE",
-    address: "RAJOT",
+    address: "C/O 133, Laxmi Palace, Street No. 5, Radha Nagar, Radha Nagar Society, Chandreshnagar, Rajkot, Gujarat pin-360004",
     // gstin: "RTOUFGV56790",
     phone: "9016457163",
     email: "avhstore@example.com",
@@ -82,7 +83,7 @@ const Cart = () => {
   const discountPercent = applicableOffer?.discount || 0;
   const discountAmount = (subtotal * discountPercent) / 100;
   const subtotalAfterDiscount = subtotal - discountAmount;
-  const gst = subtotalAfterDiscount * 0.03;
+  const gst = subtotalAfterDiscount * 1;
   const shipping = subtotal > 0 && subtotal < FREE_SHIPPING_MIN ? 50 : 0;
   const finalTotal = subtotalAfterDiscount + gst + shipping;
 
@@ -100,15 +101,41 @@ const Cart = () => {
       maximumFractionDigits: 0,
     }).format(price);
 
+  const peopleAlsoBuy = useMemo(() => {
+    const cartIds = new Set(
+      normalizedCart.map((item) => String(item?.id ?? ""))
+    );
+
+    const pool = (Array.isArray(catalogProducts) ? catalogProducts : [])
+      .filter((item) => item && !cartIds.has(String(item.id)))
+      .filter((item) => item.inStock !== false);
+
+    const shuffled = [...pool].sort(() => Math.random() - 0.5);
+    return shuffled.slice(0, 4);
+  }, [normalizedCart]);
+
+  const handleQuickAddToCart = (product) => {
+    if (!product) return;
+    addToCart(product, 1, "Free Size");
+  };
+
+  const createInvoiceMeta = () => {
+    const now = new Date();
+    return {
+      invoiceNumber: `INV-${Date.now().toString().slice(-8)}`,
+      date: now.toLocaleDateString("en-IN", {
+        day: "numeric",
+        month: "long",
+        year: "numeric",
+      }),
+    };
+  };
+
   /* ---------------- GENERATE INVOICE HTML ---------------- */
   const generateInvoiceHTML = (options = {}) => {
     const compact = Boolean(options.compact);
-    const invoiceNumber = `INV-${Date.now().toString().slice(-8)}`;
-    const date = new Date().toLocaleDateString("en-IN", {
-      day: "numeric",
-      month: "long",
-      year: "numeric",
-    });
+    const invoiceMeta = options.invoiceMeta || createInvoiceMeta();
+    const { invoiceNumber, date } = invoiceMeta;
 
     const itemsHTML = normalizedCart
       .map((item, index) => {
@@ -240,6 +267,51 @@ const Cart = () => {
             grid-template-columns: repeat(2, 1fr);
             gap: 16px;
           }
+
+          .billing-grid {
+            display: grid;
+            grid-template-columns: 1fr 1px 1fr;
+            gap: 20px;
+            align-items: stretch;
+          }
+
+          .center-divider {
+            background: #cbd5e0;
+            width: 1px;
+          }
+
+          .billing-column {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+          }
+
+          .billing-title {
+            font-size: 14px;
+            font-weight: 700;
+            color: #2d3748;
+            text-transform: uppercase;
+            letter-spacing: 0.4px;
+          }
+
+          .billing-row {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+          }
+
+          .billing-label {
+            font-size: 12px;
+            color: #718096;
+            font-weight: 500;
+          }
+
+          .billing-value {
+            font-size: 14px;
+            color: #1a202c;
+            font-weight: 600;
+            line-height: 1.45;
+          }
           
           .detail-item {
             display: flex;
@@ -328,6 +400,18 @@ const Cart = () => {
             font-size: ${compact ? "12px" : "13px"};
             page-break-inside: avoid;
           }
+
+          @media (max-width: 680px) {
+            .billing-grid {
+              grid-template-columns: 1fr;
+              gap: 14px;
+            }
+
+            .center-divider {
+              width: 100%;
+              height: 1px;
+            }
+          }
           
           @media print {
             body { background: white; padding: 0; }
@@ -366,19 +450,34 @@ const Cart = () => {
           </div>
           
           <div class="customer-section">
-            <div class="section-title">Bill To:</div>
-            <div class="customer-details">
-              <div class="detail-item">
-                <span class="detail-label">Customer Name</span>
-                <span class="detail-value">${form.fullName || "N/A"}</span>
+            <div class="section-title">Billing Details</div>
+            <div class="billing-grid">
+              <div class="billing-column">
+                <div class="billing-title">Customer</div>
+                <div class="billing-row">
+                  <span class="billing-label">Name</span>
+                  <span class="billing-value">${form.fullName || "N/A"} </span>
+                </div>
+                <div class="billing-row">
+                  <span class="billing-label">Address</span>
+                  <span class="billing-value">${form.address || "N/A"}, ${form.city || "N/A"}, ${form.state || "N/A"} - ${form.pincode || "N/A"}</span>
+                </div>
+                <div class="billing-row">
+                  <span class="billing-label">Phone Number</span>
+                  <span class="billing-value">${form.phone || "N/A"}</span>
+                </div>
               </div>
-              <div class="detail-item">
-                <span class="detail-label">Phone Number</span>
-                <span class="detail-value">${form.phone || "N/A"}</span>
-              </div>
-              <div class="detail-item" style="grid-column: span 2;">
-                <span class="detail-label">Shipping Address</span>
-                <span class="detail-value">${form.address || "N/A"}, ${form.city || "N/A"}, ${form.state || "N/A"} - ${form.pincode || "N/A"}</span>
+              <div class="center-divider"></div>
+              <div class="billing-column">
+                <div class="billing-title">Store Address</div>
+                <div class="billing-row">
+                  <span class="billing-label">Store Name</span>
+                  <span class="billing-value">${STORE_INFO.name}</span>
+                </div>
+                <div class="billing-row">
+                  <span class="billing-label">Address</span>
+                  <span class="billing-value">${STORE_INFO.address}</span>
+                </div>
               </div>
             </div>
           </div>
@@ -413,10 +512,7 @@ const Cart = () => {
                 <span class="summary-amount">-₹${discountRounded}</span>
               </div>
               ` : ""}
-              <div class="summary-row">
-                <span class="summary-label">GST (3%):</span>
-                <span class="summary-amount">₹${gstRounded}</span>
-              </div>
+          
               <div class="summary-row">
                 <span class="summary-label">Shipping:</span>
                 <span class="summary-amount">${shipping === 0 ? 'Free' : '₹' + shipping}</span>
@@ -443,17 +539,24 @@ const Cart = () => {
       </html>
     `;
   };
-
+    // <div class="summary-row">
+              //   <span class="summary-label">GST (3%):</span>
+              //   <span class="summary-amount">₹${gstRounded}</span>
+              // </div>
   /* ---------------- DOWNLOAD INVOICE PDF ---------------- */
-  const downloadInvoicePDF = async () => {
+  const downloadInvoicePDF = async (invoiceMeta) => {
     if (normalizedCart.length === 0) return;
+    const resolvedInvoiceMeta =
+      invoiceMeta?.invoiceNumber && invoiceMeta?.date
+        ? invoiceMeta
+        : createInvoiceMeta();
 
     const [{ jsPDF }, { default: html2canvas }] = await Promise.all([
       import("jspdf"),
       import("html2canvas"),
     ]);
 
-    const invoiceHTML = generateInvoiceHTML({ compact: true });
+    const invoiceHTML = generateInvoiceHTML({ compact: true, invoiceMeta: resolvedInvoiceMeta });
 
     const temp = document.createElement("div");
     temp.style.position = "fixed";
@@ -493,13 +596,18 @@ const Cart = () => {
 
     pdf.addImage(imgData, "PNG", x, y, imgWidth, imgHeight);
 
-    pdf.save(`invoice-avhstore-${Date.now()}.pdf`);
+    const safeInvoiceRef = (resolvedInvoiceMeta.invoiceNumber || `INV-${Date.now()}`)
+      .toLowerCase()
+      .replace(/[^a-z0-9-]/g, "");
+    pdf.save(`invoice-${safeInvoiceRef}.pdf`);
     document.body.removeChild(temp);
   };
 
   /* ---------------- WHATSAPP MESSAGE ---------------- */
-  const buildInvoiceMessage = () => {
-    let message = `🧾 *New Order - ${STORE_INFO.name}*\n\n`;
+  const buildInvoiceMessage = (invoiceMeta) => {
+    let message = `🧾 *New Order - ${STORE_INFO.name}*\n`;
+    message += `Invoice No: ${invoiceMeta?.invoiceNumber || "N/A"}\n`;
+    message += `Date: ${invoiceMeta?.date || "N/A"}\n\n`;
 
     normalizedCart.forEach((item, index) => {
       message += `${index + 1}. ${item.title}\n`;
@@ -512,14 +620,13 @@ const Cart = () => {
     if (discountRounded > 0) {
       message += `Discount (${discountPercent}%): -₹${discountRounded}\n`;
     }
-    message += `GST (3%): ₹${gstRounded}\n`;
+    // message += `GST (3%): ₹${gstRounded}\n`;
     message += `Shipping: ${shipping === 0 ? "Free" : "₹" + shipping}\n`;
     message += `*Grand Total: ₹${finalTotalRounded}*\n\n`;
 
     message += `👤 Customer Details:\n`;
-    message += `Name: ${form.fullName}\n`;
+    message += `Name & Address: ${form.fullName}, ${form.address}, ${form.city}, ${form.state} - ${form.pincode}\n`;
     message += `Phone: ${form.phone}\n`;
-    message += `Address: ${form.address}, ${form.city}, ${form.state} - ${form.pincode}\n`;
 
     return message;
   };
@@ -540,14 +647,16 @@ const Cart = () => {
       return;
     }
 
-    await downloadInvoicePDF();
+    const invoiceMeta = createInvoiceMeta();
+    await downloadInvoicePDF(invoiceMeta);
 
-    const message = buildInvoiceMessage();
+    const message = buildInvoiceMessage(invoiceMeta);
     const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(
       message
     )}`;
 
     window.open(url, "_blank", "noopener,noreferrer");
+    clearCart()
   };
 
   /* ---------------- QUANTITY ---------------- */
@@ -591,6 +700,7 @@ const Cart = () => {
             </Link>
           </div>
         ) : (
+          <>
           <div className="grid gap-6 lg:gap-8 lg:grid-cols-3">
             
             {/* CART ITEMS */}
@@ -619,7 +729,7 @@ const Cart = () => {
                         </Link>
 
                         <div className="flex flex-col justify-center">
-                          <h3 className="text-base text-wrap sm:text-lg font-medium text-gray-900 truncate">{item.title}</h3>
+                          <h3 className="text-base text-wrap sm:text-lg font-medium text-gray-900 truncate line-clamp-1">{item.title}</h3>
                           <p className="text-xs text-gray-500">SKU: {item.sku}</p>
                           {item.size && (
                             <p className="text-xs sm:text-sm text-gray-500">
@@ -676,7 +786,13 @@ const Cart = () => {
               
               {/* Clear Cart Option */}
               {normalizedCart.length > 0 && (
-                <div className="flex justify-end pt-4">
+                <div className="flex justify-end gap-5 pt-4">
+                  <Link
+                    href="/collections"
+                    className="text-sm text-gray-500 hover:text-black transition-colors"
+                  >
+                    Shop More
+                  </Link>
                   <button
                     onClick={clearCart}
                     className="text-sm text-gray-500 hover:text-red-600 transition-colors"
@@ -703,10 +819,10 @@ const Cart = () => {
                       <span className="font-medium">-{formatPrice(discountRounded)}</span>
                     </div>
                   )}
-                  <div className="flex justify-between text-gray-600">
+                  {/* <div className="flex justify-between text-gray-600">
                     <span>GST (3%)</span>
                     <span className="font-medium">{formatPrice(gstRounded)}</span>
-                  </div>
+                  </div> */}
                   <div className="flex justify-between text-gray-600">
                     <span>Shipping</span>
                     <span className="font-medium">{shipping === 0 ? "Free" : formatPrice(shipping)}</span>
@@ -775,6 +891,21 @@ const Cart = () => {
               </div>
             </div>
           </div>
+
+          {peopleAlsoBuy.length > 0 && (
+            <section className="mt-10">
+              <h2 className="mb-5 text-2xl sm:text-3xl font-semibold text-gray-900">
+                People Also Buy
+              </h2>
+             <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                          {peopleAlsoBuy.map((item) => (
+                            <ProductCard key={item.id} product={item} />
+                          ))}
+                        </div>
+
+            </section>
+          )}
+          </>
         )}
       </div>
     </div>

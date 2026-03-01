@@ -641,20 +641,20 @@ An ideal choice for women and girls who love classy, ethnic, and designer-inspir
   },
     {
     id: 29,
-    name: "Gold Plated Trishul Earrings for Women",
-    SKU_id: "AVH_ER_029",
+    name: "Rose Gold Plated Black & Gold Clover Bracelet for Women & Girls | Elegant Minimal Kada Bracelet | Stylish Daily Wear Jewellery",
+    SKU_id: "AVH_BR_029",
     price: 200,
     description:
-      `Add a touch of elegance to your jewelry collection with these Antique Gold Leaf Drop Earrings featuring a beautiful pink stone centerpiece. Designed with a teardrop top, detailed leaf motif, and circular drop frame, these earrings blend vintage charm with modern style.
+      `Upgrade your jewellery collection with this elegant Rose Gold Dual Clover Charm Bracelet. Designed with two beautifully crafted clover motifs featuring a classy black and rose gold finish, this bracelet symbolizes luck, elegance, and timeless fashion.
 
-The antique gold finish enhances the soft pink stone, making them perfect for weddings, festive occasions, parties, and traditional events. Lightweight and comfortable for long hours, these statement earrings pair beautifully with sarees, lehengas, kurtis, and Indo-western outfits.
+The slim rose gold band adds a modern and minimal touch, making it perfect for daily wear, office styling, casual outings, and special occasions. Crafted with premium-quality plating and a secure lock closure, it ensures durability, comfort, and a perfect fit.
 
-An ideal choice for women and girls who love classy, ethnic, and designer-inspired jewelr`,
+This bracelet pairs effortlessly with western outfits, formal wear, and ethnic dresses, making it a versatile must-have accessory. It also makes a thoughtful gift for birthdays, anniversaries, or festive celebrations.`,
     images: [
       "https://drive.google.com/uc?export=view&id=1Jj1mAjlz4hM0CCYxMMPUP-hkjPH79Onu",
     ],
     category: "bracelets",
-    metakey:"Shop premium gold plated heart dangle earrings for women. Lightweight, stylish party wear jewelry perfect for weddings, festivals & daily wear. Ideal gift for girls.",
+    metakey:"rose gold bracelet for women, clover bracelet for girls, black clover bracelet, stylish kada for women, trendy bracelet 2026, minimal bracelet for women, designer bracelet, daily wear bracelet, fancy jewellery for girls, gift bracelet for her",
     material: "Brass",
     stone: "none",
     isBestseller: true,
@@ -664,7 +664,7 @@ An ideal choice for women and girls who love classy, ethnic, and designer-inspir
     {
     id: 30,
     name: "Rose Gold Plated LOVE Bracelet for Women & Girls | Stylish Letter Design Kada Bracelet | Trendy Party Wear & Gift Jewellery",
-    SKU_id: "AVH_ER_030",
+    SKU_id: "AVH_BR_030",
     price: 200,
     description:
       `Celebrate love and style with this elegant Rose Gold LOVE Letter Bracelet. Designed with a modern and minimal look, this bracelet features a stylish “LOVE” letter charm in a classy black and white enamel finish. The smooth rose gold plating enhances its premium and luxurious appeal.
@@ -687,7 +687,7 @@ This bracelet is a perfect gift choice for birthdays, anniversaries, Valentine�
    {
     id: 31,
     name: "Rose Gold Plated Heart Bracelet for Women & Girls | Crystal Studded Stylish Kada Bracelet | Party Wear & Gift Jewellery",
-    SKU_id: "AVH_ER_031",
+    SKU_id: "AVH_BR_031",
     price: 200,
     description:
       `Upgrade your jewellery collection with this Elegant Rose Gold Double Heart Crystal Bracelet, designed to add charm and sophistication to your look. Featuring a beautiful dual-heart centerpiece — one polished solid heart and one crystal-studded open heart — this bracelet symbolizes love, elegance, and modern style.
@@ -709,7 +709,7 @@ Whether you're attending a party, celebration, wedding, or looking for a thought
    {
     id: 32,
     name: "Rose Gold Plated Black Stone Bracelet for Women & Girls | Geometric Circle Design Stylish Kada | Party Wear & Trendy Jewellery",
-    SKU_id: "AVH_ER_032",
+    SKU_id: "AVH_BR_032",
     price: 200,
     description:
       `Enhance your style with this elegant Rose Gold Black Stone Geometric Bracelet, designed for women who love modern and classy jewellery. Featuring a bold black round centerpiece with matching side accents and stylish circular elements, this bracelet gives a sophisticated and contemporary look.
@@ -730,20 +730,20 @@ Perfect for parties, office wear, casual outings, and gifting, this bracelet add
   },
    {
     id: 33,
-    name: "Gold Plated Trishul Earrings for Women",
-    SKU_id: "AVH_ER_033",
+    name: "Gold Plated AD Micro Kada Bracelet for Women | Pink Stone Floral Charm Designer Bracelet | Wedding & Party Wear Jewellery",
+    SKU_id: "AVH_BR_033",
     price:200,
     description:
-      `Add a touch of elegance to your jewelry collection with these Antique Gold Leaf Drop Earrings featuring a beautiful pink stone centerpiece. Designed with a teardrop top, detailed leaf motif, and circular drop frame, these earrings blend vintage charm with modern style.
+      `Add royal elegance to your jewellery collection with this stunning Gold Plated AD Micro Kada Bracelet. Beautifully crafted with a premium gold finish, this bracelet features sparkling American Diamond (AD) detailing and a charming pink floral pendant design that enhances its traditional and festive appeal.
 
-The antique gold finish enhances the soft pink stone, making them perfect for weddings, festive occasions, parties, and traditional events. Lightweight and comfortable for long hours, these statement earrings pair beautifully with sarees, lehengas, kurtis, and Indo-western outfits.
+The intricate stone work combined with delicate hanging elements gives it a graceful and luxurious look. Designed with a secure clasp closure, this bracelet ensures comfort and durability for long hours of wear.
 
-An ideal choice for women and girls who love classy, ethnic, and designer-inspired jewelr`,
+Perfect for weddings, festive occasions, parties, and traditional functions, this bracelet pairs beautifully with sarees, lehengas, salwar suits, and ethnic wear. It also makes a thoughtful gift for special celebrations.`,
     images: [
       "https://drive.google.com/uc?export=view&id=1KgMiVgUyD-TMyK9gQU80FtFm_JFvC_sT",
     ],
     category: "bracelets",
-    metakey:"Shop premium gold plated heart dangle earrings for women. Lightweight, stylish party wear jewelry perfect for weddings, festivals & daily wear. Ideal gift for girls.",
+    metakey:"gold kada bracelet for women, AD micro bracelet, american diamond bracelet, pink stone bracelet, designer kada for women, wedding wear bracelet, traditional gold bracelet, party wear jewellery, fancy bracelet for girls, festive jewellery 2026",
     material: "Brass",
     stone: "none",
     isBestseller: true,
@@ -753,7 +753,7 @@ An ideal choice for women and girls who love classy, ethnic, and designer-inspir
    {
     id: 34,
     name: "Rose Gold Plated Butterfly Bracelet with Crystal Stones | Stylish Kada Bracelet for Women & Girls | Party & Gift Wear Jewellery",
-    SKU_id: "AVH_ER_034",
+    SKU_id: "AVH_BR_034",
     price:200,
     description:
       `Add elegance and charm to your jewelry collection with this stunning Rose Gold Butterfly Bracelet. Beautifully designed with delicate butterfly motifs, this bracelet features sparkling crystal stones that enhance its luxurious and feminine look. The sleek rose gold finish gives it a modern yet classy appeal, making it perfect for both daily wear and special occasions.
@@ -774,20 +774,20 @@ Perfect for birthdays, anniversaries, parties, weddings, or as a thoughtful gift
   },
    {
     id: 35,
-    name: "Gold Plated Trishul Earrings for Women",
-    SKU_id: "AVH_ER_035",
+    name: "Gold Plated AD Micro Kada Bracelet for Women | American Diamond Floral Designer Bracelet | Wedding & Party Wear Jewellery",
+    SKU_id: "AVH_BR_035",
     price:200,
     description:
-      `Add a touch of elegance to your jewelry collection with these Antique Gold Leaf Drop Earrings featuring a beautiful pink stone centerpiece. Designed with a teardrop top, detailed leaf motif, and circular drop frame, these earrings blend vintage charm with modern style.
+      `Enhance your traditional look with this beautifully crafted Gold Plated AD Micro Kada Bracelet. Designed with sparkling American Diamond (AD) stones and a stunning floral centerpiece featuring rich pink stone detailing, this bracelet adds royal elegance to any outfit.
 
-The antique gold finish enhances the soft pink stone, making them perfect for weddings, festive occasions, parties, and traditional events. Lightweight and comfortable for long hours, these statement earrings pair beautifully with sarees, lehengas, kurtis, and Indo-western outfits.
+The textured gold finish combined with intricate stone work and delicate hanging charm elements creates a luxurious and festive appeal. The adjustable chain closure ensures a secure and comfortable fit, making it perfect for long wear during weddings, festivals, and special occasions.
 
-An ideal choice for women and girls who love classy, ethnic, and designer-inspired jewelr`,
+This designer bracelet pairs beautifully with sarees, lehengas, salwar suits, and ethnic attire, making it a must-have addition to your jewellery collection. It is also an ideal gifting option for celebrations and special moments.`,
     images: [
       "https://drive.google.com/uc?export=view&id=1Ko4F5iP1bURj4Ezo-AH_JptsBELB9hGM",
     ],
     category: "bracelets",
-    metakey:"Shop premium gold plated heart dangle earrings for women. Lightweight, stylish party wear jewelry perfect for weddings, festivals & daily wear. Ideal gift for girls.",
+    metakey:"gold kada bracelet for women, AD micro bracelet, american diamond bracelet, floral gold bracelet, designer kada for women, wedding wear bracelet, traditional jewellery, party wear bracelet, festive jewellery for girls, fancy gold bracelet",
     material: "Brass",
     stone: "none",
     isBestseller: true,
@@ -796,20 +796,20 @@ An ideal choice for women and girls who love classy, ethnic, and designer-inspir
   },
    {
     id: 36,
-    name: "Gold Plated Trishul Earrings for Women",
-    SKU_id: "AVH_ER_036",
+    name: "Gold Plated Micro AD Kada Bracelet for Women | American Diamond Ruby Stone Bracelet | Traditional Wedding & Party Wear Jewellery",
+    SKU_id: "AVH_BR_036",
     price:200,
     description:
-      `Add a touch of elegance to your jewelry collection with these Antique Gold Leaf Drop Earrings featuring a beautiful pink stone centerpiece. Designed with a teardrop top, detailed leaf motif, and circular drop frame, these earrings blend vintage charm with modern style.
+      `Add timeless elegance to your jewellery collection with this stunning Gold Plated Micro AD Kada Bracelet. Beautifully designed with sparkling American Diamond stones and three royal ruby-colored center stones, this bracelet gives a rich and graceful look.
 
-The antique gold finish enhances the soft pink stone, making them perfect for weddings, festive occasions, parties, and traditional events. Lightweight and comfortable for long hours, these statement earrings pair beautifully with sarees, lehengas, kurtis, and Indo-western outfits.
+The textured gold finish and premium stone detailing enhance its traditional charm, making it perfect for weddings, festivals, parties, and special occasions. The adjustable chain with secure clasp ensures a comfortable fit for all wrist sizes.
 
-An ideal choice for women and girls who love classy, ethnic, and designer-inspired jewelr`,
+This designer bracelet pairs perfectly with sarees, lehengas, gowns, and ethnic outfits. A perfect choice for gifting on birthdays, anniversaries, and festive celebrations`,
     images: [
       "https://drive.google.com/uc?export=view&id=1KbF9jhPAFTu1dqdudvUVjg0jguL-Qkyy",
     ],
     category: "bracelets",
-    metakey:"Shop premium gold plated heart dangle earrings for women. Lightweight, stylish party wear jewelry perfect for weddings, festivals & daily wear. Ideal gift for girls.",
+    metakey:"gold kada bracelet for women, micro ad bracelet, ruby stone bracelet, american diamond kada, designer gold bracelet, wedding jewellery bracelet, party wear bracelet for women, traditional gold kada, festive jewellery, fancy bracelet for girls",
     material: "Brass",
     stone: "none",
     isBestseller: true,
@@ -819,7 +819,7 @@ An ideal choice for women and girls who love classy, ethnic, and designer-inspir
    {
     id: 37,
     name: "Rose Gold Plated Black Butterfly Bracelet for Women & Girls | Crystal Studded Stylish Kada | Trendy Party Wear Jewellery",
-    SKU_id: "AVH_ER_037",
+    SKU_id: "AVH_BR_037",
     price:200,
     description:
       `Add a touch of elegance and charm to your jewellery collection with this stunning Rose Gold Black Butterfly Bracelet. Featuring a sleek butterfly centerpiece with glossy black enamel detailing, this bracelet beautifully blends modern style with feminine grace.
@@ -840,20 +840,20 @@ Perfect for parties, office wear, casual outings, and gifting, this stylish brac
   },
    {
     id: 38,
-    name: "Gold Plated Trishul Earrings for Women",
+    name: "Gold Plated Micro AD Heart Bracelet for Women | American Diamond Designer Gold Bracelet | Adjustable Party & Daily Wear Jewellery",
     SKU_id: "AVH_ER_038",
     price: 200,
     description:
-      `Add a touch of elegance to your jewelry collection with these Antique Gold Leaf Drop Earrings featuring a beautiful pink stone centerpiece. Designed with a teardrop top, detailed leaf motif, and circular drop frame, these earrings blend vintage charm with modern style.
+      `Upgrade your jewellery collection with this elegant Gold Plated Micro AD Heart Bracelet. Designed with a sleek gold finish and delicate heart cut detailing on both sides, this bracelet offers a modern yet classy look. The center micro AD stone setting adds a subtle sparkle, making it perfect for both daily wear and special occasions.
 
-The antique gold finish enhances the soft pink stone, making them perfect for weddings, festive occasions, parties, and traditional events. Lightweight and comfortable for long hours, these statement earrings pair beautifully with sarees, lehengas, kurtis, and Indo-western outfits.
+Its adjustable chain lock ensures a comfortable and secure fit for all wrist sizes. Lightweight and stylish, this bracelet pairs beautifully with ethnic as well as western outfits.
 
-An ideal choice for women and girls who love classy, ethnic, and designer-inspired jewelr`,
+A perfect gifting option for birthdays, anniversaries, Valentine's Day, and festive celebrations`,
     images: [
       "https://drive.google.com/uc?export=view&id=1KCfEo_C-6BDmcRaVm_vgPm7TiJ6H9rv2",
     ],
     category: "bracelets",
-    metakey:"Shop premium gold plated heart dangle earrings for women. Lightweight, stylish party wear jewelry perfect for weddings, festivals & daily wear. Ideal gift for girls.",
+    metakey:"gold bracelet for women, micro ad bracelet, heart design bracelet, american diamond bracelet, gold plated bracelet, designer bracelet for girls, daily wear gold bracelet, party wear bracelet, fancy bracelet for women, adjustable gold bracelet",
     material: "Brass",
     stone: "none",
     isBestseller: true,
@@ -862,20 +862,20 @@ An ideal choice for women and girls who love classy, ethnic, and designer-inspir
   },
    {
     id: 39,
-    name: "Gold Plated Trishul Earrings for Women",
+    name: "Gold Plated Micro AD Multi Heart Bracelet for Women",
     SKU_id: "AVH_ER_039",
     price: 200,
     description:
-      `Add a touch of elegance to your jewelry collection with these Antique Gold Leaf Drop Earrings featuring a beautiful pink stone centerpiece. Designed with a teardrop top, detailed leaf motif, and circular drop frame, these earrings blend vintage charm with modern style.
+      `Add sparkle to your jewellery collection with this stunning Gold Plated Micro AD Multi Heart Bracelet. Beautifully crafted with a premium gold finish, this bracelet features elegant heart cut detailing on the sides and a stylish center line of micro American Diamond stones for a classy shine.
 
-The antique gold finish enhances the soft pink stone, making them perfect for weddings, festive occasions, parties, and traditional events. Lightweight and comfortable for long hours, these statement earrings pair beautifully with sarees, lehengas, kurtis, and Indo-western outfits.
+The sleek and modern design makes it perfect for both everyday wear and special occasions. Its adjustable chain closure provides a secure and comfortable fit for all wrist sizes.
 
-An ideal choice for women and girls who love classy, ethnic, and designer-inspired jewelr`,
+Pair it effortlessly with ethnic outfits, western dresses, or office wear to complete your stylish look. A perfect gift choice for birthdays, anniversaries, Valentine’s Day, and festive celebrations.`,
     images: [
       "https://drive.google.com/uc?export=view&id=1KIp5aTnMZl7kmp0b0Z5cWZ5jEp6FGxIx",
     ],
     category: "bracelets",
-    metakey:"Shop premium gold plated heart dangle earrings for women. Lightweight, stylish party wear jewelry perfect for weddings, festivals & daily wear. Ideal gift for girls.",
+    metakey:"gold bracelet for women, micro ad bracelet, heart design gold bracelet, american diamond bracelet, designer bracelet for girls, daily wear gold bracelet, fancy bracelet for women, adjustable bracelet for women, party wear bracelet, stylish gold bracelet",
     material: "Brass",
     stone: "none",
     isBestseller: true,
@@ -884,20 +884,20 @@ An ideal choice for women and girls who love classy, ethnic, and designer-inspir
   },
    {
     id: 40,
-    name: "Gold Plated Trishul Earrings for Women",
-    SKU_id: "AVH_ER_040",
+    name: "Gold Plated Micro AD Interlocking Heart Designer Bracelet for Women",
+    SKU_id: "AVH_BR_040",
     price:200,
     description:
-      `Add a touch of elegance to your jewelry collection with these Antique Gold Leaf Drop Earrings featuring a beautiful pink stone centerpiece. Designed with a teardrop top, detailed leaf motif, and circular drop frame, these earrings blend vintage charm with modern style.
+      `Enhance your style with this elegant Gold Plated Micro AD Interlocking Heart Bracelet. Featuring a sleek gold finish with modern elongated side bars and a beautiful center design of interlocking hearts, this bracelet symbolizes love and elegance.
 
-The antique gold finish enhances the soft pink stone, making them perfect for weddings, festive occasions, parties, and traditional events. Lightweight and comfortable for long hours, these statement earrings pair beautifully with sarees, lehengas, kurtis, and Indo-western outfits.
+The center strip is studded with sparkling micro American Diamonds, adding a subtle yet classy shine to your look. Its adjustable chain lock ensures a perfect and comfortable fit for all wrist sizes.
 
-An ideal choice for women and girls who love classy, ethnic, and designer-inspired jewelr`,
+Lightweight and versatile, this bracelet is ideal for daily wear, office wear, casual outings, and special occasions. It pairs beautifully with both ethnic and western outfits and makes a thoughtful gift for birthdays, anniversaries, and festive celebrations.`,
     images: [
       "https://drive.google.com/uc?export=view&id=1KKLzY0Ax2Chw7kNSal_vsjEXJc3dYX40",
     ],
     category: "bracelets",
-    metakey:"Shop premium gold plated heart dangle earrings for women. Lightweight, stylish party wear jewelry perfect for weddings, festivals & daily wear. Ideal gift for girls.",
+    metakey:"gold bracelet for women, micro ad bracelet, heart design bracelet, interlocking heart bracelet, american diamond bracelet, gold plated bracelet for girls, daily wear gold bracelet, fancy bracelet for women, adjustable bracelet, party wear jewellery",
     material: "Brass",
     stone: "none",
     isBestseller: true,
@@ -906,20 +906,20 @@ An ideal choice for women and girls who love classy, ethnic, and designer-inspir
   },
    {
     id: 41,
-    name: "Gold Plated Trishul Earrings for Women",
-    SKU_id: "AVH_ER_041",
+    name: "Gold Plated Micro AD Heart Bar Designer Bracelet for Women",
+    SKU_id: "AVH_BR_041",
     price:200,
     description:
-      `Add a touch of elegance to your jewelry collection with these Antique Gold Leaf Drop Earrings featuring a beautiful pink stone centerpiece. Designed with a teardrop top, detailed leaf motif, and circular drop frame, these earrings blend vintage charm with modern style.
+      `Add a touch of elegance to your jewellery collection with this stylish Gold Plated Micro AD Heart Bar Bracelet. Designed with a sleek gold finish and beautiful heart cut detailing on the sides, this bracelet features a stunning double-line micro American Diamond bar in the center for a classy sparkle.
 
-The antique gold finish enhances the soft pink stone, making them perfect for weddings, festive occasions, parties, and traditional events. Lightweight and comfortable for long hours, these statement earrings pair beautifully with sarees, lehengas, kurtis, and Indo-western outfits.
+The modern yet graceful design makes it suitable for daily wear, office wear, and special occasions. Its adjustable chain lock ensures a secure and comfortable fit for all wrist sizes.
 
-An ideal choice for women and girls who love classy, ethnic, and designer-inspired jewelr`,
+Lightweight and versatile, this bracelet pairs perfectly with both ethnic and western outfits. It also makes a thoughtful gift for birthdays, anniversaries, Valentine’s Day, and festive celebrations.`,
     images: [
       "https://drive.google.com/uc?export=view&id=1KFzUCSvmvWbxwHivBf2YuPVOeUI7lPmD",
     ],
     category: "bracelets",
-    metakey:"Shop premium gold plated heart dangle earrings for women. Lightweight, stylish party wear jewelry perfect for weddings, festivals & daily wear. Ideal gift for girls.",
+    metakey:"gold bracelet for women, micro ad bracelet, heart design gold bracelet, american diamond bracelet, gold plated designer bracelet, daily wear gold bracelet, adjustable bracelet for women, party wear bracelet, fancy bracelet for girls, stylish gold jewellery",
     material: "Brass",
     stone: "none",
     isBestseller: true,
@@ -928,20 +928,20 @@ An ideal choice for women and girls who love classy, ethnic, and designer-inspir
   },
    {
     id: 42,
-    name: "Gold Plated Trishul Earrings for Women",
-    SKU_id: "AVH_ER_042",
+    name: "Gold Plated Micro AD Infinity Bracelet for Women | American Diamond Heart Designer Gold Bracelet | Adjustable Daily & Party Wear Jewellery",
+    SKU_id: "AVH_BR_042",
     price:200,
     description:
-      `Add a touch of elegance to your jewelry collection with these Antique Gold Leaf Drop Earrings featuring a beautiful pink stone centerpiece. Designed with a teardrop top, detailed leaf motif, and circular drop frame, these earrings blend vintage charm with modern style.
+      `Elevate your style with this elegant Gold Plated Micro AD Infinity Heart Bracelet. Featuring a sleek gold finish with delicate heart cut detailing on the sides, this bracelet showcases a beautiful infinity-shaped center design studded with sparkling micro American Diamonds.
 
-The antique gold finish enhances the soft pink stone, making them perfect for weddings, festive occasions, parties, and traditional events. Lightweight and comfortable for long hours, these statement earrings pair beautifully with sarees, lehengas, kurtis, and Indo-western outfits.
+The infinity motif symbolizes endless love and grace, making it a meaningful and stylish accessory for everyday wear as well as special occasions. The adjustable chain closure ensures a secure and comfortable fit for all wrist sizes.
 
-An ideal choice for women and girls who love classy, ethnic, and designer-inspired jewelr`,
+Lightweight and versatile, this bracelet pairs perfectly with ethnic outfits, western dresses, and office wear. It is also a perfect gifting option for birthdays, anniversaries, Valentine’s Day, and festive celebrations.`,
     images: [
       "https://drive.google.com/uc?export=view&id=1KO9mHPqBBAj_LsJa-rHfkO3BOUZfTQdI",
     ],
     category: "bracelets",
-    metakey:"Shop premium gold plated heart dangle earrings for women. Lightweight, stylish party wear jewelry perfect for weddings, festivals & daily wear. Ideal gift for girls.",
+    metakey:"gold bracelet for women, micro ad bracelet, infinity bracelet gold, heart design bracelet, american diamond bracelet, designer bracelet for girls, daily wear gold bracelet, adjustable bracelet for women, party wear jewellery, stylish gold bracelet",
     material: "Brass",
     stone: "none",
     isBestseller: true,
@@ -955,25 +955,25 @@ export const categories = [
     id: "earrings",
     name: "Earrings",
     image:
-      "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=600&q=80",
+      "https://drive.google.com/uc?export=view&id=19LvtmMDhguK-uZdGDbEX28xnsBLwzGKk",
   },
   {
     id: "jewelleryset",
     name: "Jewellery Sets",
     image:
-      "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=600&q=80",
+      "https://drive.google.com/uc?export=view&id=1AIjDCx5JWYRROuLCWoGST7qjNPRbTVyf",
   },
   {
     id: "rajwadiset ",
     name: "Rajwadi Set",
     image:
-      "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=600&q=80",
+      "https://drive.google.com/uc?export=view&id=1AnySjTOtc5Qb08vgYh03gadJVtF03dma",
   },
   {
     id: "bracelets",
     name: "Bracelets",
     image:
-      "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=600&q=80",
+      "https://drive.google.com/uc?export=view&id=1Ko4F5iP1bURj4Ezo-AH_JptsBELB9hGM",
   },
 ];
 
