@@ -1,52 +1,125 @@
-// This component is a static display of policy text.
-// 'use client'; is not strictly necessary unless you plan to add interactivity later.
-
-import React from 'react';
-
-const RefundPolicySection = () => {
-  return (
-    <div className="flex flex-col pt-20 lg:pt-0 items-center justify-start bg-white w-full text-black py-16 mainCatgeroryContainer">
-      <div className="bg-white p-8 sm:p-12 md:p-16 flex flex-col items-center w-full max-w-2xl lg:max-w-xl text-left">
-        
-        <h1 className="text-4xl font-normal text-gray-800 mb-8 text-center">Refund policy</h1>
-
-        <p className="text-gray-700 leading-relaxed mb-4">
-          We do not have a return option, which means you cannot exchange or return the product after receiving the product.
-        </p>
-        
-        <ul className="list-disc pl-6 text-gray-700 leading-relaxed mb-4">
-          <li className="mb-2">Orders once placed cannot be cancelled or exchanged.</li>
-          <li className="mb-2">We do not offer returns or refunds on our products unless there has been severe damage during the shipping process.
-            (for only Artificial jewelry products not packaging-wood boxes)</li>
-          <li className="mb-2">In case a defective product has arrived, we accept returns with full refund to you on the item. In order to claim the refund, it is MANDATORY to send an unboxing video of the package.
-            <br />No claims would be accepted without the unboxing video.</li>
-          <li className="mb-2">In case an incorrect item has been sent, we will ask for photos/videos of your package, items and invoice to better understand how the mistake happened on our end. After verifying, we will issue a refund or send the correct item. It is mandatory for you to return the incorrect item back to us within 7 days and the refund will be processed in 2-3 working days and will be credited to your account within 10-12 working days.</li>
-          <li className="mb-2">Please make sure you give us an accurate ring size as all our rings are fixed sized rings (mentioned size guide if it's Indian, USA, or inner diameter).</li>
-          <li className="mb-4">Please check our size guide highlights; you can use a ring sizer app if you have an existing ring that fits you well.</li>
-        </ul>
-
-        <p className="text-gray-700 leading-relaxed mb-8">
-          You can always contact us for any complaints at <a href="mailto:abhihothi524@gmail.com" className="text-blue-600 hover:underline">abhihothi524@gmail.com</a>.
-        </p>
-
-        <h2 className="text-3xl font-normal text-gray-800 mb-4">Damages and issues</h2>
-        <p className="text-gray-700 leading-relaxed mb-4">
-          Please inspect your order upon reception and contact us immediately if the item is defective, damaged or if you receive the wrong item, so that we can evaluate the issue and make it right.
-        </p>
-        <p className="text-gray-700 leading-relaxed mb-8">
-          In case a defective product has arrived, we accept returns with full refund to you on the item. In order to claim the refund, it is MANDATORY to send an unboxing video of the package.
-          <br />No claims would be accepted without the unboxing video.
-        </p>
-
-        <h2 className="text-3xl font-normal text-gray-800 mb-4">Things to keep in mind while making a purchase</h2>
-        <ul className="list-disc pl-6 text-gray-700 leading-relaxed mb-4">
-          <li className="mb-2">The units have been photographed under lights and the actual product may differ slightly when seen under normal lights, though we maintain the originality in the photographs to utmost extent.</li>
-          <li className="mb-4">Note- NO two crystals will be exactly alike in terms of their color, pattern, shape etc. This uniqueness adds to the charm and allure of crystals, as it highlights their individuality and distinctiveness. It's important to embrace their differences and appreciate the beauty of their natural variations. This understanding allows individuals to form personal connections with their crystals and to work with them in ways that resonate with their own energy and intentions.</li>
-        </ul>
-
-      </div>
-    </div>
-  );
+export const metadata = {
+  title: "Return & Refund Policy | AVH STORE",
+  description:
+    "Read AVH STORE's return, replacement, and refund policy for damaged, incorrect, and eligible orders.",
 };
 
-export default RefundPolicySection;
+const policySections = [
+  {
+    title: "1. Order Cancellation",
+    points: [
+      "Orders once confirmed are generally not cancellable.",
+      "If you need urgent help, contact support immediately and we will try to assist before dispatch.",
+    ],
+  },
+  {
+    title: "2. Return Eligibility",
+    points: [
+      "Returns are accepted only for damaged, defective, or wrong products.",
+      "A complete unboxing video is mandatory to process any damage/wrong-item claim.",
+      "Claims without unboxing video proof may not be approved.",
+    ],
+  },
+  {
+    title: "3. Wrong Product Received",
+    points: [
+      "If you receive a wrong item, share package photos/video and invoice details.",
+      "After verification, we will arrange replacement or refund as applicable.",
+      "The incorrect product must be returned in original condition.",
+    ],
+  },
+  {
+    title: "4. Damaged Product",
+    points: [
+      "Report damage within 24 hours of delivery.",
+      "Share clear video/photos of product and packaging for verification.",
+      "After confirmation, eligible orders are replaced or refunded.",
+    ],
+  },
+  {
+    title: "5. Refund Processing",
+    points: [
+      "Approved refunds are initiated after quality verification and return confirmation (if required).",
+      "Refund processing time: typically 2-3 working days from approval.",
+      "Bank/UPI credit may take additional working days depending on payment provider.",
+    ],
+  },
+  {
+    title: "6. Non-Returnable Cases",
+    points: [
+      "Used, damaged-by-customer, or altered products are not eligible.",
+      "Claims raised after the allowed reporting window may be declined.",
+      "Minor visual variation due to lighting/photography is not considered damage.",
+    ],
+  },
+];
+
+export default function ReturnRefundPolicyPage() {
+  return (
+    <div className="bg-[#fcfbf8] text-gray-900 mainCatgeroryContainer">
+      <section className="px-5 pb-10 pt-24 lg:px-[10%] lg:pt-16">
+        <div className="mx-auto max-w-6xl rounded-2xl border border-gray-200 bg-white p-6 shadow-sm lg:p-8">
+          <p className="text-xs uppercase tracking-[0.22em] text-gray-500">
+            AVH STORE LEGAL
+          </p>
+          <h1 className="mt-3 text-[clamp(2rem,5vw,3.4rem)] font-semibold leading-tight text-[#1f1b16]">
+            Return & Refund Policy
+          </h1>
+          <p className="mt-3 text-sm text-gray-500">Last updated: March 2, 2026</p>
+          <p className="mt-6 max-w-4xl leading-7 text-gray-700">
+            At AVH STORE, we aim to provide a smooth shopping experience. Please
+            read the policy below carefully before placing your order. This policy
+            applies to all purchases made through our official channels.
+          </p>
+        </div>
+      </section>
+
+      <section className="px-5 pb-10 lg:px-[10%]">
+        <div className="mx-auto grid max-w-6xl gap-4">
+          {policySections.map((section) => (
+            <article
+              key={section.title}
+              className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm"
+            >
+              <h2 className="text-xl font-semibold text-gray-900">{section.title}</h2>
+              <ul className="mt-3 space-y-2 text-gray-700">
+                {section.points.map((point) => (
+                  <li key={point} className="flex items-start gap-2">
+                    <span className="mt-2 h-2 w-2 rounded-full bg-amber-600" />
+                    <span>{point}</span>
+                  </li>
+                ))}
+              </ul>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section className="px-5 pb-20 lg:px-[10%]">
+        <div className="mx-auto max-w-6xl rounded-2xl bg-[#1f1b16] px-6 py-8 text-white lg:px-10">
+          <h2 className="text-2xl font-semibold">Return/Refund Support</h2>
+          <p className="mt-3 text-sm leading-7 text-amber-100">
+            For faster resolution, share order ID, unboxing video, and issue details
+            in one message/email.
+          </p>
+          <div className="mt-4 grid gap-2 text-sm text-amber-100">
+            <p>
+              Email:{" "}
+              <a
+                href="mailto:abhihothi524@gmail.com"
+                className="underline underline-offset-2"
+              >
+                abhihothi524@gmail.com
+              </a>
+            </p>
+            <p>Phone: +91 9016457163</p>
+            <p>
+              Address: C/O 133, Laxmi Palace, Street No. 5, Radha Nagar,
+              Chandreshnagar, Rajkot, Gujarat - 360004, India
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+}

@@ -1,57 +1,121 @@
-// This component is a static display of policy text.
-// 'use client'; is not strictly necessary unless you plan to add interactivity later.
-
-import React from 'react';
-
-const ShippingPolicySection = () => {
-  return (
-    <div className="flex flex-col items-center pt-20 lg:pt-0 justify-start bg-white w-full text-black py-16 mainCatgeroryContainer">
-      <div className="bg-white p-8 sm:p-12 md:p-16 flex flex-col items-center w-full max-w-2xl lg:max-w-xl text-left">
-        
-        <h1 className="text-4xl font-normal text-gray-800 mb-8 text-center">Shipping policy</h1>
-
-        <p className="text-gray-700 leading-relaxed mb-8">
-          At AVH Store Silver, we strive to provide a seamless and efficient shipping experience for our customers. Please take a moment to familiarize yourself with our shipping policy to ensure a smooth delivery process.
-        </p>
-
-        <h2 className="text-3xl font-normal text-gray-800 mb-4">Free Delivery</h2>
-        <p className="text-gray-700 leading-relaxed mb-8">
-          We are pleased to offer free delivery on all orders. This means that you can enjoy our exquisite jewelry pieces without any additional shipping costs.
-        </p>
-
-        <h2 className="text-3xl font-normal text-gray-800 mb-4">Order Processing Time</h2>
-        <p className="text-gray-700 leading-relaxed mb-8">
-          Once your order is confirmed, our team will begin processing it promptly. For readymade products, please allow 2-3 working days for order processing. If you have ordered a made-to-order product, such as bracelets, please allow 3-4 working days for processing. In some cases, if additional time is required, we will inform you accordingly.
-        </p>
-
-        <h2 className="text-3xl font-normal text-gray-800 mb-4">Shipping Options</h2>
-        <p className="text-gray-700 text-left w-full leading-relaxed mb-2">
-          We currently offer the following shipping options:
-        </p>
-        <ul className="list-disc pl-6 text-gray-700 leading-relaxed text-left w-full mb-4">
-          <li className="mb-2">Shree Maruti</li>
-          <li className="mb-2">Delivery Courier (Private)</li>
-          <li className="mb-4">Indian Speed Post</li>
-        </ul>
-        <p className="text-gray-700 leading-relaxed mb-8">
-          If you require a faster shipping service, such as Fastrack or express delivery, please note that additional shipping costs may apply.
-        </p>
-
-        <h2 className="text-3xl font-normal text-gray-800 mb-4">Estimated Delivery Time</h2>
-        <p className="text-gray-700 leading-relaxed mb-4">
-          Once your order has been dispatched, the estimated delivery time is 4-7 working days, depending on your location. However, please keep in mind that delays can occur due to factors beyond our control, such as local postal services, weather conditions, and unforeseen circumstances.
-        </p>
-        <p className="text-gray-700 leading-relaxed mb-8">
-          We kindly request that you wait for at least 8-10 working days from the dispatch date before raising any concerns regarding the delivery. In some cases, the delivery may have been received by a family member or security guard without your knowledge, so we recommend checking with them first.
-        </p>
-
-        <p className="text-gray-700 leading-relaxed mb-8">
-          If you have any further questions or concerns regarding our shipping policy, please do not hesitate to contact us at <a href="mailto:abhihothi524@gmail.com" className="text-blue-600 hover:underline">abhihothi524@gmail.com</a>. Our dedicated team is here to assist you and ensure your complete satisfaction.
-        </p>
-
-      </div>
-    </div>
-  );
+export const metadata = {
+  title: "Shipping Policy | AVH STORE",
+  description:
+    "Read AVH STORE shipping policy, dispatch timelines, delivery estimates, and shipping support details.",
 };
 
-export default ShippingPolicySection;
+const shippingSections = [
+  {
+    title: "1. Processing Time",
+    points: [
+      "Readymade items are usually processed within 2-3 working days.",
+      "Made-to-order items may require additional processing time.",
+      "If delays occur, our team will notify you through available contact details.",
+    ],
+  },
+  {
+    title: "2. Delivery Timeline",
+    points: [
+      "Estimated delivery usually takes 4-7 working days after dispatch.",
+      "Delivery time may vary based on location, courier network, and local service conditions.",
+      "During peak periods, delivery may take longer than usual.",
+    ],
+  },
+  {
+    title: "3. Shipping Charges",
+    points: [
+      "Shipping charges (if applicable) are displayed during checkout.",
+      "Free shipping offers, if active, are applied as per current offer rules.",
+    ],
+  },
+  {
+    title: "4. Address Accuracy",
+    points: [
+      "Please provide complete and correct address, pin code, and phone number.",
+      "Incorrect or incomplete details may cause delays or failed delivery attempts.",
+    ],
+  },
+  {
+    title: "5. Delays & Exceptions",
+    points: [
+      "Unexpected delays can occur due to weather, strikes, regional restrictions, or courier issues.",
+      "AVH STORE is not liable for delays caused by circumstances beyond reasonable control.",
+    ],
+  },
+  {
+    title: "6. Delivery Confirmation",
+    points: [
+      "Once marked delivered by courier, customers should check with family/security if parcel is not immediately visible.",
+      "If still unresolved, contact support with order ID for investigation.",
+    ],
+  },
+];
+
+export default function ShippingPolicyPage() {
+  return (
+    <div className="bg-[#fcfbf8] text-gray-900 mainCatgeroryContainer">
+      <section className="px-5 pb-10 pt-24 lg:px-[10%] lg:pt-16">
+        <div className="mx-auto max-w-6xl rounded-2xl border border-gray-200 bg-white p-6 shadow-sm lg:p-8">
+          <p className="text-xs uppercase tracking-[0.22em] text-gray-500">
+            AVH STORE LEGAL
+          </p>
+          <h1 className="mt-3 text-[clamp(2rem,5vw,3.4rem)] font-semibold leading-tight text-[#1f1b16]">
+            Shipping Policy
+          </h1>
+          <p className="mt-3 text-sm text-gray-500">Last updated: March 2, 2026</p>
+          <div className="mt-6 overflow-hidden rounded-2xl border border-gray-200">
+            <img
+              src="https://images.unsplash.com/photo-1553413077-190dd305871c?auto=format&fit=crop&w=1400&q=80"
+              alt="Shipping and delivery visual"
+              className="h-56 w-full object-cover"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section className="px-5 pb-10 lg:px-[10%]">
+        <div className="mx-auto grid max-w-6xl gap-4">
+          {shippingSections.map((section) => (
+            <article
+              key={section.title}
+              className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm"
+            >
+              <h2 className="text-xl font-semibold text-gray-900">{section.title}</h2>
+              <ul className="mt-3 space-y-2 text-gray-700">
+                {section.points.map((point) => (
+                  <li key={point} className="flex items-start gap-2">
+                    <span className="mt-2 h-2 w-2 rounded-full bg-amber-600" />
+                    <span>{point}</span>
+                  </li>
+                ))}
+              </ul>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section className="px-5 pb-20 lg:px-[10%]">
+        <div className="mx-auto max-w-6xl rounded-2xl bg-[#1f1b16] px-6 py-8 text-white lg:px-10">
+          <h2 className="text-2xl font-semibold">Shipping Support</h2>
+          <p className="mt-3 text-sm leading-7 text-amber-100">
+            For delivery issues, share your order ID and registered phone number
+            for faster support.
+          </p>
+          <div className="mt-4 grid gap-2 text-sm text-amber-100">
+            <p>
+              Email:{" "}
+              <a
+                href="mailto:abhihothi524@gmail.com"
+                className="underline underline-offset-2"
+              >
+                abhihothi524@gmail.com
+              </a>
+            </p>
+            <p>Phone: +91 9016457163</p>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+}
