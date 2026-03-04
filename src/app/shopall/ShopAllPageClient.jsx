@@ -1,7 +1,8 @@
 "use client";
 
-import { useState, useMemo, useEffect } from "react";
+import { useState, useMemo, useEffect, useRef } from "react";
 import { useSearchParams } from "next/navigation";
+import { Loader2 } from "lucide-react";
 import ShopAll from "@/components/Shop-All/Shop-All";
 import { products } from "@/data";
 
@@ -142,6 +143,8 @@ export default function ShopAllPageClient() {
 
   const PRODUCTS_PER_PAGE = 12;
   const [visibleCount, setVisibleCount] = useState(PRODUCTS_PER_PAGE);
+  const [isLoadingMore, setIsLoadingMore] = useState(false);
+  const loadMoreRef = useRef(null);
 
   useEffect(() => {
     setVisibleCount(PRODUCTS_PER_PAGE);
@@ -156,10 +159,34 @@ export default function ShopAllPageClient() {
   ]);
 
   const visibleProducts = filteredProducts.slice(0, visibleCount);
+  const hasMore = visibleCount < filteredProducts.length;
 
-  const handleViewMore = () => {
-    setVisibleCount((prev) => prev + PRODUCTS_PER_PAGE);
-  };
+  useEffect(() => {
+    const target = loadMoreRef.current;
+    if (!target || !hasMore) return;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const first = entries[0];
+        if (first?.isIntersecting) {
+          setIsLoadingMore(true);
+          setVisibleCount((prev) =>
+            Math.min(prev + PRODUCTS_PER_PAGE, filteredProducts.length)
+          );
+          setTimeout(() => setIsLoadingMore(false), 350);
+        }
+      },
+      {
+        root: null,
+        rootMargin: "250px",
+        threshold: 0.1,
+      }
+    );
+
+    observer.observe(target);
+
+    return () => observer.disconnect();
+  }, [hasMore, filteredProducts.length]);
 
   const clearAllFilters = () => {
     setSelectedProductTypes([]);
@@ -352,14 +379,21 @@ export default function ShopAllPageClient() {
             ))}
           </div>
 
-          {visibleCount < filteredProducts.length && (
-            <div className="mt-12 flex justify-center">
-              <button
-                onClick={handleViewMore}
-                className="rounded-full border border-black px-8 py-3 text-sm font-medium transition hover:bg-black hover:text-white"
-              >
-                View More
-              </button>
+          {hasMore && (
+            <div className="mt-10 flex flex-col items-center gap-3">
+              <div
+                ref={loadMoreRef}
+                aria-hidden="true"
+                className="h-2 w-full"
+              />
+              {isLoadingMore ? (
+                <div className="flex items-center gap-2 text-xs text-gray-500">
+                  <Loader2 className="h-4 w-4 animate-spin text-black" />
+                  <span>Loading more products...</span>
+                </div>
+              ) : (
+                <p className="text-xs text-gray-500">Scroll to load more products</p>
+              )}
             </div>
           )}
 
