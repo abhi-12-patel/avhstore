@@ -1133,17 +1133,17 @@ const Cart = () => {
                         className="flex w-full items-center justify-center gap-2 bg-green-600 py-3 text-sm font-medium uppercase tracking-wider text-white transition-all hover:bg-green-700 rounded-lg"
                       >
                         <Send size={16} />
-                        Send Invoice on WhatsApp
+                        Pay First, Then Send WhatsApp
                       </button>
 
-                      <button
+                      {/* <button
                         type="button"
                         onClick={downloadInvoicePDF}
                         className="flex w-full items-center justify-center gap-2 border-2 border-black py-3 text-sm font-medium uppercase tracking-wider text-black transition-all hover:bg-black hover:text-white rounded-lg"
                       >
                         <Download size={16} />
                         Download Invoice
-                      </button>
+                      </button> */}
                     </div>
 
                     <div className="mt-5 rounded-xl border border-gray-200 bg-gray-50 p-4">
