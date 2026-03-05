@@ -1,8 +1,8 @@
 "use client";
 
-import { useState, useMemo, useEffect, useRef } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
+import { ChevronDown, Loader2 } from "lucide-react";
 import { useSearchParams } from "next/navigation";
-import { Loader2 } from "lucide-react";
 import ShopAll from "@/components/Shop-All/Shop-All";
 import { products } from "@/data";
 
@@ -21,32 +21,62 @@ const SHOP_FOR_OPTIONS = [
   { id: "men", label: "Men" },
 ];
 
+const formatTypeLabel = (value) => {
+  if (value === "jewelleryset") return "Jewelleryset";
+  if (value === "rajwadiset") return "Rajwadiset";
+  return value.charAt(0).toUpperCase() + value.slice(1);
+};
+
 export default function ShopAllPageClient() {
   const searchParams = useSearchParams();
-  const selectedCategory = (searchParams.get("category") || "").trim().toLowerCase();
+  const selectedCategoryFromUrl = (searchParams.get("category") || "").trim().toLowerCase();
 
-  const [activeFilterPanel, setActiveFilterPanel] = useState("productType");
+  const [openMenu, setOpenMenu] = useState("");
   const [selectedProductTypes, setSelectedProductTypes] = useState([]);
   const [selectedPriceId, setSelectedPriceId] = useState("all");
   const [selectedShopFor, setSelectedShopFor] = useState([]);
-  const [showBestSellerOnly, setShowBestSellerOnly] = useState(false);
-  const [priceSort, setPriceSort] = useState("default");
-  const [specialSort, setSpecialSort] = useState("default");
+  const [sortBy, setSortBy] = useState("default");
 
-  const productTypes = useMemo(() => {
-    const counts = new Map();
+  const [visibleCount, setVisibleCount] = useState(12);
+  const [isLoadingMore, setIsLoadingMore] = useState(false);
+  const loadMoreRef = useRef(null);
+  const menuRef = useRef(null);
+
+  useEffect(() => {
+    if (!selectedCategoryFromUrl) return;
+    setSelectedProductTypes([selectedCategoryFromUrl]);
+  }, [selectedCategoryFromUrl]);
+
+  useEffect(() => {
+    const onClickOutside = (event) => {
+      if (!menuRef.current) return;
+      if (!menuRef.current.contains(event.target)) setOpenMenu("");
+    };
+    document.addEventListener("mousedown", onClickOutside);
+    return () => document.removeEventListener("mousedown", onClickOutside);
+  }, []);
+
+  const productTypeCounts = useMemo(() => {
+    const map = new Map();
     products.forEach((product) => {
       const key = String(product.category || "").trim().toLowerCase();
       if (!key) return;
-      counts.set(key, (counts.get(key) || 0) + 1);
+      map.set(key, (map.get(key) || 0) + 1);
     });
-    return Array.from(counts.entries())
-      .map(([id, count]) => ({
-        id,
-        label: id.charAt(0).toUpperCase() + id.slice(1),
-        count,
-      }))
+    return Array.from(map.entries())
+      .map(([id, count]) => ({ id, label: formatTypeLabel(id), count }))
       .sort((a, b) => a.label.localeCompare(b.label));
+  }, []);
+
+  const priceCounts = useMemo(() => {
+    const counts = {};
+    PRICE_RANGES.forEach((range) => {
+      counts[range.id] = products.filter((product) => {
+        const price = Number(product.price) || 0;
+        return price >= range.min && price <= range.max;
+      }).length;
+    });
+    return counts;
   }, []);
 
   const getShopForTags = (product) => {
@@ -70,23 +100,6 @@ export default function ShopAllPageClient() {
     return counts;
   }, []);
 
-  const priceCounts = useMemo(() => {
-    const counts = {};
-    PRICE_RANGES.forEach((range) => {
-      counts[range.id] = products.filter((product) => {
-        const price = Number(product.price) || 0;
-        return price >= range.min && price <= range.max;
-      }).length;
-    });
-    return counts;
-  }, []);
-
-  useEffect(() => {
-    if (!selectedCategory) return;
-    setSelectedProductTypes([selectedCategory]);
-    setActiveFilterPanel("productType");
-  }, [selectedCategory]);
-
   const filteredProducts = useMemo(() => {
     let list = [...products];
 
@@ -94,10 +107,6 @@ export default function ShopAllPageClient() {
       const selectedSet = new Set(selectedProductTypes);
       list = list.filter((product) =>
         selectedSet.has(String(product.category || "").trim().toLowerCase())
-      );
-    } else if (selectedCategory) {
-      list = list.filter(
-        (product) => String(product.category || "").trim().toLowerCase() === selectedCategory
       );
     }
 
@@ -118,48 +127,27 @@ export default function ShopAllPageClient() {
       });
     }
 
-    if (showBestSellerOnly) {
-      list = list.filter((product) => product.isBestseller);
-    }
-
-    if (specialSort === "bestseller_first") {
-      list.sort((a, b) => Number(Boolean(b.isBestseller)) - Number(Boolean(a.isBestseller)));
-    } else if (priceSort === "price_low_high") {
+    if (sortBy === "price_low_high") {
       list.sort((a, b) => (Number(a.price) || 0) - (Number(b.price) || 0));
-    } else if (priceSort === "price_high_low") {
+    } else if (sortBy === "price_high_low") {
       list.sort((a, b) => (Number(b.price) || 0) - (Number(a.price) || 0));
+    } else if (sortBy === "best_selling") {
+      list.sort((a, b) => Number(Boolean(b.isBestseller)) - Number(Boolean(a.isBestseller)));
     }
 
     return list;
-  }, [
-    selectedCategory,
-    selectedProductTypes,
-    selectedPriceId,
-    selectedShopFor,
-    showBestSellerOnly,
-    priceSort,
-    specialSort,
-  ]);
-
-  const PRODUCTS_PER_PAGE = 12;
-  const [visibleCount, setVisibleCount] = useState(PRODUCTS_PER_PAGE);
-  const [isLoadingMore, setIsLoadingMore] = useState(false);
-  const loadMoreRef = useRef(null);
+  }, [selectedProductTypes, selectedPriceId, selectedShopFor, sortBy]);
 
   useEffect(() => {
-    setVisibleCount(PRODUCTS_PER_PAGE);
-  }, [
-    selectedCategory,
-    selectedProductTypes,
-    selectedPriceId,
-    selectedShopFor,
-    showBestSellerOnly,
-    priceSort,
-    specialSort,
-  ]);
+    setVisibleCount(12);
+  }, [selectedProductTypes, selectedPriceId, selectedShopFor, sortBy]);
 
   const visibleProducts = filteredProducts.slice(0, visibleCount);
   const hasMore = visibleCount < filteredProducts.length;
+  const activeFilterCount =
+    selectedProductTypes.length +
+    (selectedPriceId !== "all" ? 1 : 0) +
+    selectedShopFor.length;
 
   useEffect(() => {
     const target = loadMoreRef.current;
@@ -167,35 +155,18 @@ export default function ShopAllPageClient() {
 
     const observer = new IntersectionObserver(
       (entries) => {
-        const first = entries[0];
-        if (first?.isIntersecting) {
-          setIsLoadingMore(true);
-          setVisibleCount((prev) =>
-            Math.min(prev + PRODUCTS_PER_PAGE, filteredProducts.length)
-          );
-          setTimeout(() => setIsLoadingMore(false), 350);
-        }
+        const entry = entries[0];
+        if (!entry?.isIntersecting) return;
+        setIsLoadingMore(true);
+        setVisibleCount((prev) => Math.min(prev + 12, filteredProducts.length));
+        setTimeout(() => setIsLoadingMore(false), 350);
       },
-      {
-        root: null,
-        rootMargin: "250px",
-        threshold: 0.1,
-      }
+      { root: null, rootMargin: "250px", threshold: 0.1 }
     );
 
     observer.observe(target);
-
     return () => observer.disconnect();
   }, [hasMore, filteredProducts.length]);
-
-  const clearAllFilters = () => {
-    setSelectedProductTypes([]);
-    setSelectedPriceId("all");
-    setSelectedShopFor([]);
-    setShowBestSellerOnly(false);
-    setPriceSort("default");
-    setSpecialSort("default");
-  };
 
   const toggleProductType = (id) => {
     setSelectedProductTypes((prev) =>
@@ -209,200 +180,182 @@ export default function ShopAllPageClient() {
     );
   };
 
-  const selectedFilterChips = [
-    ...selectedProductTypes.map((id) => ({ type: "product", id, label: `Type: ${id}` })),
-    ...(selectedPriceId !== "all"
-      ? [
-          {
-            type: "price",
-            id: selectedPriceId,
-            label: `Price: ${
-              PRICE_RANGES.find((r) => r.id === selectedPriceId)?.label || selectedPriceId
-            }`,
-          },
-        ]
-      : []),
-    ...selectedShopFor.map((id) => ({ type: "shopFor", id, label: `Shop For: ${id}` })),
-    ...(showBestSellerOnly ? [{ type: "best", id: "best", label: "Bestselling" }] : []),
-  ];
-
-  const removeChip = (chip) => {
-    if (chip.type === "product") {
-      setSelectedProductTypes((prev) => prev.filter((item) => item !== chip.id));
-    } else if (chip.type === "price") {
-      setSelectedPriceId("all");
-    } else if (chip.type === "shopFor") {
-      setSelectedShopFor((prev) => prev.filter((item) => item !== chip.id));
-    } else if (chip.type === "best") {
-      setShowBestSellerOnly(false);
-    }
+  const clearAllFilters = () => {
+    setSelectedProductTypes([]);
+    setSelectedPriceId("all");
+    setSelectedShopFor([]);
+    setSortBy("default");
   };
 
   return (
-    <div
-      className="bg-white px-2 pt-2 text-gray-600 lg:px-[5%] lg:pt-3 lg:pb-5 mainCatgeroryContainer"
-      style={{ fontFamily: "Inter, sans-serif" }}
-    >
-      <h1 className="pb-6 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-gray-900">
-        Products
-      </h1>
+    <div className="bg-gradient-to-b from-[#faf9ff] via-white to-white px-2 pt-2 text-gray-700 lg:px-[5%] lg:pt-3 lg:pb-6 mainCatgeroryContainer">
+      <div className="mb-5 rounded-2xl  p-5 sm:p-7">
+     
+        <h1 className="mt-2 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-[#111a2e]">
+          Products
+        </h1>
+       
+      </div>
 
-      <div className="grid gap-6 lg:grid-cols-[300px_minmax(0,1fr)]">
-        <aside className="h-fit overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm lg:sticky lg:top-24">
-          <div className="grid grid-cols-2 border-b border-gray-200 text-sm font-medium">
-            <button
-              type="button"
-              onClick={() => setActiveFilterPanel("productType")}
-              className={`flex items-center justify-between px-3 py-4 text-left transition ${
-                activeFilterPanel === "productType"
-                  ? "border-b-2 border-rose-500 text-rose-500"
-                  : "text-gray-700 hover:bg-gray-50"
-              }`}
+      <div
+        ref={menuRef}
+        className="relative rounded-xl border border-gray-200 bg-white shadow-sm"
+      >
+        <div className="flex flex-wrap items-center gap-x-8 gap-y-2 border-b border-gray-200 px-4 py-3">
+          <button
+            type="button"
+            onClick={() => setOpenMenu((prev) => (prev === "productType" ? "" : "productType"))}
+            className={`inline-flex items-center gap-1 text-[18px] transition ${
+              openMenu === "productType" ? "text-rose-500" : "text-gray-700"
+            }`}
+          >
+            Product type <ChevronDown size={16} />
+          </button>
+          <button
+            type="button"
+            onClick={() => setOpenMenu((prev) => (prev === "price" ? "" : "price"))}
+            className={`inline-flex items-center gap-1 text-[18px] transition ${
+              openMenu === "price" ? "text-rose-500" : "text-gray-700"
+            }`}
+          >
+            Price <ChevronDown size={16} />
+          </button>
+      
+          <div className="ml-auto flex items-center gap-3">
+            <span className="text-sm text-gray-500">Sort by:</span>
+            <select
+              value={sortBy}
+              onChange={(e) => setSortBy(e.target.value)}
+              className="rounded-md border border-gray-300 px-2 py-1 text-sm focus:border-black focus:outline-none"
             >
-              Product type <span className="text-xs">⌄</span>
-            </button>
-            <button
-              type="button"
-              onClick={() => setActiveFilterPanel("price")}
-              className={`flex items-center justify-between px-3 py-4 text-left transition ${
-                activeFilterPanel === "price"
-                  ? "border-b-2 border-rose-500 text-rose-500"
-                  : "text-gray-700 hover:bg-gray-50"
-              }`}
-            >
-              Price <span className="text-xs">⌄</span>
-            </button>
+              <option value="default">Default</option>
+              <option value="best_selling">Best selling</option>
+              <option value="price_low_high">Price low to high</option>
+              <option value="price_high_low">Price high to low</option>
+            </select>
           </div>
+        </div>
 
-          <div className="max-h-[470px] overflow-y-auto px-3 py-2">
-            {activeFilterPanel === "productType" &&
-              productTypes.map((type) => (
-                <label
-                  key={type.id}
-                  className="flex cursor-pointer items-center justify-between gap-3 rounded-lg px-2 py-2 text-gray-700 hover:bg-gray-50"
-                >
-                  <span className="flex items-center gap-3">
-                    <input
-                      type="checkbox"
-                      checked={selectedProductTypes.includes(type.id)}
-                      onChange={() => toggleProductType(type.id)}
-                      className="h-4 w-4 border-gray-300 accent-black"
-                    />
-                    <span className="capitalize">{type.label}</span>
-                  </span>
-                  <span className="text-gray-500">({type.count})</span>
-                </label>
-              ))}
+        <div className="flex flex-wrap items-center justify-between gap-2 px-4 py-2">
+          <p className="text-xs text-gray-500">{filteredProducts.length} products found</p>
+          {activeFilterCount > 0 && (
+            <span className="rounded-full bg-black px-2.5 py-1 text-[11px] font-medium text-white">
+              {activeFilterCount} filters active
+            </span>
+          )}
+        </div>
 
-            {activeFilterPanel === "price" &&
-              PRICE_RANGES.map((range) => (
-                <label
-                  key={range.id}
-                  className="flex cursor-pointer items-center justify-between gap-3 rounded-lg px-2 py-2 text-gray-700 hover:bg-gray-50"
-                >
-                  <span className="flex items-center gap-3">
-                    <input
-                      type="radio"
-                      name="price-filter"
-                      checked={selectedPriceId === range.id}
-                      onChange={() => setSelectedPriceId(range.id)}
-                      className="h-4 w-4 border-gray-300 accent-black"
-                    />
-                    <span>{range.label}</span>
-                  </span>
-                  <span className="text-gray-500">({priceCounts[range.id] || 0})</span>
-                </label>
-              ))}
+        {openMenu && (
+          <div className="absolute left-0 top-full z-20 mt-1 w-full max-w-[460px] rounded-xl border border-gray-200 bg-white shadow-xl">
+            <div className="max-h-[340px] overflow-y-auto p-3">
+              {openMenu === "productType" &&
+                productTypeCounts.map((type) => (
+                  <label
+                    key={type.id}
+                    className="flex cursor-pointer items-center justify-between rounded-lg px-2 py-2 text-gray-700 hover:bg-gray-50"
+                  >
+                    <span className="flex items-center gap-3">
+                      <input
+                        type="checkbox"
+                        checked={selectedProductTypes.includes(type.id)}
+                        onChange={() => toggleProductType(type.id)}
+                        className="h-4 w-4 accent-black"
+                      />
+                      <span>{type.label}</span>
+                    </span>
+                    <span className="text-gray-500">({type.count})</span>
+                  </label>
+                ))}
 
-            {activeFilterPanel === "shopFor" &&
-              SHOP_FOR_OPTIONS.map((option) => (
-                <label
-                  key={option.id}
-                  className="flex cursor-pointer items-center justify-between gap-3 rounded-lg px-2 py-2 text-gray-700 hover:bg-gray-50"
-                >
-                  <span className="flex items-center gap-3">
-                    <input
-                      type="checkbox"
-                      checked={selectedShopFor.includes(option.id)}
-                      onChange={() => toggleShopFor(option.id)}
-                      className="h-4 w-4 border-gray-300 accent-black"
-                    />
-                    <span>{option.label}</span>
-                  </span>
-                  <span className="text-gray-500">({shopForCounts[option.id] || 0})</span>
-                </label>
-              ))}
-          </div>
+              {openMenu === "price" &&
+                PRICE_RANGES.map((range) => (
+                  <label
+                    key={range.id}
+                    className="flex cursor-pointer items-center justify-between rounded-lg px-2 py-2 text-gray-700 hover:bg-gray-50"
+                  >
+                    <span className="flex items-center gap-3">
+                      <input
+                        type="radio"
+                        name="price"
+                        checked={selectedPriceId === range.id}
+                        onChange={() => setSelectedPriceId(range.id)}
+                        className="h-4 w-4 accent-black"
+                      />
+                      <span>{range.label}</span>
+                    </span>
+                    <span className="text-gray-500">({priceCounts[range.id] || 0})</span>
+                  </label>
+                ))}
 
-          <div className="border-t border-gray-200 p-3">
-            <button
-              type="button"
-              onClick={clearAllFilters}
-              className="w-full rounded-lg border border-gray-300 px-3 py-2 text-sm font-medium text-gray-700 transition hover:border-black"
-            >
-              Clear Filters
-            </button>
-          </div>
-        </aside>
-
-        <section>
-          {selectedFilterChips.length > 0 && (
-            <div className="mb-4 flex flex-wrap gap-2">
-              {selectedFilterChips.map((chip) => (
-                <button
-                  key={`${chip.type}-${chip.id}`}
-                  type="button"
-                  onClick={() => removeChip(chip)}
-                  className="inline-flex items-center gap-2 rounded-full border border-gray-300 bg-gray-50 px-3 py-1 text-xs text-gray-700 hover:border-black"
-                >
-                  <span className="capitalize">{chip.label}</span>
-                  <span>x</span>
-                </button>
-              ))}
+              {openMenu === "shopFor" &&
+                SHOP_FOR_OPTIONS.map((option) => (
+                  <label
+                    key={option.id}
+                    className="flex cursor-pointer items-center justify-between rounded-lg px-2 py-2 text-gray-700 hover:bg-gray-50"
+                  >
+                    <span className="flex items-center gap-3">
+                      <input
+                        type="checkbox"
+                        checked={selectedShopFor.includes(option.id)}
+                        onChange={() => toggleShopFor(option.id)}
+                        className="h-4 w-4 accent-black"
+                      />
+                      <span>{option.label}</span>
+                    </span>
+                    <span className="text-gray-500">({shopForCounts[option.id] || 0})</span>
+                  </label>
+                ))}
             </div>
-          )}
-
-          <div className="grid justify-items-center gap-6 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-            {visibleProducts.map((product) => (
-              <ShopAll
-                key={product.id}
-                id={product.id}
-                productData={product}
-                imageUrl={product.images?.[0] || ""}
-                title={product.name}
-                price={product.price}
-                linkHref={`/product/${product.id}`}
-                inStock={product.inStock}
-                isNew={product.isNew}
-                isBestseller={product.isBestseller}
-              />
-            ))}
-          </div>
-
-          {hasMore && (
-            <div className="mt-10 flex flex-col items-center gap-3">
-              <div
-                ref={loadMoreRef}
-                aria-hidden="true"
-                className="h-2 w-full"
-              />
-              {isLoadingMore ? (
-                <div className="flex items-center gap-2 text-xs text-gray-500">
-                  <Loader2 className="h-4 w-4 animate-spin text-black" />
-                  <span>Loading more products...</span>
-                </div>
-              ) : (
-                <p className="text-xs text-gray-500">Scroll to load more products</p>
-              )}
+            <div className="border-t border-gray-200 p-3">
+              <button
+                type="button"
+                onClick={clearAllFilters}
+                className="w-full rounded-lg border border-gray-300 px-3 py-2 text-sm font-medium transition hover:border-black hover:bg-gray-50"
+              >
+                Clear Filters
+              </button>
             </div>
-          )}
+          </div>
+        )}
+      </div>
 
-          {filteredProducts.length === 0 && (
-            <p className="mt-10 text-center text-sm text-gray-500">
-              No products found for selected filters.
-            </p>
-          )}
-        </section>
+      <div className="pt-6">
+        <div className="grid grid-cols-2 justify-items-center gap-4 sm:gap-6 lg:grid-cols-3 xl:grid-cols-4">
+          {visibleProducts.map((product) => (
+            <ShopAll
+              key={product.id}
+              id={product.id}
+              productData={product}
+              imageUrl={product.images?.[0] || ""}
+              title={product.name}
+              price={product.price}
+              linkHref={`/product/${product.id}`}
+              inStock={product.inStock}
+              isNew={product.isNew}
+              isBestseller={product.isBestseller}
+            />
+          ))}
+        </div>
+
+        {hasMore && (
+          <div className="mt-10 flex flex-col items-center gap-3">
+            <div ref={loadMoreRef} aria-hidden="true" className="h-2 w-full" />
+            {isLoadingMore ? (
+              <div className="flex items-center gap-2 text-xs text-gray-500">
+                <Loader2 className="h-4 w-4 animate-spin text-black" />
+                <span>Loading more products...</span>
+              </div>
+            ) : (
+              <p className="text-xs text-gray-500">Scroll to load more products</p>
+            )}
+          </div>
+        )}
+
+        {filteredProducts.length === 0 && (
+          <p className="mt-10 text-center text-sm text-gray-500">
+            No products found for selected filters.
+          </p>
+        )}
       </div>
     </div>
   );

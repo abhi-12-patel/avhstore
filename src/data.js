@@ -643,7 +643,7 @@ An ideal choice for women and girls who love classy, ethnic, and designer-inspir
     id: 29,
     name: "Rose Gold Plated Black & Gold Clover Bracelet for Women & Girls | Elegant Minimal Kada Bracelet | Stylish Daily Wear Jewellery",
     SKU_id: "AVH_BR_029",
-    price: 200,
+    price: 150,
     description:
       `Upgrade your jewellery collection with this elegant Rose Gold Dual Clover Charm Bracelet. Designed with two beautifully crafted clover motifs featuring a classy black and rose gold finish, this bracelet symbolizes luck, elegance, and timeless fashion.
 
@@ -665,7 +665,7 @@ This bracelet pairs effortlessly with western outfits, formal wear, and ethnic d
     id: 30,
     name: "Rose Gold Plated LOVE Bracelet for Women & Girls | Stylish Letter Design Kada Bracelet | Trendy Party Wear & Gift Jewellery",
     SKU_id: "AVH_BR_030",
-    price: 200,
+    price: 150,
     description:
       `Celebrate love and style with this elegant Rose Gold LOVE Letter Bracelet. Designed with a modern and minimal look, this bracelet features a stylish “LOVE” letter charm in a classy black and white enamel finish. The smooth rose gold plating enhances its premium and luxurious appeal.
 
@@ -688,7 +688,7 @@ This bracelet is a perfect gift choice for birthdays, anniversaries, Valentine�
     id: 31,
     name: "Rose Gold Plated Heart Bracelet for Women & Girls | Crystal Studded Stylish Kada Bracelet | Party Wear & Gift Jewellery",
     SKU_id: "AVH_BR_031",
-    price: 200,
+    price: 150,
     description:
       `Upgrade your jewellery collection with this Elegant Rose Gold Double Heart Crystal Bracelet, designed to add charm and sophistication to your look. Featuring a beautiful dual-heart centerpiece — one polished solid heart and one crystal-studded open heart — this bracelet symbolizes love, elegance, and modern style.
 
@@ -710,7 +710,7 @@ Whether you're attending a party, celebration, wedding, or looking for a thought
     id: 32,
     name: "Rose Gold Plated Black Stone Bracelet for Women & Girls | Geometric Circle Design Stylish Kada | Party Wear & Trendy Jewellery",
     SKU_id: "AVH_BR_032",
-    price: 200,
+    price: 150,
     description:
       `Enhance your style with this elegant Rose Gold Black Stone Geometric Bracelet, designed for women who love modern and classy jewellery. Featuring a bold black round centerpiece with matching side accents and stylish circular elements, this bracelet gives a sophisticated and contemporary look.
 
@@ -754,7 +754,7 @@ Perfect for weddings, festive occasions, parties, and traditional functions, thi
     id: 34,
     name: "Rose Gold Plated Butterfly Bracelet with Crystal Stones | Stylish Kada Bracelet for Women & Girls | Party & Gift Wear Jewellery",
     SKU_id: "AVH_BR_034",
-    price:200,
+    price:150,
     description:
       `Add elegance and charm to your jewelry collection with this stunning Rose Gold Butterfly Bracelet. Beautifully designed with delicate butterfly motifs, this bracelet features sparkling crystal stones that enhance its luxurious and feminine look. The sleek rose gold finish gives it a modern yet classy appeal, making it perfect for both daily wear and special occasions.
 
@@ -820,7 +820,7 @@ This designer bracelet pairs perfectly with sarees, lehengas, gowns, and ethnic 
     id: 37,
     name: "Rose Gold Plated Black Butterfly Bracelet for Women & Girls | Crystal Studded Stylish Kada | Trendy Party Wear Jewellery",
     SKU_id: "AVH_BR_037",
-    price:200,
+    price:150,
     description:
       `Add a touch of elegance and charm to your jewellery collection with this stunning Rose Gold Black Butterfly Bracelet. Featuring a sleek butterfly centerpiece with glossy black enamel detailing, this bracelet beautifully blends modern style with feminine grace.
 
@@ -842,7 +842,7 @@ Perfect for parties, office wear, casual outings, and gifting, this stylish brac
     id: 38,
     name: "Gold Plated Micro AD Heart Bracelet for Women | American Diamond Designer Gold Bracelet | Adjustable Party & Daily Wear Jewellery",
     SKU_id: "AVH_ER_038",
-    price: 200,
+    price: 150,
     description:
       `Upgrade your jewellery collection with this elegant Gold Plated Micro AD Heart Bracelet. Designed with a sleek gold finish and delicate heart cut detailing on both sides, this bracelet offers a modern yet classy look. The center micro AD stone setting adds a subtle sparkle, making it perfect for both daily wear and special occasions.
 
@@ -864,7 +864,7 @@ A perfect gifting option for birthdays, anniversaries, Valentine's Day, and fest
     id: 39,
     name: "Gold Plated Micro AD Multi Heart Bracelet for Women",
     SKU_id: "AVH_ER_039",
-    price: 200,
+    price: 150,
     description:
       `Add sparkle to your jewellery collection with this stunning Gold Plated Micro AD Multi Heart Bracelet. Beautifully crafted with a premium gold finish, this bracelet features elegant heart cut detailing on the sides and a stylish center line of micro American Diamond stones for a classy shine.
 
@@ -886,7 +886,7 @@ Pair it effortlessly with ethnic outfits, western dresses, or office wear to com
     id: 40,
     name: "Gold Plated Micro AD Interlocking Heart Designer Bracelet for Women",
     SKU_id: "AVH_BR_040",
-    price:200,
+    price:150,
     description:
       `Enhance your style with this elegant Gold Plated Micro AD Interlocking Heart Bracelet. Featuring a sleek gold finish with modern elongated side bars and a beautiful center design of interlocking hearts, this bracelet symbolizes love and elegance.
 
@@ -908,7 +908,7 @@ Lightweight and versatile, this bracelet is ideal for daily wear, office wear, c
     id: 41,
     name: "Gold Plated Micro AD Heart Bar Designer Bracelet for Women",
     SKU_id: "AVH_BR_041",
-    price:200,
+    price:150,
     description:
       `Add a touch of elegance to your jewellery collection with this stylish Gold Plated Micro AD Heart Bar Bracelet. Designed with a sleek gold finish and beautiful heart cut detailing on the sides, this bracelet features a stunning double-line micro American Diamond bar in the center for a classy sparkle.
 
@@ -930,7 +930,7 @@ Lightweight and versatile, this bracelet pairs perfectly with both ethnic and we
     id: 42,
     name: "Gold Plated Micro AD Infinity Bracelet for Women | American Diamond Heart Designer Gold Bracelet | Adjustable Daily & Party Wear Jewellery",
     SKU_id: "AVH_BR_042",
-    price:200,
+    price:150,
     description:
       `Elevate your style with this elegant Gold Plated Micro AD Infinity Heart Bracelet. Featuring a sleek gold finish with delicate heart cut detailing on the sides, this bracelet showcases a beautiful infinity-shaped center design studded with sparkling micro American Diamonds.
 

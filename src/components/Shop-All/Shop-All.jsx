@@ -94,14 +94,14 @@ const ShopAll = ({
       </Link>
 
       {/* BADGES */}
-      <div className="absolute left-4 top-4 flex flex-col gap-2">
+      <div className="absolute left-2 top-2 z-10 flex max-w-[68%] flex-col gap-1 sm:left-4 sm:top-4 sm:max-w-none sm:gap-2">
         {isNew && (
-          <span className="rounded-full bg-black px-3 py-1 text-[10px] font-semibold uppercase tracking-widest text-white shadow-md">
+          <span className="w-fit rounded-full bg-black px-2 py-1 text-[9px] font-semibold uppercase tracking-wide text-white shadow-md sm:px-3 sm:text-[10px] sm:tracking-widest">
             New
           </span>
         )}
         {isBestseller && (
-          <span className="rounded-full bg-amber-400 px-3 py-1 text-[10px] font-semibold uppercase tracking-widest text-black shadow-md">
+          <span className="w-fit rounded-full bg-amber-400 px-2 py-1 text-[9px] font-semibold uppercase tracking-wide text-black shadow-md sm:px-3 sm:text-[10px] sm:tracking-widest">
             Best Seller
           </span>
         )}
@@ -110,11 +110,11 @@ const ShopAll = ({
       {/* WISHLIST BUTTON */}
       <button
         onClick={handleWishlist}
-        className="absolute right-4 top-4 rounded-full bg-white/20 p-2 backdrop-blur-md transition-all duration-300 hover:scale-110 z-10"
+        className="absolute right-2 top-2 z-10 rounded-full bg-white/20 p-1.5 backdrop-blur-md transition-all duration-300 hover:scale-110 sm:right-4 sm:top-4 sm:p-2"
         aria-label="Toggle wishlist"
       >
         <FaHeart
-          className={`h-4 w-4 transition-colors duration-300 ${
+          className={`h-3.5 w-3.5 transition-colors duration-300 sm:h-4 sm:w-4 ${
             inWishlist ? 'text-red-500 scale-110' : 'text-gray-400'
           }`}
         />
