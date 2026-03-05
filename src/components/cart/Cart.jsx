@@ -3,12 +3,24 @@
 import React, { useMemo, useState } from "react";
 import Link from "next/link";
 import { useStore } from "@/store/useStore";
-import { Minus, Plus, X, ShoppingBag, ArrowRight, Download, Send } from "lucide-react";
+import {
+  Minus,
+  Plus,
+  X,
+  ShoppingBag,
+  ArrowRight,
+  Download,
+  Send,
+  QrCode,
+  Smartphone,
+} from "lucide-react";
 import ImageWithFallback from "../ImageWithFallback";
 import { FREE_SHIPPING_MIN, OFFER_RULES, products as catalogProducts } from "@/data";
 import ProductCard from "../common/productCart/ProductCart";
 
-const WHATSAPP_NUMBER = "919016457163";
+const WHATSAPP_NUMBER = "916351359801";
+const UPI_ID = "vjashoda738-2@oksbi";
+const UPI_PAYEE_NAME = "AVH STORE";
 const CHECKOUT_FIELDS = [
   { key: "fullName", label: "Full Name", type: "text", autoComplete: "name" },
   { key: "phone", label: "Phone Number", type: "tel", autoComplete: "tel" },
@@ -18,9 +30,40 @@ const CHECKOUT_FIELDS = [
   { key: "pincode", label: "Pincode", type: "text", autoComplete: "postal-code" },
 ];
 
+const buildUPIURL = (amount, orderNumber) => {
+  const params = new URLSearchParams({
+    pa: UPI_ID,
+    pn: UPI_PAYEE_NAME,
+    am: Number(amount || 0).toFixed(2),
+    cu: "INR",
+    tn: `Order ID ${orderNumber || "N/A"}`,
+  });
+
+  return `upi://pay?${params.toString()}`;
+};
+
+const getQRCodeURL = (upiURL, size = 220) =>
+  `https://api.qrserver.com/v1/create-qr-code/?size=${size}x${size}&data=${encodeURIComponent(
+    upiURL
+  )}`;
+
+const fetchImageAsDataURL = async (url) => {
+  const response = await fetch(url);
+  if (!response.ok) {
+    throw new Error("Unable to load QR image");
+  }
+
+  const blob = await response.blob();
+  return new Promise((resolve, reject) => {
+    const reader = new FileReader();
+    reader.onloadend = () => resolve(reader.result);
+    reader.onerror = reject;
+    reader.readAsDataURL(blob);
+  });
+};
+
 const Cart = () => {
   const { cart, addToCart, removeFromCart, updateQuantity, clearCart } = useStore();
-  console.log(cart,"Cart")
   const [showCheckout, setShowCheckout] = useState(false);
   const [form, setForm] = useState({
     fullName: "",
@@ -35,7 +78,7 @@ const Cart = () => {
     name: "AVH STORE",
     address: "C/O 133, Laxmi Palace, Street No. 5, Radha Nagar, Radha Nagar Society, Chandreshnagar, Rajkot, Gujarat pin-360004",
     // gstin: "RTOUFGV56790",
-    phone: "9016457163",
+    phone: "91 6351359801",
     email: "avhstore@example.com",
   };
 
@@ -83,13 +126,11 @@ const Cart = () => {
   const discountPercent = applicableOffer?.discount || 0;
   const discountAmount = (subtotal * discountPercent) / 100;
   const subtotalAfterDiscount = subtotal - discountAmount;
-  const gst = subtotalAfterDiscount * 1;
   const shipping = subtotal > 0 && subtotal < FREE_SHIPPING_MIN ? 50 : 0;
-  const finalTotal = subtotalAfterDiscount + gst + shipping;
+  const finalTotal = subtotalAfterDiscount + shipping;
 
   const subtotalRounded = round(subtotal);
   const discountRounded = round(discountAmount);
-  const gstRounded = round(gst);
   const finalTotalRounded = round(finalTotal);
 
 
@@ -114,6 +155,19 @@ const Cart = () => {
     return shuffled.slice(0, 4);
   }, [normalizedCart]);
 
+  const previewOrderNumber = useMemo(
+    () => `ORD-${Date.now().toString().slice(-8)}`,
+    []
+  );
+  const previewUpiURL = useMemo(
+    () => buildUPIURL(finalTotalRounded, previewOrderNumber),
+    [finalTotalRounded, previewOrderNumber]
+  );
+  const previewQRCodeURL = useMemo(
+    () => getQRCodeURL(previewUpiURL),
+    [previewUpiURL]
+  );
+
   const handleQuickAddToCart = (product) => {
     if (!product) return;
     addToCart(product, 1, "Free Size");
@@ -136,6 +190,8 @@ const Cart = () => {
     const compact = Boolean(options.compact);
     const invoiceMeta = options.invoiceMeta || createInvoiceMeta();
     const { invoiceNumber, date } = invoiceMeta;
+    const invoiceUpiURL = buildUPIURL(finalTotalRounded, invoiceNumber);
+    const invoiceQRCodeURL = getQRCodeURL(invoiceUpiURL, 180);
 
     const itemsHTML = normalizedCart
       .map((item, index) => {
@@ -525,6 +581,15 @@ const Cart = () => {
           </div>
           
           <div class="invoice-footer">
+            <div style="margin-bottom: 14px;">
+              <div style="font-weight: 700; color: #1a202c; margin-bottom: 8px;">Pay Now (UPI)</div>
+              <div style="display: inline-flex; align-items: center; gap: 12px; padding: 10px 12px; border: 1px solid #e2e8f0; border-radius: 10px;">
+                <img src="${invoiceQRCodeURL}" alt="UPI Payment QR" width="90" height="90" style="border-radius: 8px; border: 1px solid #edf2f7;" />
+                <div style="text-align: left;">
+
+                </div>
+              </div>
+            </div>
             <p>Thank you for shopping with ${STORE_INFO.name}!</p>
             <p style="margin-top: 8px;">This is a computer generated invoice - no signature required.</p>
           </div>
@@ -551,56 +616,250 @@ const Cart = () => {
         ? invoiceMeta
         : createInvoiceMeta();
 
-    const [{ jsPDF }, { default: html2canvas }] = await Promise.all([
-      import("jspdf"),
-      import("html2canvas"),
-    ]);
-
-    const invoiceHTML = generateInvoiceHTML({ compact: true, invoiceMeta: resolvedInvoiceMeta });
-
-    const temp = document.createElement("div");
-    temp.style.position = "fixed";
-    temp.style.left = "-10000px";
-    temp.style.top = "0";
-    temp.style.width = "1000px";
-    temp.style.background = "white";
-    temp.innerHTML = invoiceHTML;
-    document.body.appendChild(temp);
-
-    const invoiceRoot = temp.querySelector(".invoice-container");
-    if (!invoiceRoot) {
-      document.body.removeChild(temp);
-      return;
-    }
-
-    const canvas = await html2canvas(invoiceRoot, {
-      backgroundColor: "#ffffff",
-      scale: 2,
-      useCORS: true,
-      allowTaint: true,
-      logging: false,
-    });
-
-    const imgData = canvas.toDataURL("image/png");
+    const { jsPDF } = await import("jspdf");
     const pdf = new jsPDF("p", "mm", "a4");
     const pageWidth = pdf.internal.pageSize.getWidth();
     const pageHeight = pdf.internal.pageSize.getHeight();
-    const ratio = Math.min(
-      pageWidth / canvas.width,
-      pageHeight / canvas.height
-    );
-    const imgWidth = canvas.width * ratio;
-    const imgHeight = canvas.height * ratio;
-    const x = (pageWidth - imgWidth) / 2;
-    const y = (pageHeight - imgHeight) / 2;
 
-    pdf.addImage(imgData, "PNG", x, y, imgWidth, imgHeight);
+    const left = 12;
+    const right = 12;
+    const top = 12;
+    const bottom = 12;
+    const contentWidth = pageWidth - left - right;
+    const money = (value) => `Rs. ${Math.round(value)}`;
+    const safe = (value) => String(value ?? "").trim() || "N/A";
+    const upiURL = buildUPIURL(finalTotalRounded, resolvedInvoiceMeta.invoiceNumber);
+    const qrCodeURL = getQRCodeURL(upiURL);
+
+    const columns = {
+      index: left + 2,
+      product: left + 12,
+      qty: pageWidth - right - 58,
+      price: pageWidth - right - 30,
+      total: pageWidth - right - 2,
+      qtySep: pageWidth - right - 64,
+      priceSep: pageWidth - right - 36,
+      totalSep: pageWidth - right - 24,
+    };
+    const productColWidth = columns.qtySep - columns.product - 4;
+
+    let y = top;
+
+    const billToWidth = Math.min(78, contentWidth * 0.42);
+    const billToX = pageWidth - right - billToWidth;
+    const companyWidth = contentWidth - billToWidth - 8;
+    const companyX = left + 4;
+    const customerText = [
+      `Name: ${safe(form.fullName)}`,
+      `Address: ${safe(form.address)}, ${safe(form.city)}, ${safe(form.state)} - ${safe(form.pincode)}`,
+      `Phone: ${safe(form.phone)}`,
+    ].join("\n");
+    const companyText = [
+      `Address: ${safe(STORE_INFO.address)}`,
+      `Phone: ${safe(STORE_INFO.phone)}`,
+      `Email: ${safe(STORE_INFO.email)}`,
+    ].join("\n");
+    const customerLines = pdf.splitTextToSize(customerText, billToWidth);
+    const companyLines = pdf.splitTextToSize(companyText, companyWidth);
+    const headerHeight = Math.max(
+      34,
+      12 + Math.max(customerLines.length * 4.2, companyLines.length * 4.2)
+    );
+
+    pdf.setFillColor(20, 20, 20);
+    pdf.rect(left, y, contentWidth, headerHeight, "F");
+    pdf.setTextColor(255, 255, 255);
+    pdf.setFont("helvetica", "bold");
+    pdf.setFontSize(16);
+    pdf.text(STORE_INFO.name, companyX, y + 8);
+    pdf.setFont("helvetica", "normal");
+    pdf.setFontSize(8.8);
+    pdf.text(companyLines, companyX, y + 13);
+
+    pdf.setDrawColor(255, 255, 255);
+    pdf.setLineWidth(0.2);
+    pdf.line(billToX - 4, y + 4, billToX - 4, y + headerHeight - 4);
+
+    pdf.setFont("helvetica", "bold");
+    pdf.setFontSize(10);
+    pdf.text("BILL TO", billToX, y + 8);
+    pdf.setFont("helvetica", "normal");
+    pdf.setFontSize(9);
+    pdf.text(customerLines, billToX, y + 13);
+
+    y += headerHeight + 8;
+    pdf.setTextColor(0, 0, 0);
+
+    pdf.setDrawColor(220, 220, 220);
+    pdf.setFillColor(248, 248, 248);
+    pdf.rect(left, y, contentWidth, 8, "FD");
+    pdf.setFont("helvetica", "bold");
+    pdf.setFontSize(9);
+    pdf.text(`Invoice: ${resolvedInvoiceMeta.invoiceNumber}`, left + 3, y + 5.4);
+    pdf.text(`Date: ${resolvedInvoiceMeta.date}`, pageWidth - right - 3, y + 5.4, {
+      align: "right",
+    });
+    y += 11;
+
+    const drawTableHeader = () => {
+      pdf.setDrawColor(200, 200, 200);
+      pdf.setFillColor(245, 245, 245);
+      pdf.rect(left, y, contentWidth, 8, "FD");
+      pdf.setTextColor(0, 0, 0);
+      pdf.setFont("helvetica", "bold");
+      pdf.setFontSize(9);
+      pdf.text("#", columns.index, y + 5.5);
+      pdf.text("Product", columns.product, y + 5.5);
+      pdf.text("Qty", columns.qty - 2, y + 5.5, { align: "right" });
+      pdf.text("Price", columns.price, y + 5.5, { align: "right" });
+      pdf.text("Total", columns.total, y + 5.5, { align: "right" });
+      y += 8;
+    };
+
+    const ensureRowSpace = (heightNeeded) => {
+      if (y + heightNeeded > pageHeight - bottom - 32) {
+        pdf.addPage();
+        y = top;
+        drawTableHeader();
+      }
+    };
+
+    drawTableHeader();
+
+    normalizedCart.forEach((item, index) => {
+      const productTitle = safe(item.title || item.name || "Product");
+      const metaText = `SKU: ${safe(item.sku)}${item.size ? ` | Size: ${item.size}` : ""}`;
+      const rawTitleLines = pdf.splitTextToSize(productTitle, productColWidth);
+      const titleLines = rawTitleLines.slice(0, 2);
+      if (rawTitleLines.length > 2 && titleLines[1]) {
+        titleLines[1] = `${String(titleLines[1]).replace(/\s+$/, "")}...`;
+      }
+      const metaLines = pdf.splitTextToSize(metaText, productColWidth).slice(0, 1);
+      const rowHeight = Math.max(11, titleLines.length * 3.9 + metaLines.length * 3.4 + 4.8);
+
+      ensureRowSpace(rowHeight);
+
+      const rowTop = y;
+      const rowBottom = y + rowHeight;
+      const valueY = rowTop + rowHeight / 2 + 1.2;
+      const itemTotal = item.price * item.qty;
+
+      pdf.setDrawColor(230, 230, 230);
+      if (index % 2 === 0) {
+        pdf.setFillColor(252, 252, 252);
+        pdf.rect(left, rowTop, contentWidth, rowHeight, "F");
+      }
+      pdf.line(left, rowBottom, pageWidth - right, rowBottom);
+      pdf.line(columns.qtySep, rowTop, columns.qtySep, rowBottom);
+      pdf.line(columns.priceSep, rowTop, columns.priceSep, rowBottom);
+      pdf.line(columns.totalSep, rowTop, columns.totalSep, rowBottom);
+
+      pdf.setFont("helvetica", "normal");
+      pdf.setTextColor(0, 0, 0);
+      pdf.text(String(index + 1), columns.index, rowTop + 5);
+      pdf.setFont("helvetica", "bold");
+      pdf.text(titleLines, columns.product, rowTop + 4.8);
+      pdf.setFont("helvetica", "normal");
+      pdf.setTextColor(95, 95, 95);
+      pdf.setFontSize(8.5);
+      pdf.text(metaLines, columns.product, rowTop + 4.8 + titleLines.length * 4);
+      pdf.setTextColor(0, 0, 0);
+      pdf.setFontSize(9);
+      pdf.text(String(item.qty), columns.qty - 2, valueY, { align: "right" });
+      pdf.text(money(item.price), columns.price, valueY, { align: "right" });
+      pdf.text(money(itemTotal), columns.total, valueY, { align: "right" });
+
+      y += rowHeight;
+    });
+
+    const summaryHeight = discountRounded > 0 ? 28 : 22;
+    if (y + summaryHeight > pageHeight - bottom) {
+      pdf.addPage();
+      y = top;
+    }
+
+    const boxWidth = 80;
+    const boxX = pageWidth - right - boxWidth;
+    pdf.setDrawColor(210, 210, 210);
+    pdf.setFillColor(250, 250, 250);
+    pdf.rect(boxX, y + 3, boxWidth, summaryHeight, "FD");
+    pdf.setFont("helvetica", "normal");
+    pdf.setFontSize(9);
+
+    let lineY = y + 9;
+    pdf.text("Subtotal", boxX + 4, lineY);
+    pdf.text(money(subtotalRounded), boxX + boxWidth - 4, lineY, { align: "right" });
+
+    if (discountRounded > 0) {
+      lineY += 6;
+      pdf.text(`Discount (${discountPercent}%)`, boxX + 4, lineY);
+      pdf.text(`-${money(discountRounded)}`, boxX + boxWidth - 4, lineY, { align: "right" });
+    }
+
+    lineY += 6;
+    pdf.text("Shipping", boxX + 4, lineY);
+    pdf.text(shipping === 0 ? "Free" : money(shipping), boxX + boxWidth - 4, lineY, {
+      align: "right",
+    });
+
+    lineY += 7;
+    pdf.setFont("helvetica", "bold");
+    pdf.setFontSize(10);
+    pdf.text("Grand Total", boxX + 4, lineY);
+    pdf.text(money(finalTotalRounded), boxX + boxWidth - 4, lineY, { align: "right" });
+
+    let paymentTop = y + summaryHeight + 8;
+    const paymentSectionHeight = 44;
+    if (paymentTop + paymentSectionHeight > pageHeight - bottom) {
+      pdf.addPage();
+      paymentTop = top + 6;
+    }
+
+    pdf.setDrawColor(215, 215, 215);
+    pdf.setFillColor(250, 250, 250);
+    pdf.roundedRect(left, paymentTop, contentWidth, paymentSectionHeight, 2, 2, "FD");
+    pdf.setTextColor(20, 20, 20);
+    pdf.setFont("helvetica", "bold");
+    pdf.setFontSize(10);
+    pdf.text("Pay Now (UPI)", left + 4, paymentTop + 7);
+    pdf.setFont("helvetica", "normal");
+    pdf.setFontSize(8.5);
+    pdf.text(`UPI ID: ${UPI_ID}`, left + 4, paymentTop + 13);
+
+    try {
+      const qrDataURL = await fetchImageAsDataURL(qrCodeURL);
+      pdf.addImage(qrDataURL, "PNG", left + 4, paymentTop + 16, 24, 24);
+    } catch (error) {
+      pdf.setFont("helvetica", "normal");
+      pdf.setFontSize(8);
+      pdf.text("QR unavailable while generating PDF.", left + 4, paymentTop + 24);
+    }
+
+    pdf.setFont("helvetica", "normal");
+    pdf.setFontSize(8.2);
+    const upiLinkText = "Pay using any UPI app";
+    const linkX = left + 32;
+    const linkY = paymentTop + 24;
+    pdf.text(upiLinkText, linkX, linkY);
+    pdf.textWithLink(upiLinkText, linkX, linkY, { url: upiURL });
+    const upiPreview = upiURL.length > 70 ? `${upiURL.slice(0, 70)}...` : upiURL;
+    pdf.setTextColor(90, 90, 90);
+    pdf.text(upiPreview, linkX, linkY + 6);
+
+    const pages = pdf.getNumberOfPages();
+    for (let i = 1; i <= pages; i += 1) {
+      pdf.setPage(i);
+      pdf.setTextColor(110, 110, 110);
+      pdf.setFont("helvetica", "normal");
+      pdf.setFontSize(8);
+      pdf.text(`Thank you for shopping with ${STORE_INFO.name}`, left, pageHeight - 6);
+      pdf.text(`Page ${i} of ${pages}`, pageWidth - right, pageHeight - 6, { align: "right" });
+    }
 
     const safeInvoiceRef = (resolvedInvoiceMeta.invoiceNumber || `INV-${Date.now()}`)
       .toLowerCase()
       .replace(/[^a-z0-9-]/g, "");
     pdf.save(`invoice-${safeInvoiceRef}.pdf`);
-    document.body.removeChild(temp);
   };
 
   /* ---------------- WHATSAPP MESSAGE ---------------- */
@@ -885,6 +1144,32 @@ const Cart = () => {
                         <Download size={16} />
                         Download Invoice
                       </button>
+                    </div>
+
+                    <div className="mt-5 rounded-xl border border-gray-200 bg-gray-50 p-4">
+                      <div className="mb-3 flex items-center gap-2 text-sm font-semibold text-gray-800">
+                        <QrCode size={16} />
+                        Pay Now (UPI)
+                      </div>
+                      <div className="grid grid-cols-[90px_1fr] gap-3">
+                        <img
+                          src={previewQRCodeURL}
+                          alt="UPI QR Code"
+                          className="h-[90px] w-[90px] rounded-md border border-gray-200 bg-white p-1"
+                        />
+                        <div className="flex flex-col justify-between gap-2">
+                          <p className="text-xs text-gray-600 break-all">
+                            UPI ID: <span className="font-medium text-gray-800">{UPI_ID}</span>
+                          </p>
+                          <a
+                            href={previewUpiURL}
+                            className="inline-flex w-fit items-center gap-2 rounded-md bg-black px-3 py-2 text-xs font-medium uppercase tracking-wider text-white transition-colors hover:bg-gray-800"
+                          >
+                            <Smartphone size={14} />
+                            Pay Now
+                          </a>
+                        </div>
+                      </div>
                     </div>
                   </form>
                 )}
