@@ -18,13 +18,13 @@ export default function Home() {
   return (
    <div className="bg-white pt-20 lg:pt-0">
     <ImageSlider/>
-    <Image
+    {/* <Image
       src={logo}
       alt="AVH Store Artificial Logo"
       width={2000} // Adjust as needed
       height={50} // Adjust as needed
       className=" w-full"
-    />
+    /> */}
     <Part3/>
     <Part5/>
     {/* <Part4/> */}
