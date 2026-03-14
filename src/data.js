@@ -1151,6 +1151,86 @@ butterflys  pendant necklace, crystals  butterflys  necklace, gold pendant for w
     inStock: true,
     isNew: false,
   },
+  {
+    id: 53,
+    name: "Pink titali Crystals Drops Pendant Necklace for Women and Girls",
+    SKU_id: "AVH_MOT_053",
+    price:280,
+    description:
+      `Elegants  Butterflys  Crystals  Drops  Pendant Necklace with a beautiful gold-tone finish and sparkling crystals. Lightweight, stylish, and perfect for daily wear, parties, and special occasions. A trendy jewelry piece for girls and women that adds charm to any outfit.
+butterflys  pendant necklace, crystals  butterflys  necklace, gold pendant for women, stylish necklace for girls, party wear jewelry, trendy fashion necklace, women pendant chain. ✨`,
+    images: [
+      "https://drive.google.com/uc?export=view&id=1ILkRsaXU9Iekyz4ODWYd9Pc8V_IGqrkZ",
+      "https://drive.google.com/uc?export=view&id=1ILkRsaXU9Iekyz4ODWYd9Pc8V_IGqrkZ",
+    ],
+    category: "motiset",
+    metakey:"gold bracelet for women, micro ad bracelet, infinity bracelet gold, heart design bracelet, american diamond bracelet, designer bracelet for girls, daily wear gold bracelet, adjustable bracelet for women, party wear jewellery, stylish gold bracelet",
+    material: "Brass",
+    stone: "none",
+    isBestseller: false,
+    inStock: true,
+    isNew: false,
+  },
+  {
+    id: 53,
+    name: "Pink titali Crystals Drops Pendant Necklace for Women and Girls",
+    SKU_id: "AVH_MOT_053",
+    price:280,
+    description:
+      `Elegants  Butterflys  Crystals  Drops  Pendant Necklace with a beautiful gold-tone finish and sparkling crystals. Lightweight, stylish, and perfect for daily wear, parties, and special occasions. A trendy jewelry piece for girls and women that adds charm to any outfit.
+butterflys  pendant necklace, crystals  butterflys  necklace, gold pendant for women, stylish necklace for girls, party wear jewelry, trendy fashion necklace, women pendant chain. ✨`,
+    images: [
+      "https://drive.google.com/uc?export=view&id=1INrHW-bGVIGQMD3SAc0tZv4csoW7h2Nv",
+      "https://drive.google.com/uc?export=view&id=1INrHW-bGVIGQMD3SAc0tZv4csoW7h2Nv",
+    ],
+    category: "motiset",
+    metakey:"gold bracelet for women, micro ad bracelet, infinity bracelet gold, heart design bracelet, american diamond bracelet, designer bracelet for girls, daily wear gold bracelet, adjustable bracelet for women, party wear jewellery, stylish gold bracelet",
+    material: "Brass",
+    stone: "none",
+    isBestseller: false,
+    inStock: true,
+    isNew: false,
+  },
+  {
+    id: 53,
+    name: "Pink titali Crystals Drops Pendant Necklace for Women and Girls",
+    SKU_id: "AVH_MOT_053",
+    price:280,
+    description:
+      `Elegants  Butterflys  Crystals  Drops  Pendant Necklace with a beautiful gold-tone finish and sparkling crystals. Lightweight, stylish, and perfect for daily wear, parties, and special occasions. A trendy jewelry piece for girls and women that adds charm to any outfit.
+butterflys  pendant necklace, crystals  butterflys  necklace, gold pendant for women, stylish necklace for girls, party wear jewelry, trendy fashion necklace, women pendant chain. ✨`,
+    images: [
+      "https://drive.google.com/uc?export=view&id=1IJ2K1yylMd2UhiDXNYHLAmYz13VEs79H",
+      "https://drive.google.com/uc?export=view&id=1IJ2K1yylMd2UhiDXNYHLAmYz13VEs79H",
+    ],
+    category: "motiset",
+    metakey:"gold bracelet for women, micro ad bracelet, infinity bracelet gold, heart design bracelet, american diamond bracelet, designer bracelet for girls, daily wear gold bracelet, adjustable bracelet for women, party wear jewellery, stylish gold bracelet",
+    material: "Brass",
+    stone: "none",
+    isBestseller: false,
+    inStock: true,
+    isNew: false,
+  },
+  {
+    id: 54,
+    name: "Pink titali Crystals Drops Pendant Necklace for Women and Girls",
+    SKU_id: "AVH_MOT_053",
+    price:280,
+    description:
+      `Elegants  Butterflys  Crystals  Drops  Pendant Necklace with a beautiful gold-tone finish and sparkling crystals. Lightweight, stylish, and perfect for daily wear, parties, and special occasions. A trendy jewelry piece for girls and women that adds charm to any outfit.
+butterflys  pendant necklace, crystals  butterflys  necklace, gold pendant for women, stylish necklace for girls, party wear jewelry, trendy fashion necklace, women pendant chain. ✨`,
+    images: [
+      "https://drive.google.com/uc?export=view&id=1Skk6__nAjAG9SkWkSKH-05z0ByPLawT-",
+      "https://drive.google.com/uc?export=view&id=1Skk6__nAjAG9SkWkSKH-05z0ByPLawT-",
+    ],
+    category: "motiset",
+    metakey:"gold bracelet for women, micro ad bracelet, infinity bracelet gold, heart design bracelet, american diamond bracelet, designer bracelet for girls, daily wear gold bracelet, adjustable bracelet for women, party wear jewellery, stylish gold bracelet",
+    material: "Brass",
+    stone: "none",
+    isBestseller: false,
+    inStock: true,
+    isNew: false,
+  },
 ];
 
 export const categories = [
