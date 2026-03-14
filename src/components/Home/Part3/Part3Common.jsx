@@ -7,14 +7,14 @@ const Part3Common = ({ imageUrl, title, linkHref = '#' }) => {
   return (
     <Link
       href={linkHref}
-      className="block w-full h-auto overflow-hidden group cursor-pointer transform transition-transform duration-500"
+      className="group flex w-full max-w-[400px] flex-col overflow-hidden cursor-pointer transition-transform duration-500"
       style={{ fontFamily: 'Inter, sans-serif' }}
     >
-      <div className="w-full h-3/4 overflow-hidden">
+      <div className="w-full aspect-[4/5] overflow-hidden rounded-xl bg-gray-100">
         <ImageWithFallback
           src={imageUrl}
           alt={title}
-          className="w-full h-full object-cover transform transition-transform duration-300 group-hover:scale-103 "
+          className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
           onError={(e) => {
             e.target.onerror = null; // Prevents infinite loop if fallback also fails
             e.target.src = `https://placehold.co/600x400/CCCCCC/333333?text=Image+Not+Found`;
@@ -22,8 +22,8 @@ const Part3Common = ({ imageUrl, title, linkHref = '#' }) => {
         />
       </div>
 
-      <div className="py-4 h-1/6 w-full flex items-center justify-center">
-        <h3 className="text-lg text-gray-800 w-full text-left">
+      <div className="pt-3">
+        <h3 className="w-full text-left text-base sm:text-lg text-gray-800">
           {title} →
         </h3>
       </div>

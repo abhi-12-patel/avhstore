@@ -16,7 +16,7 @@ const logo = `/uytp.jpg`
 
 export default function Home() {
   return (
-   <div className="bg-white pt-20 lg:pt-0">
+   <div className="bg-white pt- lg:pt-0">
     <ImageSlider/>
     {/* <Image
       src={logo}

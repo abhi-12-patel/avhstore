@@ -60,7 +60,7 @@ const Footer = () => {
               <a href="#" className="rounded-full border border-stone-300 p-2.5 text-stone-700 hover:border-stone-900 hover:text-stone-900 transition">
                 <FaPinterestP className="text-sm" />
               </a> */}
-              <a href="#" className="rounded-full border border-stone-300 p-2.5 text-stone-700 hover:border-stone-900 hover:text-stone-900 transition">
+              <a href="https://www.instagram.com/avh_fashion_jewellery?igsh=MTFxYmducXN2c2JveQ==" className="rounded-full border border-stone-300 p-2.5 text-stone-700 hover:border-stone-900 hover:text-stone-900 transition">
                 <FaInstagram className="text-sm" />
               </a>
             </div>
