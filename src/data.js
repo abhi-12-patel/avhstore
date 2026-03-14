@@ -954,17 +954,13 @@ Lightweight and versatile, this bracelet pairs perfectly with ethnic outfits, we
     SKU_id: "AVH_PD_043",
     price:200,
     description:
-      `Elevate your style with this elegant Gold Plated Micro AD Infinity Heart Bracelet. Featuring a sleek gold finish with delicate heart cut detailing on the sides, this bracelet showcases a beautiful infinity-shaped center design studded with sparkling micro American Diamonds.
-
-The infinity motif symbolizes endless love and grace, making it a meaningful and stylish accessory for everyday wear as well as special occasions. The adjustable chain closure ensures a secure and comfortable fit for all wrist sizes.
-
-Lightweight and versatile, this bracelet pairs perfectly with ethnic outfits, western dresses, and office wear. It is also a perfect gifting option for birthdays, anniversaries, Valentine’s Day, and festive celebrations.`,
+      `Rose Gold Pendant Necklace for Women and Girls `,
     images: [
       "https://drive.google.com/uc?export=view&id=1RsqFkKqDeOh5c3DOFACPASK3kjfas0tt",
       "https://drive.google.com/uc?export=view&id=1Rq_z_A3XM7sSruti-yTd6g6FQuw26Tc1",
     ],
     category: "pendants",
-    metakey:"gold bracelet for women, micro ad bracelet, infinity bracelet gold, heart design bracelet, american diamond bracelet, designer bracelet for girls, daily wear gold bracelet, adjustable bracelet for women, party wear jewellery, stylish gold bracelet",
+    metakey:"gold pendant for women, micro ad pendant, infinity pendant gold, heart design pendant, american diamond pendant, designer pendant for girls, daily wear gold pendant, adjustable pendant for women, party wear jewellery, stylish gold pendant",
     material: "Brass",
     stone: "none",
     isBestseller: false,
@@ -977,17 +973,14 @@ Lightweight and versatile, this bracelet pairs perfectly with ethnic outfits, we
     SKU_id: "AVH_PD_044",
     price:100,
     description:
-      `Elevate your style with this elegant Gold Plated Micro AD Infinity Heart Bracelet. Featuring a sleek gold finish with delicate heart cut detailing on the sides, this bracelet showcases a beautiful infinity-shaped center design studded with sparkling micro American Diamonds.
-
-The infinity motif symbolizes endless love and grace, making it a meaningful and stylish accessory for everyday wear as well as special occasions. The adjustable chain closure ensures a secure and comfortable fit for all wrist sizes.
-
-Lightweight and versatile, this bracelet pairs perfectly with ethnic outfits, western dresses, and office wear. It is also a perfect gifting option for birthdays, anniversaries, Valentine’s Day, and festive celebrations.`,
+      `Add a touch of elegance to your jewelry collection with this beautiful Butterflys  Ruby Drops  Pendant Necklace. Designed with a delicate butterflys  shape, this necklace features sparkling stones on the wings and stunning ruby-red crystals that create a luxurious and eye-catching look. The gold-tone chain with a stylish drops  design adds grace and charm, making it perfect for both every day  wear and special occasions.
+This elegants  necklace pairs beautifully with traditional and modern outfits such as sarees, dresses, and party wear. Lightweight and comfortable, it is and  ideal accessory for weddings, festivals, parties, or gifting to someone special.`,
     images: [
       "https://drive.google.com/uc?export=view&id=1QbzlPIlzVIixNKntpRBpsoFlTF8Ykj6v",
       "https://drive.google.com/uc?export=view&id=1Qb4qVsXEg1dkc5xHLctddF1F13MkbYUP",
     ],
     category: "pendants",
-    metakey:"gold bracelet for women, micro ad bracelet, infinity bracelet gold, heart design bracelet, american diamond bracelet, designer bracelet for girls, daily wear gold bracelet, adjustable bracelet for women, party wear jewellery, stylish gold bracelet",
+    metakey:"gold pendant for women, micro ad pendant, infinity pendant gold, heart design pendant, american diamond pendant, designer pendant for girls, daily wear gold pendant, adjustable pendant for women, party wear jewellery, stylish gold pendant",
     material: "Brass",
     stone: "none",
     isBestseller: false,
@@ -1000,17 +993,13 @@ Lightweight and versatile, this bracelet pairs perfectly with ethnic outfits, we
     SKU_id: "AVH_PD_043",
     price:200,
     description:
-      `Elevate your style with this elegant Gold Plated Micro AD Infinity Heart Bracelet. Featuring a sleek gold finish with delicate heart cut detailing on the sides, this bracelet showcases a beautiful infinity-shaped center design studded with sparkling micro American Diamonds.
-
-The infinity motif symbolizes endless love and grace, making it a meaningful and stylish accessory for everyday wear as well as special occasions. The adjustable chain closure ensures a secure and comfortable fit for all wrist sizes.
-
-Lightweight and versatile, this bracelet pairs perfectly with ethnic outfits, western dresses, and office wear. It is also a perfect gifting option for birthdays, anniversaries, Valentine’s Day, and festive celebrations.`,
+      `Woofh Crystals Angel Wings Heart Pendant Necklaces Ladies Girl Simples Y2K Pink White Zircon Love Elegants Necklace Women`,
     images: [
       "https://drive.google.com/uc?export=view&id=1S-6fPNDnpCFCG5wqbnFDwaD7TzMX1CQO",
       "https://drive.google.com/uc?export=view&id=1QrXMenRviWce0UCP4_MRJU2K7U4ZjGWA",
     ],
     category: "pendants",
-    metakey:"gold bracelet for women, micro ad bracelet, infinity bracelet gold, heart design bracelet, american diamond bracelet, designer bracelet for girls, daily wear gold bracelet, adjustable bracelet for women, party wear jewellery, stylish gold bracelet",
+    metakey:"gold pendant for women, micro ad pendant, infinity pendant gold, heart design pendant, american diamond pendant, designer pendant for girls, daily wear gold pendant, adjustable pendant for women, party wear jewellery, stylish gold pendant",
     material: "Brass",
     stone: "none",
     isBestseller: false,
@@ -1068,11 +1057,8 @@ Lightweight and versatile, this bracelet pairs perfectly with ethnic outfits, we
     SKU_id: "AVH_PD_048",
     price:100,
     description:
-      `Elevate your style with this elegant Gold Plated Micro AD Infinity Heart Bracelet. Featuring a sleek gold finish with delicate heart cut detailing on the sides, this bracelet showcases a beautiful infinity-shaped center design studded with sparkling micro American Diamonds.
-
-The infinity motif symbolizes endless love and grace, making it a meaningful and stylish accessory for everyday wear as well as special occasions. The adjustable chain closure ensures a secure and comfortable fit for all wrist sizes.
-
-Lightweight and versatile, this bracelet pairs perfectly with ethnic outfits, western dresses, and office wear. It is also a perfect gifting option for birthdays, anniversaries, Valentine’s Day, and festive celebrations.`,
+      `Elegants  Butterflys  Crystals  Drops  Pendant Necklace with a beautiful gold-tone finish and sparkling crystals. Lightweight, stylish, and perfect for daily wear, parties, and special occasions. A trendy jewelry piece for girls and women that adds charm to any outfit.
+butterflys  pendant necklace, crystals  butterflys  necklace, gold pendant for women, stylish necklace for girls, party wear jewelry, trendy fashion necklace, women pendant chain. ✨`,
     images: [
       "https://drive.google.com/uc?export=view&id=1QVcU2iF10TEp9B6zkeY5rcwO983zLYDm",
       "https://drive.google.com/uc?export=view&id=1QNfZpCWUSy_m1tpwiSA3cIXx5idOt27i",
