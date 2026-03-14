@@ -13,6 +13,7 @@ import {
   Send,
   QrCode,
   Smartphone,
+  Info,
 } from "lucide-react";
 import ImageWithFallback from "../ImageWithFallback";
 import { FREE_SHIPPING_MIN, OFFER_RULES, products as catalogProducts } from "@/data";
@@ -65,6 +66,7 @@ const fetchImageAsDataURL = async (url) => {
 const Cart = () => {
   const { cart, addToCart, removeFromCart, updateQuantity, clearCart } = useStore();
   const [showCheckout, setShowCheckout] = useState(false);
+  const [showPaymentInfoModal, setShowPaymentInfoModal] = useState(false);
   const [form, setForm] = useState({
     fullName: "",
     phone: "",
@@ -1128,13 +1130,23 @@ const Cart = () => {
                     ))}
 
                     <div className="space-y-3 pt-4">
-                      <button
-                        type="submit"
-                        className="flex w-full items-center justify-center gap-2 bg-green-600 py-3 text-sm font-medium uppercase tracking-wider text-white transition-all hover:bg-green-700 rounded-lg"
-                      >
-                        <Send size={16} />
-                        Pay First, Then Send WhatsApp
-                      </button>
+                      <div className="flex items-center gap-2">
+                        <button
+                          type="submit"
+                          className="flex w-full items-center justify-center gap-2 bg-green-600 py-3 text-sm font-medium uppercase tracking-wider text-white transition-all hover:bg-green-700 rounded-lg"
+                        >
+                          <Send size={16} />
+                          Pay First, Then Send WhatsApp
+                        </button>
+                        <button
+                          type="button"
+                          onClick={() => setShowPaymentInfoModal(true)}
+                          aria-label="Payment and WhatsApp steps"
+                          className="inline-flex h-11 w-11 items-center justify-center rounded-lg border border-gray-300 text-gray-700 transition-colors hover:bg-gray-100"
+                        >
+                          <Info size={18} />
+                        </button>
+                      </div>
 
                       {/* <button
                         type="button"
@@ -1171,6 +1183,39 @@ const Cart = () => {
                         </div>
                       </div>
                     </div>
+
+                    {showPaymentInfoModal && (
+                      <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 px-4">
+                        <div className="w-full max-w-md rounded-xl bg-white p-5 shadow-xl">
+                          <div className="mb-3 flex items-center justify-between">
+                            <h4 className="text-base font-semibold text-gray-900">
+                              Payment Steps
+                            </h4>
+                            <button
+                              type="button"
+                              onClick={() => setShowPaymentInfoModal(false)}
+                              className="rounded-md p-1 text-gray-500 hover:bg-gray-100 hover:text-gray-700"
+                              aria-label="Close payment steps"
+                            >
+                              <X size={18} />
+                            </button>
+                          </div>
+                          <div className="space-y-2 text-sm text-gray-700">
+                            <p>1. First complete UPI payment.</p>
+                            <p>2. Take payment screenshot.</p>
+                            <p>3. Click WhatsApp and send order data with screenshot.</p>
+                            <p>4. Download invoice PDF and send PDF on WhatsApp.</p>
+                          </div>
+                          <button
+                            type="button"
+                            onClick={() => setShowPaymentInfoModal(false)}
+                            className="mt-4 w-full rounded-lg bg-black py-2.5 text-sm font-medium text-white hover:bg-gray-800"
+                          >
+                            OK
+                          </button>
+                        </div>
+                      </div>
+                    )}
                   </form>
                 )}
               </div>
