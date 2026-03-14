@@ -948,6 +948,143 @@ Lightweight and versatile, this bracelet pairs perfectly with ethnic outfits, we
     inStock: true,
     isNew: false,
   },
+  {
+    id: 43,
+    name: "Rose Gold Pendant Necklace for Women and Girls",
+    SKU_id: "AVH_PD_043",
+    price:200,
+    description:
+      `Elevate your style with this elegant Gold Plated Micro AD Infinity Heart Bracelet. Featuring a sleek gold finish with delicate heart cut detailing on the sides, this bracelet showcases a beautiful infinity-shaped center design studded with sparkling micro American Diamonds.
+
+The infinity motif symbolizes endless love and grace, making it a meaningful and stylish accessory for everyday wear as well as special occasions. The adjustable chain closure ensures a secure and comfortable fit for all wrist sizes.
+
+Lightweight and versatile, this bracelet pairs perfectly with ethnic outfits, western dresses, and office wear. It is also a perfect gifting option for birthdays, anniversaries, Valentine’s Day, and festive celebrations.`,
+    images: [
+      "https://drive.google.com/uc?export=view&id=1RsqFkKqDeOh5c3DOFACPASK3kjfas0tt",
+      "https://drive.google.com/uc?export=view&id=1Rq_z_A3XM7sSruti-yTd6g6FQuw26Tc1",
+    ],
+    category: "pendants",
+    metakey:"gold bracelet for women, micro ad bracelet, infinity bracelet gold, heart design bracelet, american diamond bracelet, designer bracelet for girls, daily wear gold bracelet, adjustable bracelet for women, party wear jewellery, stylish gold bracelet",
+    material: "Brass",
+    stone: "none",
+    isBestseller: false,
+    inStock: true,
+    isNew: false,
+  },
+  {
+    id: 44,
+    name: "Titali chain for girls and women",
+    SKU_id: "AVH_PD_044",
+    price:100,
+    description:
+      `Elevate your style with this elegant Gold Plated Micro AD Infinity Heart Bracelet. Featuring a sleek gold finish with delicate heart cut detailing on the sides, this bracelet showcases a beautiful infinity-shaped center design studded with sparkling micro American Diamonds.
+
+The infinity motif symbolizes endless love and grace, making it a meaningful and stylish accessory for everyday wear as well as special occasions. The adjustable chain closure ensures a secure and comfortable fit for all wrist sizes.
+
+Lightweight and versatile, this bracelet pairs perfectly with ethnic outfits, western dresses, and office wear. It is also a perfect gifting option for birthdays, anniversaries, Valentine’s Day, and festive celebrations.`,
+    images: [
+      "https://drive.google.com/uc?export=view&id=1QbzlPIlzVIixNKntpRBpsoFlTF8Ykj6v",
+      "https://drive.google.com/uc?export=view&id=1Qb4qVsXEg1dkc5xHLctddF1F13MkbYUP",
+    ],
+    category: "pendants",
+    metakey:"gold bracelet for women, micro ad bracelet, infinity bracelet gold, heart design bracelet, american diamond bracelet, designer bracelet for girls, daily wear gold bracelet, adjustable bracelet for women, party wear jewellery, stylish gold bracelet",
+    material: "Brass",
+    stone: "none",
+    isBestseller: false,
+    inStock: true,
+    isNew: false,
+  },
+  {
+    id: 45,
+    name: "Woofh Crystals Angel Wings Heart Pendant Necklaces Ladies Girl Simples Y2K Pink White Zircon Love Elegants Necklace Women",
+    SKU_id: "AVH_PD_043",
+    price:200,
+    description:
+      `Elevate your style with this elegant Gold Plated Micro AD Infinity Heart Bracelet. Featuring a sleek gold finish with delicate heart cut detailing on the sides, this bracelet showcases a beautiful infinity-shaped center design studded with sparkling micro American Diamonds.
+
+The infinity motif symbolizes endless love and grace, making it a meaningful and stylish accessory for everyday wear as well as special occasions. The adjustable chain closure ensures a secure and comfortable fit for all wrist sizes.
+
+Lightweight and versatile, this bracelet pairs perfectly with ethnic outfits, western dresses, and office wear. It is also a perfect gifting option for birthdays, anniversaries, Valentine’s Day, and festive celebrations.`,
+    images: [
+      "https://drive.google.com/uc?export=view&id=1S-6fPNDnpCFCG5wqbnFDwaD7TzMX1CQO",
+      "https://drive.google.com/uc?export=view&id=1QrXMenRviWce0UCP4_MRJU2K7U4ZjGWA",
+    ],
+    category: "pendants",
+    metakey:"gold bracelet for women, micro ad bracelet, infinity bracelet gold, heart design bracelet, american diamond bracelet, designer bracelet for girls, daily wear gold bracelet, adjustable bracelet for women, party wear jewellery, stylish gold bracelet",
+    material: "Brass",
+    stone: "none",
+    isBestseller: false,
+    inStock: true,
+    isNew: false,
+  },
+  {
+    id: 46,
+    name: "Purple Gemstone Floral Necklace Pendal and Chain",
+    SKU_id: "AVH_PD_046",
+    price:60,
+    description:
+      `Elevate your style with this elegant Gold Plated Micro AD Infinity Heart Bracelet. Featuring a sleek gold finish with delicate heart cut detailing on the sides, this bracelet showcases a beautiful infinity-shaped center design studded with sparkling micro American Diamonds.
+
+The infinity motif symbolizes endless love and grace, making it a meaningful and stylish accessory for everyday wear as well as special occasions. The adjustable chain closure ensures a secure and comfortable fit for all wrist sizes.
+
+Lightweight and versatile, this bracelet pairs perfectly with ethnic outfits, western dresses, and office wear. It is also a perfect gifting option for birthdays, anniversaries, Valentine’s Day, and festive celebrations.`,
+    images: [
+      "https://drive.google.com/uc?export=view&id=1SXSDfNDKo-iPKxstThtz46M5VY9x_Flb",
+      "https://drive.google.com/uc?export=view&id=1S5Jsi5dPidV6enPWilL2HqonFyNWZa1-",
+    ],
+    category: "pendants",
+    metakey:"gold bracelet for women, micro ad bracelet, infinity bracelet gold, heart design bracelet, american diamond bracelet, designer bracelet for girls, daily wear gold bracelet, adjustable bracelet for women, party wear jewellery, stylish gold bracelet",
+    material: "Brass",
+    stone: "none",
+    isBestseller: false,
+    inStock: true,
+    isNew: false,
+  },
+  {
+    id: 47,
+    name: "Pink Gemstone Floral Necklace Pendal and Chain",
+    SKU_id: "AVH_PD_047",
+    price:60,
+    description:
+      `Elevate your style with this elegant Gold Plated Micro AD Infinity Heart Bracelet. Featuring a sleek gold finish with delicate heart cut detailing on the sides, this bracelet showcases a beautiful infinity-shaped center design studded with sparkling micro American Diamonds.
+
+The infinity motif symbolizes endless love and grace, making it a meaningful and stylish accessory for everyday wear as well as special occasions. The adjustable chain closure ensures a secure and comfortable fit for all wrist sizes.
+
+Lightweight and versatile, this bracelet pairs perfectly with ethnic outfits, western dresses, and office wear. It is also a perfect gifting option for birthdays, anniversaries, Valentine’s Day, and festive celebrations.`,
+    images: [
+      "https://drive.google.com/uc?export=view&id=1SFhZolZvhz-lTF7Kz_DadNkVSqH8jjnP",
+    ],
+    category: "pendants",
+    metakey:"gold bracelet for women, micro ad bracelet, infinity bracelet gold, heart design bracelet, american diamond bracelet, designer bracelet for girls, daily wear gold bracelet, adjustable bracelet for women, party wear jewellery, stylish gold bracelet",
+    material: "Brass",
+    stone: "none",
+    isBestseller: false,
+    inStock: true,
+    isNew: false,
+  },
+  {
+    id: 48,
+    name: "Pink titali Crystals Drops Pendant Necklace for Women and Girls",
+    SKU_id: "AVH_PD_048",
+    price:100,
+    description:
+      `Elevate your style with this elegant Gold Plated Micro AD Infinity Heart Bracelet. Featuring a sleek gold finish with delicate heart cut detailing on the sides, this bracelet showcases a beautiful infinity-shaped center design studded with sparkling micro American Diamonds.
+
+The infinity motif symbolizes endless love and grace, making it a meaningful and stylish accessory for everyday wear as well as special occasions. The adjustable chain closure ensures a secure and comfortable fit for all wrist sizes.
+
+Lightweight and versatile, this bracelet pairs perfectly with ethnic outfits, western dresses, and office wear. It is also a perfect gifting option for birthdays, anniversaries, Valentine’s Day, and festive celebrations.`,
+    images: [
+      "https://drive.google.com/uc?export=view&id=1QVcU2iF10TEp9B6zkeY5rcwO983zLYDm",
+      "https://drive.google.com/uc?export=view&id=1QNfZpCWUSy_m1tpwiSA3cIXx5idOt27i",
+    ],
+    category: "pendants",
+    metakey:"gold bracelet for women, micro ad bracelet, infinity bracelet gold, heart design bracelet, american diamond bracelet, designer bracelet for girls, daily wear gold bracelet, adjustable bracelet for women, party wear jewellery, stylish gold bracelet",
+    material: "Brass",
+    stone: "none",
+    isBestseller: false,
+    inStock: true,
+    isNew: false,
+  },
 ];
 
 export const categories = [
@@ -975,6 +1112,12 @@ export const categories = [
     image:
       "https://drive.google.com/uc?export=view&id=1Ko4F5iP1bURj4Ezo-AH_JptsBELB9hGM",
   },
+  {
+    id: "pendants",
+    name: "Pendants",
+    image:
+      "https://drive.google.com/uc?export=view&id=1SFhZolZvhz-lTF7Kz_DadNkVSqH8jjnP",
+  },
 ];
 
 export const collectionCategoryLinks = [
@@ -982,6 +1125,7 @@ export const collectionCategoryLinks = [
   { to: "/collections?category=jewelleryset", label: "Jewellery Sets" },
   { to: "/collections?category=rajwadiset", label: "Rajwadi Sets" },
   { to: "/collections?category=bracelets", label: "Bracelets" },
+  { to: "/collections?category=pendants", label: "Pendants" },
   // { to: '/collections?category=newly-launched', label: 'Newly Launched' },
   // { to: '/collections?category=bracelets', label: 'Bracelets' },
   // { to: '/collections?category=bangle-bracelets', label: 'Bangle Bracelets' },

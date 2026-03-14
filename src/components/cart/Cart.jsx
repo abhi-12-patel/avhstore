@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useMemo, useState } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import { useStore } from "@/store/useStore";
 import {
@@ -22,6 +22,7 @@ import ProductCard from "../common/productCart/ProductCart";
 const WHATSAPP_NUMBER = "916351359801";
 const UPI_ID = "vjashoda738-2@oksbi";
 const UPI_PAYEE_NAME = "AVH STORE";
+const MIN_ORDER_AMOUNT = 500;
 const CHECKOUT_FIELDS = [
   { key: "fullName", label: "Full Name", type: "text", autoComplete: "name" },
   { key: "phone", label: "Phone Number", type: "tel", autoComplete: "tel" },
@@ -135,6 +136,11 @@ const Cart = () => {
   const discountRounded = round(discountAmount);
   const finalTotalRounded = round(finalTotal);
 
+  // Minimum order validation is based on subtotal (before discount/shipping).
+  const isBelowMinOrder =
+    subtotalRounded > 0 && subtotalRounded < MIN_ORDER_AMOUNT;
+  const minOrderRemaining = Math.max(0, MIN_ORDER_AMOUNT - subtotalRounded);
+
 
   const formatPrice = (price) =>
     new Intl.NumberFormat("en-IN", {
@@ -169,6 +175,12 @@ const Cart = () => {
     () => getQRCodeURL(previewUpiURL),
     [previewUpiURL]
   );
+
+  useEffect(() => {
+    if (showCheckout && isBelowMinOrder) {
+      setShowCheckout(false);
+    }
+  }, [showCheckout, isBelowMinOrder]);
 
   const handleQuickAddToCart = (product) => {
     if (!product) return;
@@ -896,6 +908,15 @@ const Cart = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
+    if (isBelowMinOrder) {
+      alert(
+        `Minimum order is ₹${MIN_ORDER_AMOUNT}. Add ${formatPrice(
+          minOrderRemaining
+        )} more to checkout.`
+      );
+      return;
+    }
+
     if (
       !form.fullName ||
       !form.phone ||
@@ -1097,10 +1118,21 @@ const Cart = () => {
 
                 <button
                   onClick={() => setShowCheckout(!showCheckout)}
-                  className="w-full bg-black py-4 text-sm font-medium uppercase tracking-wider text-white transition-all hover:bg-gray-800"
+                  disabled={isBelowMinOrder}
+                  className={`w-full py-4 text-sm font-medium uppercase tracking-wider text-white transition-all ${
+                    isBelowMinOrder ? "bg-gray-400 cursor-not-allowed" : "bg-black hover:bg-gray-800"
+                  }`}
                 >
                   {showCheckout ? "Hide Checkout" : "Proceed to Checkout"}
                 </button>
+
+                {isBelowMinOrder && (
+                  <p className="mt-3 text-sm text-red-600">
+                    Minimum order is ₹{MIN_ORDER_AMOUNT}. Add{" "}
+                    <span className="font-semibold">{formatPrice(minOrderRemaining)}</span>{" "}
+                    more (subtotal) to checkout.
+                  </p>
+                )}
 
                 {showCheckout && (
                   <form onSubmit={handleSubmit} className="mt-6 space-y-4">
