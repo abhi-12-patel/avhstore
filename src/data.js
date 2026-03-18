@@ -347,7 +347,7 @@ Crafted with premium gold-tone finish and lightweight material, these earrings a
   },
   {
     id: 8,
-    name: "Antique Gold Leaf Drop Earrings with Pink Stone for Women",
+    name: "Antique Gold Leaf Drop Earrings for Women",
     SKU_id: "AVH_ER_008",
     price: 50,
     description:
