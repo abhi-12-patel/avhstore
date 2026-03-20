@@ -96,8 +96,9 @@ export default function ProductCard({ product }) {
         {/* Add to Cart Icon */}
         <button
           onClick={handleAddToCart}
-          className="absolute bottom-3 right-3 p-2 bg-black text-white rounded-full shadow-md hover:scale-110 transition z-10"
+          className="absolute bottom-3 right-3 p-2 bg-black text-white rounded-full shadow-md hover:scale-110 transition z-10 disabled:bg-gray-300 disabled:cursor-not-allowed"
           aria-label="Add to Cart"
+          disabled={!product.inStock}
         >
           <ShoppingBag className="h-4 w-4" />
         </button>
@@ -114,6 +115,13 @@ export default function ProductCard({ product }) {
         <p className="text-base font-bold text-gray-900">
           {formattedPrice}
         </p>
+               {!product.inStock && (
+                      <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
+                        <span className="px-4 py-2 bg-white text-black text-xs font-semibold uppercase rounded">
+                          Out of Stock
+                        </span>
+                      </div>
+                    )}
       </div>
     </div>
   );

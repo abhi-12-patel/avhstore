@@ -87,8 +87,8 @@ The detailed circular pendant showcases fine craftsmanship with layered textures
 Ideal for pairing with sarees, lehengas, and traditional attire, the Sudarsha Chakra set is a stunning choice for bridal wear, festive gifting, and heirloom-inspired jewellery collections.`,
     images: [   
       "https://drive.google.com/uc?export=view&id=16bPvCp7b4DyTj5iDI6YSBs6gbm2bfdnN",
-      "https://drive.google.com/uc?export=view&id=1sCfKEsQcmdZtsNankkcV2FiXF5ZZFEEm",
-      "https://drive.google.com/uc?export=view&id=1NHcrAe9N-2Zn9_r9ZrfeF054Wzw1QJIe",
+      "https://drive.google.com/uc?export=view&id=16bPvCp7b4DyTj5iDI6YSBs6gbm2bfdnN",
+      "https://drive.google.com/uc?export=view&id=16bPvCp7b4DyTj5iDI6YSBs6gbm2bfdnN",
     ],
     category: "jewelleryset",
     metakey:"round gold necklace set, circular pendant jewellery, traditional gold necklace set, bridal round necklace, designer gold jewellery set, necklace earrings set for women, festive gold jewellery, ruby accent necklace, ethnic Indian jewellery, premium gold finish jewellery",
@@ -1073,18 +1073,19 @@ butterflys  pendant necklace, crystals  butterflys  necklace, gold pendant for w
   },
   {
     id: 49,
-    name: "Pink titali Crystals Drops Pendant Necklace for Women and Girls",
+    name: "Traditional Pearl Beaded Necklace Set with Multicolor Stones & Gold Pendant",
     SKU_id: "AVH_MOT_049",
     price:330,
     description:
-      `Elegants  Butterflys  Crystals  Drops  Pendant Necklace with a beautiful gold-tone finish and sparkling crystals. Lightweight, stylish, and perfect for daily wear, parties, and special occasions. A trendy jewelry piece for girls and women that adds charm to any outfit.
-butterflys  pendant necklace, crystals  butterflys  necklace, gold pendant for women, stylish necklace for girls, party wear jewelry, trendy fashion necklace, women pendant chain. ✨`,
+      `Enhance your ethnic look with this elegant traditional pearl beaded necklace set, beautifully crafted with premium white pearl strands and a stunning gold-plated pendant. The design is enriched with vibrant red and green stones, adding a royal and festive touch.
+
+This jewelry set comes with matching designer earrings, making it perfect for weddings, festivals, and special occasions. The intricate craftsmanship and timeless design make it a must-have accessory for every jewelry lover.`,
     images: [
       "https://drive.google.com/uc?export=view&id=1Hc2ahQibQV9zpNOPfNgmGVR0jq9Jrcm9",
       "https://drive.google.com/uc?export=view&id=1Hc2ahQibQV9zpNOPfNgmGVR0jq9Jrcm9",
     ],
     category: "motiset",
-    metakey:"gold bracelet for women, micro ad bracelet, infinity bracelet gold, heart design bracelet, american diamond bracelet, designer bracelet for girls, daily wear gold bracelet, adjustable bracelet for women, party wear jewellery, stylish gold bracelet",
+    metakey:"Traditional Pearl Necklace Set with Multicolor Stones | Wedding Jewelry for,pearl, traditional, wedding, necklace set, gold plated, ethnic, festive, designer jewelry",
     material: "Brass",
     stone: "none",
     isBestseller: false,
@@ -1093,18 +1094,19 @@ butterflys  pendant necklace, crystals  butterflys  necklace, gold pendant for w
   },
   {
     id: 50,
-    name: "Pink titali Crystals Drops Pendant Necklace for Women and Girls",
+    name: "Traditional Pearl Beaded Necklace Set with Gold Peacock Pendant & Multicolor Stones",
     SKU_id: "AVH_MOT_050",
     price:330,
     description:
-      `Elegants  Butterflys  Crystals  Drops  Pendant Necklace with a beautiful gold-tone finish and sparkling crystals. Lightweight, stylish, and perfect for daily wear, parties, and special occasions. A trendy jewelry piece for girls and women that adds charm to any outfit.
-butterflys  pendant necklace, crystals  butterflys  necklace, gold pendant for women, stylish necklace for girls, party wear jewelry, trendy fashion necklace, women pendant chain. ✨`,
+      `Add royal elegance to your ethnic look with this stunning pearl beaded necklace set featuring a beautifully crafted peacock design pendant. Made with multiple strands of fine white pearls, this necklace is enhanced with gold-plated detailing and vibrant red and green beads for a rich traditional appeal.
+
+The centerpiece showcases an intricate peacock motif, symbolizing grace and beauty, paired with matching designer earrings for a complete festive look. Perfect for weddings, traditional functions, and cultural celebrations.`,
     images: [
       "https://drive.google.com/uc?export=view&id=1IWAtiPdT8wdoLnnMaFFN4EZvzUGwvc72",
       "https://drive.google.com/uc?export=view&id=1IWAtiPdT8wdoLnnMaFFN4EZvzUGwvc72",
     ],
     category: "motiset",
-    metakey:"gold bracelet for women, micro ad bracelet, infinity bracelet gold, heart design bracelet, american diamond bracelet, designer bracelet for girls, daily wear gold bracelet, adjustable bracelet for women, party wear jewellery, stylish gold bracelet",
+    metakey:"Shop elegant peacock pearl necklace set with gold-plated pendant and multicolor beads. Perfect for weddings, festivals & ethnic wear. Buy now, Peacock Pearl Necklace Set with Gold Pendant,peacock, pearl necklace, wedding jewelry, traditional set, gold plated, ethnic, festive, designer",
     material: "Brass",
     stone: "none",
     isBestseller: false,
@@ -1113,18 +1115,19 @@ butterflys  pendant necklace, crystals  butterflys  necklace, gold pendant for w
   },
   {
     id: 51,
-    name: "Pink titali Crystals Drops Pendant Necklace for Women and Girls",
+    name: "Traditional Pearl Beaded Necklace Set with Square Gold Pendant & Multicolor Stones",
     SKU_id: "AVH_MOT_051",
     price:330,
     description:
-      `Elegants  Butterflys  Crystals  Drops  Pendant Necklace with a beautiful gold-tone finish and sparkling crystals. Lightweight, stylish, and perfect for daily wear, parties, and special occasions. A trendy jewelry piece for girls and women that adds charm to any outfit.
-butterflys  pendant necklace, crystals  butterflys  necklace, gold pendant for women, stylish necklace for girls, party wear jewelry, trendy fashion necklace, women pendant chain. ✨`,
+      `Elevate your ethnic style with this beautifully crafted traditional pearl beaded necklace set, featuring a unique square-shaped gold pendant with intricate detailing. The necklace is designed with multiple strands of fine white pearls, complemented by elegant red and green beads for a rich, festive look.
+
+The statement pendant showcases detailed craftsmanship with embedded multicolor stones, paired with matching designer earrings to complete your traditional outfit. Perfect for weddings, festive occasions, and cultural celebrations.`,
     images: [
       "https://drive.google.com/uc?export=view&id=1HbOEe3Vb9bth4D8ZzP98_JxkmVRKq_Q1",
       "https://drive.google.com/uc?export=view&id=1HbOEe3Vb9bth4D8ZzP98_JxkmVRKq_Q1",
     ],
     category: "motiset",
-    metakey:"gold bracelet for women, micro ad bracelet, infinity bracelet gold, heart design bracelet, american diamond bracelet, designer bracelet for girls, daily wear gold bracelet, adjustable bracelet for women, party wear jewellery, stylish gold bracelet",
+    metakey:"Buy elegant square pendant pearl necklace set with gold plating and multicolor stones. Perfect for weddings, festive wear & ethnic outfits.pearl, square pendant, traditional, wedding jewelry, ethnic, gold plated, festive, designer",
     material: "Brass",
     stone: "none",
     isBestseller: false,
@@ -1133,18 +1136,19 @@ butterflys  pendant necklace, crystals  butterflys  necklace, gold pendant for w
   },
   {
     id: 52,
-    name: "Pink titali Crystals Drops Pendant Necklace for Women and Girls",
+    name: "Traditional Pearl Beaded Necklace Set with Royal Gold Pendant & Multicolor Stones",
     SKU_id: "AVH_MOT_052",
     price:330,
     description:
-      `Elegants  Butterflys  Crystals  Drops  Pendant Necklace with a beautiful gold-tone finish and sparkling crystals. Lightweight, stylish, and perfect for daily wear, parties, and special occasions. A trendy jewelry piece for girls and women that adds charm to any outfit.
-butterflys  pendant necklace, crystals  butterflys  necklace, gold pendant for women, stylish necklace for girls, party wear jewelry, trendy fashion necklace, women pendant chain. ✨`,
+      `Bring timeless elegance to your ethnic collection with this stunning traditional pearl beaded necklace set, featuring a beautifully detailed royal gold-plated pendant. Designed with multiple strands of fine white pearls, this necklace is enhanced with vibrant red, green, and golden beads, creating a rich and festive appeal.
+
+The intricately crafted pendant showcases traditional artistry with embedded multicolor stones and delicate hanging elements. Paired with matching designer earrings, this set is perfect for weddings, festive occasions, and traditional celebrations.`,
     images: [
       "https://drive.google.com/uc?export=view&id=1HdZcTg9xmzI2yD2pk7qts_1E_yGbTXWK",
       "https://drive.google.com/uc?export=view&id=1HdZcTg9xmzI2yD2pk7qts_1E_yGbTXWK",
     ],
     category: "motiset",
-    metakey:"gold bracelet for women, micro ad bracelet, infinity bracelet gold, heart design bracelet, american diamond bracelet, designer bracelet for girls, daily wear gold bracelet, adjustable bracelet for women, party wear jewellery, stylish gold bracelet",
+    metakey:"Shop elegant royal pearl necklace set with gold-plated pendant and multicolor stones. Perfect for weddings, festive & ethnic wear. Buy now!pearl, royal pendant, traditional, wedding",
     material: "Brass",
     stone: "none",
     isBestseller: false,
@@ -1153,58 +1157,19 @@ butterflys  pendant necklace, crystals  butterflys  necklace, gold pendant for w
   },
   {
     id: 53,
-    name: "Pink titali Crystals Drops Pendant Necklace for Women and Girls",
+    name: "Traditional Pearl Beaded Temple Necklace Set with Red & Green Stones | Ethnic Pendant Jewelry Set for Women",
     SKU_id: "AVH_MOT_053",
     price:280,
     description:
-      `Elegants  Butterflys  Crystals  Drops  Pendant Necklace with a beautiful gold-tone finish and sparkling crystals. Lightweight, stylish, and perfect for daily wear, parties, and special occasions. A trendy jewelry piece for girls and women that adds charm to any outfit.
-butterflys  pendant necklace, crystals  butterflys  necklace, gold pendant for women, stylish necklace for girls, party wear jewelry, trendy fashion necklace, women pendant chain. ✨`,
+      `Enhance your ethnic look with this beautifully crafted traditional pearl beaded necklace set featuring an antique gold finish. The elegant pendant is adorned with vibrant red and green stones, paired with matching earrings for a complete festive look.
+
+Designed with multiple strands of fine white pearls and intricate temple-style detailing, this jewelry set is perfect for weddings, festivals, and special occasions. Its lightweight yet premium design ensures comfort while giving you a royal appearance.`,
     images: [
       "https://drive.google.com/uc?export=view&id=1ILkRsaXU9Iekyz4ODWYd9Pc8V_IGqrkZ",
       "https://drive.google.com/uc?export=view&id=1ILkRsaXU9Iekyz4ODWYd9Pc8V_IGqrkZ",
     ],
     category: "motiset",
-    metakey:"gold bracelet for women, micro ad bracelet, infinity bracelet gold, heart design bracelet, american diamond bracelet, designer bracelet for girls, daily wear gold bracelet, adjustable bracelet for women, party wear jewellery, stylish gold bracelet",
-    material: "Brass",
-    stone: "none",
-    isBestseller: false,
-    inStock: true,
-    isNew: false,
-  },
-  {
-    id: 53,
-    name: "Pink titali Crystals Drops Pendant Necklace for Women and Girls",
-    SKU_id: "AVH_MOT_053",
-    price:280,
-    description:
-      `Elegants  Butterflys  Crystals  Drops  Pendant Necklace with a beautiful gold-tone finish and sparkling crystals. Lightweight, stylish, and perfect for daily wear, parties, and special occasions. A trendy jewelry piece for girls and women that adds charm to any outfit.
-butterflys  pendant necklace, crystals  butterflys  necklace, gold pendant for women, stylish necklace for girls, party wear jewelry, trendy fashion necklace, women pendant chain. ✨`,
-    images: [
-      "https://drive.google.com/uc?export=view&id=1INrHW-bGVIGQMD3SAc0tZv4csoW7h2Nv",
-      "https://drive.google.com/uc?export=view&id=1INrHW-bGVIGQMD3SAc0tZv4csoW7h2Nv",
-    ],
-    category: "motiset",
-    metakey:"gold bracelet for women, micro ad bracelet, infinity bracelet gold, heart design bracelet, american diamond bracelet, designer bracelet for girls, daily wear gold bracelet, adjustable bracelet for women, party wear jewellery, stylish gold bracelet",
-    material: "Brass",
-    stone: "none",
-    isBestseller: false,
-    inStock: true,
-    isNew: false,
-  },
-  {
-    id: 53,
-    name: "Pink titali Crystals Drops Pendant Necklace for Women and Girls",
-    SKU_id: "AVH_MOT_053",
-    price:280,
-    description:
-      `Elegants  Butterflys  Crystals  Drops  Pendant Necklace with a beautiful gold-tone finish and sparkling crystals. Lightweight, stylish, and perfect for daily wear, parties, and special occasions. A trendy jewelry piece for girls and women that adds charm to any outfit.
-butterflys  pendant necklace, crystals  butterflys  necklace, gold pendant for women, stylish necklace for girls, party wear jewelry, trendy fashion necklace, women pendant chain. ✨`,
-    images: [
-      "https://drive.google.com/uc?export=view&id=1IJ2K1yylMd2UhiDXNYHLAmYz13VEs79H",
-      "https://drive.google.com/uc?export=view&id=1IJ2K1yylMd2UhiDXNYHLAmYz13VEs79H",
-    ],
-    category: "motiset",
-    metakey:"gold bracelet for women, micro ad bracelet, infinity bracelet gold, heart design bracelet, american diamond bracelet, designer bracelet for girls, daily wear gold bracelet, adjustable bracelet for women, party wear jewellery, stylish gold bracelet",
+    metakey:"Buy elegant pearl temple necklace set with red & green stones. Perfect for weddings, festivals & ethnic wear. Lightweight, stylish & affordable jewelry set.",
     material: "Brass",
     stone: "none",
     isBestseller: false,
@@ -1213,18 +1178,61 @@ butterflys  pendant necklace, crystals  butterflys  necklace, gold pendant for w
   },
   {
     id: 54,
-    name: "Pink titali Crystals Drops Pendant Necklace for Women and Girls",
-    SKU_id: "AVH_MOT_053",
+    name: "Antique Gold Floral Pendant Necklace Set with Pearl Strands & Multicolor Stones",
+    SKU_id: "AVH_MOT_054",
     price:280,
     description:
-      `Elegants  Butterflys  Crystals  Drops  Pendant Necklace with a beautiful gold-tone finish and sparkling crystals. Lightweight, stylish, and perfect for daily wear, parties, and special occasions. A trendy jewelry piece for girls and women that adds charm to any outfit.
-butterflys  pendant necklace, crystals  butterflys  necklace, gold pendant for women, stylish necklace for girls, party wear jewelry, trendy fashion necklace, women pendant chain. ✨`,
+      `Add a touch of vintage elegance to your jewelry collection with this stunning antique gold floral pendant necklace set. Designed with delicate multi-layer pearl strands, this piece is beautifully accented with green and red stones, giving it a rich and graceful traditional look.
+
+The intricately carved floral pendant showcases fine craftsmanship with an antique finish, making it perfect for women who love timeless and elegant jewelry. Paired with matching designer earrings, this set is ideal for festive occasions, weddings, and ethnic wear styling.`,
+    images: [
+      "https://drive.google.com/uc?export=view&id=1INrHW-bGVIGQMD3SAc0tZv4csoW7h2Nv",
+      "https://drive.google.com/uc?export=view&id=1INrHW-bGVIGQMD3SAc0tZv4csoW7h2Nv",
+    ],
+    category: "motiset",
+    metakey:"Shop antique gold floral pendant necklace set with pearl strands and multicolor stones. Perfect for weddings, festive & ethnic wear. Buy now!",
+    material: "Brass",
+    stone: "none",
+    isBestseller: false,
+    inStock: true,
+    isNew: false,
+  },
+  {
+    id: 55,
+    name: "Antique Gold-Plated Long Pearl Mala Set with Temple Style Rectangular Pendant & Matching Earrings",
+    SKU_id: "AVH_MOT_055",
+    price:280,
+    description:
+      `Elevate your ethnic wardrobe with this exquisite Handcrafted Pearl Mala Necklace Set. Designed for the modern woman who loves a touch of vintage royalty, this set features four delicate strands of high-quality white seed pearls, accented with vibrant green and ruby-pink beads.
+
+The centerpiece is a bold, rectangular Temple-style pendant featuring intricate filigree work, geometric textures, and teardrop stone embellishments in a rich antique gold finish. The set is completed with a pair of matching teardrop jhumka-style studs, making it the perfect accessory for weddings, festive celebrations, or formal cultural events.`,
+    images: [
+      "https://drive.google.com/uc?export=view&id=1IJ2K1yylMd2UhiDXNYHLAmYz13VEs79H",
+      "https://drive.google.com/uc?export=view&id=1IJ2K1yylMd2UhiDXNYHLAmYz13VEs79H",
+    ],
+    category: "motiset",
+    metakey:"Antique gold necklace set, Pearl Mala necklace, Temple jewelry for women, Long ethnic necklace, Indian traditional jewelry.Oxidized gold pendant, Ruby and Emerald beaded mala, Wedding jewelry set, Bollywood style necklace, Handcrafted festive jewelry.",
+    material: "Brass",
+    stone: "none",
+    isBestseller: false,
+    inStock: true,
+    isNew: false,
+  },
+  {
+    id: 56,
+    name: "Antique Gold-Plated Chandbali Pendant Pearl Mala Set with Ruby & Emerald Accents",
+    SKU_id: "AVH_MOT_056",
+    price:280,
+    description:
+      `Add a touch of royal heritage to your ensemble with this Antique Gold Pearl Mala Set. This jewelry piece features a magnificent circular Chandbali-style pendant, intricately crafted with textured gold-tone metal and set with a striking square ruby-pink stone and emerald-green drops.
+
+The necklace is composed of three elegant strands of lustrous white seed pearls, punctuated by dainty gold-toned beads for a sophisticated layered look. Accompanied by matching drop earrings that mirror the pendant's crescent design, this set is the perfect blend of traditional craftsmanship and festive elegance.`,
     images: [
       "https://drive.google.com/uc?export=view&id=1Skk6__nAjAG9SkWkSKH-05z0ByPLawT-",
       "https://drive.google.com/uc?export=view&id=1Skk6__nAjAG9SkWkSKH-05z0ByPLawT-",
     ],
     category: "motiset",
-    metakey:"gold bracelet for women, micro ad bracelet, infinity bracelet gold, heart design bracelet, american diamond bracelet, designer bracelet for girls, daily wear gold bracelet, adjustable bracelet for women, party wear jewellery, stylish gold bracelet",
+    metakey:"Chandbali pendant necklace, Antique pearl mala, Indian bridal jewelry set, Long gold plated necklace, Traditional pearl jewelry.Ethnic jewelry for sarees, Ruby and emerald pearl set, Temple jewelry long mala, Wedding guest jewelry, Matte gold necklace set.",
     material: "Brass",
     stone: "none",
     isBestseller: false,

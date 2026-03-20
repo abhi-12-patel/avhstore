@@ -19,10 +19,10 @@ import ImageWithFallback from "../ImageWithFallback";
 import { FREE_SHIPPING_MIN, OFFER_RULES, products as catalogProducts } from "@/data";
 import ProductCard from "../common/productCart/ProductCart";
 
-const WHATSAPP_NUMBER = "916351359801";
+const WHATSAPP_NUMBER = "919016457163";
 const UPI_ID = "vjashoda738-2@oksbi";
 const UPI_PAYEE_NAME = "AVH STORE";
-const MIN_ORDER_AMOUNT = 500;
+const MIN_ORDER_AMOUNT = 300;
 const CHECKOUT_FIELDS = [
   { key: "fullName", label: "Full Name", type: "text", autoComplete: "name" },
   { key: "phone", label: "Phone Number", type: "tel", autoComplete: "tel" },
@@ -81,7 +81,7 @@ const Cart = () => {
     name: "AVH STORE",
     address: "C/O 133, Laxmi Palace, Street No. 5, Radha Nagar, Radha Nagar Society, Chandreshnagar, Rajkot, Gujarat pin-360004",
     // gstin: "RTOUFGV56790",
-    phone: "91 6351359801",
+    phone: "91 9016457163",
     email: "avhstore@example.com",
   };
 
