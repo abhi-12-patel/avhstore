@@ -7,7 +7,7 @@ export const products = [
     id: 15,
     name: "Traditional Gold Plated Royal PDE Pendant Necklace Set with Earrings for Women",
     SKU_id: "AVH_JS_015",
-    price: 320,
+    price: 350,
     description:
       `Enhance your ethnic elegance with this Traditional Gold Plated Royal PDE Pendant Necklace Set featuring a beautifully detailed geometric paisley design centerpiece. Designed with intricate craftsmanship, delicate stone accents, and a rich gold-tone finish, this jewelry set reflects timeless Indian tradition with a modern touch.
 
@@ -32,7 +32,7 @@ An ideal choice for brides, festive styling, party wear, and gifting purposes.`,
     id: 16,
     name: "Traditional Zivara Crescent Bloom Gold Necklace Set with Earrings for Women",
     SKU_id: "AVH_JS_016",
-    price: 320,
+    price: 350,
     description:
       `Elevate your elegance with the Zivara Crescent Bloom Gold Jewellery Set, a stunning fusion of traditional artistry and contemporary charm. This exquisite set features a finely crafted gold-finish necklace paired with matching crescent-inspired earrings, beautifully adorned with sparkling crystal accents and a delicate ruby-tone centerpiece.
 
@@ -54,7 +54,7 @@ Whether styled with sarees, lehengas, or ethnic gowns, the Zivara Crescent Bloom
     id: 17,
     name: "Traditional Triveni Trikon Heritage Gold Necklace Set with Earrings for Women",
     SKU_id: "AVH_JS_017",
-    price: 360,
+    price: 400,
     description:
       `Celebrate timeless tradition with the Triveni Trikon Heritage Gold Necklace Set, inspired by the sacred trikon (triangle) motif symbolizing strength, balance, and prosperity. This exquisite necklace features a beautifully crafted triangular pendant with intricate lattice detailing, enhanced by sparkling stone accents and rich ruby-tone highlights.
 
@@ -78,7 +78,7 @@ Lightweight yet luxurious, the Triveni Trikon set is a perfect choice for bridal
     id: 18,
     name: "Traditional Sudarsha Chakra Gold Necklace Set with Earrings for Women",
     SKU_id: "AVH_JS_018",
-    price: 320,
+    price: 350,
     description:
       `Embrace timeless tradition with the Sudarsha Chakra Gold Necklace Set, exquisitely designed around a classic round pendant motif that symbolizes harmony, eternity, and grace. This beautiful jewellery set features a delicately crafted gold-finish necklace paired with matching circular earrings, enhanced with sparkling stone accents and a rich ruby-tone centerpiece.
 
@@ -102,7 +102,7 @@ Ideal for pairing with sarees, lehengas, and traditional attire, the Sudarsha Ch
     id: 19,
     name: "Traditional Vaidehi Ranjana Temple Heritage Jewellery Set with Earrings for Women",
     SKU_id: "AVH_RW_019",
-    price: 750,
+    price: 850,
     description:
       `Rajwadi Antique Matte Jewellery Set Kundan, Pearl And Meenakari Design for Matte Gold Plated Necklace Set Long And Short with Earrings and Mang-Tikka Full Jewellery Set for Women-Girls.`,
     images: [   
@@ -121,7 +121,7 @@ Ideal for pairing with sarees, lehengas, and traditional attire, the Sudarsha Ch
     id: 20,
     name: "Traditional Kalyani Pushpa Temple Royale Jewellery Set with Earrings for Women",
     SKU_id: "AVH_RW_020",
-    price: 750,
+    price: 850,
     description:
       `Rajwadi Antique Matte Jewellery Set Kundan, Pearl And Meenakari Design for Matte Gold Plated Necklace Set Long And Short with Earrings and Mang-Tikka Full Jewellery Set for Women-Girls.`,
     images: [   
@@ -140,7 +140,7 @@ Ideal for pairing with sarees, lehengas, and traditional attire, the Sudarsha Ch
     id: 21,
     name: "Traditional Rajasi Vriksha Antique Temple Jewellery Set with Earrings for Women",
     SKU_id: "AVH_RW_021",
-    price: 750,
+    price: 850,
     description:
       `Rajwadi Antique Matte Jewellery Set Kundan, Pearl And Meenakari Design for Matte Gold Plated Necklace Set Long And Short with Earrings and Mang-Tikka Full Jewellery Set for Women-Girls.`,
     images: [   
@@ -159,7 +159,7 @@ Ideal for pairing with sarees, lehengas, and traditional attire, the Sudarsha Ch
     id: 22,
     name: "TraditionalAarvika Halo Gold Necklace Set with Earrings for Women",
     SKU_id: "AVH_JS_022",
-    price: 320,
+    price: 350,
     description:
       `Add refined elegance to your jewellery collection with the Aarvika Halo Gold Necklace Set, a beautifully crafted ensemble that blends modern sophistication with traditional charm. This graceful set features a sleek gold-finish necklace adorned with oval and circular motifs, highlighted by shimmering stone accents and subtle ruby-tone detailing.
 
@@ -182,7 +182,7 @@ Ideal for weddings, celebrations, parties, and gifting, the Aarvika Halo set com
     id: 23,
     name: "Traditional Anvika Chakra Grace Gold Necklace Set with Earrings for Women",
     SKU_id: "AVH_JS_023",
-    price: 360,
+    price: 400,
     description:
       `Discover timeless sophistication with the Anvika Chakra Grace Gold Necklace Set, a beautifully balanced design that blends traditional symbolism with modern elegance. This refined set features a sleek gold-finish necklace accented with sculpted oval motifs and a radiant circular chakra pendant, embellished with sparkling stones and subtle ruby-tone highlights.
 
@@ -371,7 +371,7 @@ An ideal choice for women and girls who love classy, ethnic, and designer-inspir
     id: 9,
     name: "Traditional Gold Plated Mango Design Necklace Set with Earrings for Women",
     SKU_id: "AVH_JS_009",
-    price: 320,
+    price: 350,
     description:
       `Enhance your ethnic elegance with this Traditional Gold Plated Mango Design Necklace Set featuring a beautifully crafted paisley (mango) pendant and matching earrings. Designed with intricate detailing and delicate pink stone accents, this jewelry set offers a rich and graceful look perfect for weddings, festivals, and special occasions.
 
@@ -395,7 +395,7 @@ Perfect gift choice for weddings, anniversaries, and festive celebrations.`,
     id: 10,
     name: "Traditional Gold Plated Temple Design Necklace Set with Earrings for Women",
     SKU_id: "AVH_JS_010",
-    price: 320,
+    price: 350,
     description:
       `Elevate your ethnic look with this Traditional Gold Plated Temple Design Necklace Set crafted with intricate detailing and classic South Indian temple-inspired motifs. Featuring a beautifully designed central pendant with geometric and traditional elements, along with matching earrings, this set reflects timeless heritage and elegance.
 
@@ -419,7 +419,7 @@ An ideal choice for bridal wear, festive celebrations, and gifting purposes.`,
     id: 11,
     name: "Traditional Gold Plated Hexagon Pendant Necklace Set with Earrings for Women",
     SKU_id: "AVH_JS_011",
-    price: 320,
+    price: 350,
     description:
       `Enhance your style with this Elegant Gold Plated Hexagon Pendant Necklace Set featuring a beautifully crafted geometric floral centerpiece with delicate stone detailing. The modern hexagon design combined with a traditional gold-tone finish creates a perfect blend of contemporary and ethnic elegance.
 
@@ -442,7 +442,7 @@ A must-have jewelry set for women and girls who love stylish statement accessori
     id: 12,
     name: "Traditional Gold Plated Designer Choker Necklace Set with Earrings for Women",
     SKU_id: "AVH_JS_012",
-    price: 360,
+    price: 400,
     description:
       `Add royal elegance to your ethnic collection with this Traditional Gold Plated Designer Choker Necklace Set. Featuring a beautifully detailed curved choker design with hexagon accents and a grand circular pendant, this jewelry set reflects timeless heritage craftsmanship.
 
@@ -467,7 +467,7 @@ Lightweight yet statement-making, this choker necklace set pairs beautifully wit
     id: 13,
     name: "Traditional Gold Plated Hexagon Floral Pendant Necklace Set with Earrings for Women",
     SKU_id: "AVH_JS_013",
-    price: 360,
+    price: 400,
     description:
       `Enhance your ethnic elegance with this Traditional Gold Plated Hexagon Floral Pendant Necklace Set featuring a beautifully detailed geometric floral centerpiece. Designed with intricate craftsmanship, delicate stone accents, and a rich gold-tone finish, this jewelry set reflects timeless Indian tradition with a modern touch.
 
@@ -491,7 +491,7 @@ An ideal choice for brides, festive styling, party wear, and gifting purposes.`,
     id: 14,
     name: "Traditional Gold Plated Royal Paisley Pendant Necklace Set with Earrings for Women",
     SKU_id: "AVH_JS_014",
-    price: 320,
+    price: 350,
     description:
       `Enhance your ethnic elegance with this Traditional Gold Plated Royal Paisley Pendant Necklace Set featuring a beautifully detailed geometric paisley design centerpiece. Designed with intricate craftsmanship, delicate stone accents, and a rich gold-tone finish, this jewelry set reflects timeless Indian tradition with a modern touch.
 
@@ -516,7 +516,7 @@ An ideal choice for brides, festive styling, party wear, and gifting purposes.`,
     id: 24,
     name: "Traditional Divyara Mandala Heritage Gold Necklace Set with Earrings for Women",
     SKU_id: "AVH_JS_024",
-    price: 320,
+    price: 350,
     description:
       `Elevate your traditional elegance with the Divyara Mandala Heritage Gold Necklace Set, a timeless creation inspired by sacred mandala artistry and classical Indian craftsmanship. This refined set features a beautifully structured gold-finish necklace adorned with geometric motifs, leading to a radiant circular pendant with intricate lattice detailing and a graceful drop accent.
 
@@ -541,7 +541,7 @@ Perfectly complementing silk sarees, lehengas, and ethnic ensembles, the Divyara
     id: 25,
     name: "Traditional Gold Plated Noorika Eclipse Royale Necklace Set with Earrings for Women",
     SKU_id: "AVH_JS_025",
-    price: 320,
+    price: 350,
     description:
       `Unveil understated luxury with the Noorika Eclipse Royale Necklace Set, a masterpiece designed for modern elegance with a timeless soul. This refined gold-finish necklace features a sequence of delicately sculpted motifs leading to a graceful crescent-inspired pendant, accented with shimmering stones and subtle ruby detailing.
 
